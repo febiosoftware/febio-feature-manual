@@ -62,14 +62,14 @@ for module in data['modules']:
 
     # see if we have a description file for this module
     try:
-        with open(f"meta\\{filename}", mode='r') as info_file:
+        with open(f"meta/{filename}", mode='r') as info_file:
             module_info = info_file.read()
     except FileNotFoundError:
         print(f'WARNING: No description file found for \"{module_name}\" ({filename})')
 
     print(f'Processing module: {module_name}')
     # create a markdown file for each module
-    with open(f'docs\\modules\\{filename}', 'w') as md_file:
+    with open(f'docs/modules/{filename}', 'w') as md_file:
         md_file.write(f'# {module_name} module\n\n')
         md_file.write('## Description\n\n')
         md_file.write(f'{module_info}\n')
@@ -124,14 +124,14 @@ for row in data['features']:
     # see if we have a description file for this feature
     info = ''
     try:
-        with open(f"meta\\{filename}", mode='r') as info_file:
+        with open(f"meta/{filename}", mode='r') as info_file:
             info = info_file.read()
     except FileNotFoundError:
         print(f'WARNING: No description file found for \"{name}\" ({filename})')
         info = ''
 
     # create an markdown file for each feature
-    with open(f'docs\\features\\{filename}', 'w') as md_file:
+    with open(f'docs/features/{filename}', 'w') as md_file:
         md_file.write(f'# {name}\n\n')
         md_file.write(f'**Module:** {module_name}\n\n')
         md_file.write(f'**Category:** {class_id}\n\n')
