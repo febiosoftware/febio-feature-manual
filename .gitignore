@@ -1,0 +1,9 @@
+
+# Ignore all markdown files in the features directory
+docs/features/*.md
+
+# Ignore all markdown files in the modules directory
+docs/modules/*.md
+
+# ignore the mkdocs.yml file since it's generated automatically
+mkdocs.yml
