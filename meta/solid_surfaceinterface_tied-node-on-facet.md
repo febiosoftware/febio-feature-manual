@@ -1,0 +1,3 @@
+A `tied-node-on-facet` interface can be used to connect two non-conforming surfaces [^1]. A tied interface requires the definition of both a primary and a secondary surface. For this particular formulation it is assumed that the nodes of the primary surface are connected to the faces of the secondary surface.
+
+[^1]:Laursen, T. A. and Simo, J. C., "Continuum-based finite element formulation for the implicit solution of multibody, large deformation frictional contact problems", International Journal for Numerical Methods in Engineering 36, 20 (1993), pp. 3451-3485.

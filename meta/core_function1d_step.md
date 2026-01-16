@@ -1,0 +1,1 @@
+The `step` function applies a step function to the input value. The returned value is either `left_val` or `right_val`, depending on whether the input falls left or right of transition point $x_{0}$.

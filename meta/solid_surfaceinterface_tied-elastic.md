@@ -1,0 +1,1 @@
+A `tied elastic` interface is similar to the tied interface. It may be used for tying solid materials. It enforces continuity of the displacement across the interface.
