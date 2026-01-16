@@ -1,9 +1,14 @@
 
 # Ignore all markdown files in the features directory
+# (these files are generated from the build.py script)
 docs/features/*.md
 
 # Ignore all markdown files in the modules directory
+# (these files are generated from the build.py script)
 docs/modules/*.md
 
 # ignore the mkdocs.yml file since it's generated automatically
 mkdocs.yml
+
+# don't add the site directory!
+site/
