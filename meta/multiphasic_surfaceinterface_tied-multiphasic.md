@@ -1,1 +1,0 @@
-A `tied multiphasic` interface is similar to the [tied biphasic](biphasic_surfaceinterface_tied-biphasic.md) interface. It may be used for tying any combination of solid, biphasic, multiphasic and rigid materials. It enforces continuity of the effective fluid pressure and effective solute concentrations across the interface when both materials are biphasic or multiphasic.

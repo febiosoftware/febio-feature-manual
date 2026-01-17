@@ -3203,7 +3203,7 @@
                 }
             ],
             "source": "",
-            "super_class_id": "FESURFACEINTERFACE_ID",
+            "super_class_id": "FESURFACEINTERACTION_ID",
             "type_string": "contact potential"
         },
         {
@@ -16389,7 +16389,7 @@
                 }
             ],
             "source": "",
-            "super_class_id": "FESURFACEINTERFACE_ID",
+            "super_class_id": "FESURFACEINTERACTION_ID",
             "type_string": "mortar-sliding"
         },
         {
@@ -16423,7 +16423,7 @@
                 }
             ],
             "source": "",
-            "super_class_id": "FESURFACEINTERFACE_ID",
+            "super_class_id": "FESURFACEINTERACTION_ID",
             "type_string": "mortar-tied"
         },
         {
@@ -19267,7 +19267,7 @@
                 }
             ],
             "source": "",
-            "super_class_id": "FESURFACEINTERFACE_ID",
+            "super_class_id": "FESURFACEINTERACTION_ID",
             "type_string": "periodic boundary"
         },
         {
@@ -19313,7 +19313,7 @@
                 }
             ],
             "source": "",
-            "super_class_id": "FESURFACEINTERFACE_ID",
+            "super_class_id": "FESURFACEINTERACTION_ID",
             "type_string": "periodic boundary1O"
         },
         {
@@ -19359,7 +19359,7 @@
                 }
             ],
             "source": "",
-            "super_class_id": "FESURFACEINTERFACE_ID",
+            "super_class_id": "FESURFACEINTERACTION_ID",
             "type_string": "periodic boundary2O"
         },
         {
@@ -26493,7 +26493,7 @@
                 }
             ],
             "source": "",
-            "super_class_id": "FESURFACEINTERFACE_ID",
+            "super_class_id": "FESURFACEINTERACTION_ID",
             "type_string": "sliding2"
         },
         {
@@ -26653,7 +26653,7 @@
                 }
             ],
             "source": "",
-            "super_class_id": "FESURFACEINTERFACE_ID",
+            "super_class_id": "FESURFACEINTERACTION_ID",
             "type_string": "sliding-biphasic"
         },
         {
@@ -26813,7 +26813,7 @@
                 }
             ],
             "source": "",
-            "super_class_id": "FESURFACEINTERFACE_ID",
+            "super_class_id": "FESURFACEINTERACTION_ID",
             "type_string": "sliding-biphasic-mixed"
         },
         {
@@ -26955,7 +26955,7 @@
                 }
             ],
             "source": "",
-            "super_class_id": "FESURFACEINTERFACE_ID",
+            "super_class_id": "FESURFACEINTERACTION_ID",
             "type_string": "sliding-biphasic-solute"
         },
         {
@@ -27103,7 +27103,7 @@
                 }
             ],
             "source": "",
-            "super_class_id": "FESURFACEINTERFACE_ID",
+            "super_class_id": "FESURFACEINTERACTION_ID",
             "type_string": "sliding-elastic"
         },
         {
@@ -27203,7 +27203,7 @@
                 }
             ],
             "source": "",
-            "super_class_id": "FESURFACEINTERFACE_ID",
+            "super_class_id": "FESURFACEINTERACTION_ID",
             "type_string": "sliding-facet-on-facet"
         },
         {
@@ -27363,7 +27363,7 @@
                 }
             ],
             "source": "",
-            "super_class_id": "FESURFACEINTERFACE_ID",
+            "super_class_id": "FESURFACEINTERACTION_ID",
             "type_string": "sliding-multiphasic"
         },
         {
@@ -27475,7 +27475,7 @@
                 }
             ],
             "source": "",
-            "super_class_id": "FESURFACEINTERFACE_ID",
+            "super_class_id": "FESURFACEINTERACTION_ID",
             "type_string": "sliding-node-on-facet"
         },
         {
@@ -29355,7 +29355,7 @@
                 }
             ],
             "source": "",
-            "super_class_id": "FESURFACEINTERFACE_ID",
+            "super_class_id": "FESURFACEINTERACTION_ID",
             "type_string": "sticky"
         },
         {
@@ -29693,7 +29693,7 @@
                 }
             ],
             "source": "",
-            "super_class_id": "FESURFACEINTERFACE_ID",
+            "super_class_id": "FESURFACEINTERACTION_ID",
             "type_string": "surface constraint"
         },
         {
@@ -30819,7 +30819,7 @@
                 }
             ],
             "source": "",
-            "super_class_id": "FESURFACEINTERFACE_ID",
+            "super_class_id": "FESURFACEINTERACTION_ID",
             "type_string": "tied-biphasic"
         },
         {
@@ -30919,7 +30919,7 @@
                 }
             ],
             "source": "",
-            "super_class_id": "FESURFACEINTERFACE_ID",
+            "super_class_id": "FESURFACEINTERACTION_ID",
             "type_string": "tied-elastic"
         },
         {
@@ -30971,7 +30971,7 @@
                 }
             ],
             "source": "",
-            "super_class_id": "FESURFACEINTERFACE_ID",
+            "super_class_id": "FESURFACEINTERACTION_ID",
             "type_string": "tied-facet-on-facet"
         },
         {
@@ -31059,7 +31059,7 @@
                 }
             ],
             "source": "",
-            "super_class_id": "FESURFACEINTERFACE_ID",
+            "super_class_id": "FESURFACEINTERACTION_ID",
             "type_string": "tied-fluid"
         },
         {
@@ -31229,7 +31229,7 @@
                 }
             ],
             "source": "",
-            "super_class_id": "FESURFACEINTERFACE_ID",
+            "super_class_id": "FESURFACEINTERACTION_ID",
             "type_string": "tied-multiphasic"
         },
         {
@@ -31299,7 +31299,7 @@
                 }
             ],
             "source": "",
-            "super_class_id": "FESURFACEINTERFACE_ID",
+            "super_class_id": "FESURFACEINTERACTION_ID",
             "type_string": "tied-node-on-facet"
         },
         {

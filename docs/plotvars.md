@@ -61,7 +61,7 @@ The following plot variables are available in FEBio:
 |`Drucker-Prager stress` | |solid|
 |`edge contact gap` | |solid|
 |`effective elasticity` | The elasticity of the elastic material in a biphasic/triphasic/multiphasic material.|biphasic|
-|`effective fluid pressure` | Fluid pressure p for biphasic materials, Eq.[eq:bp-stress], or $\tilde{p}$ for biphasic-solute|fluid|
+|`effective fluid pressure` | Fluid pressure p for biphasic materials, or $\tilde{p}$ for biphasic-solute|fluid|
 |`effective friction coefficient` | Effective friction coefficient at a biphasic contact interface|biphasic|
 |`effective shell fluid pressure` | fluid pressure for biphasic, biphasic-solute, triphasic, and multiphasic materials of shell domains.|biphasic|
 |`effective shell solute concentration` | Effective solute concentration for biphasic-solute, triphasic, and multiphasic materials of shell domains.|solute|
@@ -107,7 +107,7 @@ The following plot variables are available in FEBio:
 |`fluid kinetic energy density` | Average kinetic energy densify of a fluid element|fluid|
 |`fluid load support` | The total fluid load support across a named surface|biphasic|
 |`fluid mass flow rate` | Mass flow rate across a named surface, $\dot{m}=\int_{A}\rho\mathbf{v}\cdot\mathbf{n}\,dA$|fluid|
-|`fluid pressure` | Fluid pressure $$ in biphasic, biphasic-solute, triphasic/multiphasic materials, and fluid materials|fluid|
+|`fluid pressure` | Fluid pressure $p$ in biphasic, biphasic-solute, triphasic/multiphasic materials, and fluid materials|fluid|
 |`fluid pressure tangent strain` | |fluid|
 |`fluid pressure tangent temperature` | |fluid|
 |`fluid rate of deformation` | Fluid rate of deformation tensor $\mathbf{D}$|fluid|
