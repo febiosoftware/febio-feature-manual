@@ -1,5 +1,5 @@
 # Open the json file containing the data
-import json
+import json, csv
 
 print("Building FEBio Feature Manual...")
 print("Reading febio_features.json...")
@@ -80,6 +80,12 @@ for module in data['modules']:
 # create a dictionary to keep track of class and (feature, file) list created for that class
 class_files = {}
 
+# a dictionary to keep track of plot variables and their description and module
+plot_variables = {}
+
+# a dictionary to keep track of log variables and their description and module
+log_variables = {}
+
 # Process the data
 print("Processing data...")
 for row in data['features']:
@@ -98,10 +104,6 @@ for row in data['features']:
     # make all lower case
     class_id = class_id.lower()
 
-    # skip classes that start with 'log' and 'plot'
-    if class_id.startswith('log') or class_id.startswith('plot'):
-        continue
-
     # get the module name
     module_name = row['module']
     if module_name == '':
@@ -111,7 +113,19 @@ for row in data['features']:
     if module_name.lower() in ['thermo-fluid', 'polar fluid']:
         continue
 
-    print(f'Processing feature: {name}')
+    # skip classes that start with 'log' and 'plot'
+    if class_id.startswith('log') or class_id.startswith('plot'):
+        if (class_id.startswith('plot')):
+            # see if this plot variable is already in the dictionary
+            if name in plot_variables:
+                print(f'WARNING: duplicate plot variable found: \"{name}\"')
+            plot_variables[name] = (module_name, "")
+        if (class_id.startswith('log')):
+            # see if this log variable is already in the dictionary
+            if name in log_variables:
+                print(f'WARNING: duplicate log variable found: \"{name}\"')
+            log_variables[name] = (module_name, "")
+        continue
 
     # replace all spaces with underscores and make lower case
     clean_name = name.replace(' ', '_').lower()
@@ -120,6 +134,8 @@ for row in data['features']:
 
     # append module name and class ID to filename
     filename = f'{clean_mod}_{clean_class}_{clean_name}.md'
+
+    print(f'Processing feature: \"{name}\" ({filename})')
 
     # see if we have a description file for this feature
     info = ''
@@ -190,5 +206,57 @@ with open('mkdocs.yml', mode='a') as mkdocs:
         for name, filename in features:
             mkdocs.write(f'        - {name}: features/{filename}\n')
 
+    # write the Output section
+    mkdocs.write('  - Output:\n')
+    mkdocs.write('    - plot variables: plotvars.md\n')
+    mkdocs.write('    - log variables: logvars.md\n')
+
+# open the plotvars.csv that contains the descriptions of the plot variables
+print("Reading plotvars.csv...")
+with open('meta/plotvars.csv', mode='r') as csvfile:
+    csvreader = csv.reader(csvfile)
+    for row in csvreader:
+        if len(row) < 2:
+            continue
+        var_name = row[0].strip()
+        var_desc = row[1].strip()
+        if var_name in plot_variables:
+            plot_variables[var_name] = (plot_variables[var_name][0], var_desc)
+
+# create the plotvars.md file
+print("Writing plotvars.md...")
+with open('docs/plotvars.md', mode='w') as plot_file:
+    plot_file.write('# Plot Variables\n\n')
+    plot_file.write('The following plot variables are available in FEBio:\n\n')
+    plot_file.write('|variable | description|module|\n')
+    plot_file.write('|-------- | -----------|------|\n')
+    for var, desc in plot_variables.items():
+        if desc[1] == "":
+            print(f'WARNING: No description found for plot variable \"{var}\"')
+        plot_file.write(f'|`{var}` | {desc[1]}|{desc[0]}|\n')
+
+# open the logvars.csv that contains the descriptions of the plot variables
+print("Reading logvars.csv...")
+with open('meta/logvars.csv', mode='r') as csvfile:
+    csvreader = csv.reader(csvfile)
+    for row in csvreader:
+        if len(row) < 2:
+            continue
+        var_name = row[0].strip()
+        var_desc = row[1].strip()
+        if var_name in log_variables:
+            log_variables[var_name] = (log_variables[var_name][0], var_desc)
+
+# create the logvars.md file
+print("Writing logvars.md...")
+with open('docs/logvars.md', mode='w') as log_file:
+    log_file.write('# Log Variables\n\n')
+    log_file.write('The following log variables are available in FEBio:\n\n')
+    log_file.write('|variable | description|module|\n')
+    log_file.write('|-------- | -----------|------|\n')
+    for var, desc in log_variables.items():
+        if desc[1] == "":
+            print(f'WARNING: No description found for log variable \"{var}\"')
+        log_file.write(f'|`{var}` | {desc[1]}|{desc[0]}|\n')
 
 print("Build complete.")
