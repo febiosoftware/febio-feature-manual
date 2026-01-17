@@ -7,6 +7,10 @@ docs/features/*.md
 # (these files are generated from the build.py script)
 docs/modules/*.md
 
+# ignore these files too since they are generated
+docs/logvars.md
+docs/plotvars.md
+
 # ignore the mkdocs.yml file since it's generated automatically
 mkdocs.yml
 

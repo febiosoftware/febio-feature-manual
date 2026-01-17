@@ -182,3 +182,11 @@ SPR infinitesimal strain,The infinitesimal strain tensor recovered using SPR
 SPR Lagrange strain,The Lagrange strain recovered using SPR
 SPR prestrain correction,The 3x3 prestrain correction tensor (recovered with SPR)
 SPR relative volume,The relative volume (i.e. det F) recovered using the SPR method
+yielded bond fraction,The fraction of bonds that have yielded in a reactive viscoelastic material
+weak bond SED,Strain energy density of weak bonds in reactive viscoelastic material
+strong bond SED,Strain energy density of strong bonds in reactive viscoelastic material
+s norm,The norm of the Cauchy stress
+deformation gradient,The deformation gradient $\mathbf{F}$
+right Cauchy-Green,The right Cauchy-Green deformation tensor $\mathbf{C}=\mathbf{F}^T \mathbf{F}$
+surface area, The area of a surface in the current configuration.
+scalar surface load, surface element averaged load. (assumes the surface has a load applied)

@@ -118,7 +118,7 @@ cxxxz,xxxz component of spatial elasticity tensor (a.k.a. c16)
 cyyxz,yyxz component of spatial elasticity tensor (a.k.a. c26)
 czzxz,zzxz component of spatial elasticity tensor (a.k.a. c36)
 cxyxz,xyxz component of spatial elasticity tensor (a.k.a. c46)
-cyzyz,yzyz component of spatial elasticity tensor (a.k.a. c56)
+cyzxz,yzxz component of spatial elasticity tensor (a.k.a. c56)
 cxzxz,xzxz component of spatial elasticity tensor (a.k.a. c66)
 sed,strain energy density
 devsed,deviatoric strain energy density
@@ -146,7 +146,7 @@ Pxz,The xz component of the PK1 stress
 Pyx,The yx component of the PK1 stress
 Pyy,The yy component of the PK1 stress
 Pyz,The yz component of the PK1 stress
-Pxz,The xz component of the PK1 stress
+Pzx,The zx component of the PK1 stress
 Pzy,The zy component of the PK1 stress
 Pzz,The zz component of the PK1 stress
 s1x,The x-component of the 1st Eigen vector of the Cauchy stress
@@ -230,7 +230,7 @@ discrete element stretch,The discrete element's stretch (i.e. ratio of current l
 Fde.x,The x-component of the discrete element's force vector. 
 Fde.y,The y-component of the discrete element's force vector. 
 Fde.z,The z-component of the discrete element's force vector. 
-normalized internal energy,The integral over space and time of the internal energy, normalized by the volume of the domain
+normalized internal energy,The integral over space and time of the internal energy normalized by the volume of the domain
 avg,Average of another log variable over domain
 pct,Percentile of another log variable over domain
 max contact gap,The maximum contact gap value evaluated over the entire surface. 
@@ -300,3 +300,119 @@ RCthx,x-component of rigid connector rotation
 RCthy,y-component of rigid connector rotation
 RCthz,z-component of rigid connector rotation
 solution_norm,The L2 norm of the solution vector
+wi,fraction of intact bonds
+constrained volume,The volume inside the constrained volume of a `volume` constraint.
+volume pressure, The pressure inside the constrained volume of a `volume` constraint.
+volume, the volume inside a constraining surface.
+volume change, the change in volume inside a constraining surface.
+V, the current volume of an element
+total energy, the total energy (elastic energy + kinetic) integrated over a domain.
+sbm1_referential_apparent_density, The referential apparent density of solid-bound molecule with index 1 in a multiphasic material.
+sbm2_referential_apparent_density, The referential apparent density of solid-bound molecule with index 2 in a multiphasic material.
+sbm3_referential_apparent_density, The referential apparent density of solid-bound molecule with index 3 in a multiphasic material.
+sbm4_referential_apparent_density, The referential apparent density of solid-bound molecule with index 4 in a multiphasic material.
+sbm5_referential_apparent_density, The referential apparent density of solid-bound molecule with index 5 in a multiphasic material.
+sbm6_referential_apparent_density, The referential apparent density of solid-bound molecule with index 6 in a multiphasic material.
+sbm7_referential_apparent_density, The referential apparent density of solid-bound molecule with index 7 in a multiphasic material.
+sbm8_referential_apparent_density, The referential apparent density of solid-bound molecule with index 8 in a multiphasic material.
+sbm1_integral, The integral of sbm 1 concentration over the multiphasic material domain.
+sbm2_integral, The integral of sbm 2 concentration over the multiphasic material domain.
+sbm3_integral, The integral of sbm 3 concentration over the multiphasic material domain.
+sbm4_integral, The integral of sbm 4 concentration over the multiphasic material domain.
+sbm5_integral, The integral of sbm 5 concentration over the multiphasic material domain.
+sbm6_integral, The integral of sbm 6 concentration over the multiphasic material domain.
+sbm7_integral, The integral of sbm 7 concentration over the multiphasic material domain.
+sbm8_integral, The integral of sbm 8 concentration over the multiphasic material domain.
+sbm1, the element-averaged concentration of solid-bound molecule with index 1 in a multiphasic material.
+sbm2, the element-averaged concentration of solid-bound molecule with index 2 in a multiphasic material.
+sbm3, the element-averaged concentration of solid-bound molecule with index 3 in a multiphasic material.
+sbm4, the element-averaged concentration of solid-bound molecule with index 4 in a multiphasic material.
+sbm5, the element-averaged concentration of solid-bound molecule with index 5 in a multiphasic material.
+sbm6, the element-averaged concentration of solid-bound molecule with index 6 in a multiphasic material.
+sbm7, the element-averaged concentration of solid-bound molecule with index 7 in a multiphasic material.
+sbm8, the element-averaged concentration of solid-bound molecule with index 8 in a multiphasic material.
+psi, the element-averaged electric potential of an element in a multiphasic material.
+porosity, the porosity calculated from $1-\phi_r/J$ where $\phi_r$ is the referential solid volume fraction.
+pe, effective nodal fluid pressure.
+ops, the octahedral plastic strain
+mixture_stress[0].xx, The xx component of the mixture stress tensor for solid component 0 in a solid mixture material.
+mixture_stress[0].xy, The xy component of the mixture stress tensor for solid component 0 in a solid mixture material.
+mixture_stress[0].xz, The xz component of the mixture stress tensor for solid component 0 in a solid mixture material.
+mixture_stress[0].yy, The yy component of the mixture stress tensor for solid component 0 in a solid mixture material.
+mixture_stress[0].yz, The yz component of the mixture stress tensor for solid component 0 in a solid mixture material.
+mixture_stress[0].zz, The zz component of the mixture stress tensor for solid component 0 in a solid mixture material.
+mixture_stress[1].xx, The xx component of the mixture stress tensor for solid component 1 in a solid mixture material.
+mixture_stress[1].xy, The xy component of the mixture stress tensor for solid component 1 in a solid mixture material.
+mixture_stress[1].xz, The xz component of the mixture stress tensor for solid component 1 in a solid mixture material.
+mixture_stress[1].yy, The yy component of the mixture stress tensor for solid component 1 in a solid mixture material.
+mixture_stress[1].yz, The yz component of the mixture stress tensor for solid component 1 in a solid mixture material.
+mixture_stress[1].zz, The zz component of the mixture stress tensor for solid component 1 in a solid mixture material.
+mixture_stress[2].xx, The xx component of the mixture stress tensor for solid component 2 in a solid mixture material.
+mixture_stress[2].xy, The xy component of the mixture stress tensor for solid component 2 in a solid mixture material.
+mixture_stress[2].xz, The xz component of the mixture stress tensor for solid component 2 in a solid mixture material.
+mixture_stress[2].yy, The yy component of the mixture stress tensor for solid component 2 in a solid mixture material.
+mixture_stress[2].yz, The yz component of the mixture stress tensor for solid component 2 in a solid mixture material.
+mixture_stress[2].zz, The zz component of the mixture stress tensor for solid component 2 in a solid mixture material.
+j1x,The x-component of the flux of solute with index 1 in a multiphasic material
+j1y,The y-component of the flux of solute with index 1 in a multiphasic material
+j1z,The z-component of the flux of solute with index 1 in a multiphasic material
+j2x,The x-component of the flux of solute with index 2 in a multiphasic material
+j2y,The y-component of the flux of solute with index 2 in a multiphasic material
+j2z,The z-component of the flux of solute with index 2 in a multiphasic material
+j3x,The x-component of the flux of solute with index 3 in a multiphasic material
+j3y,The y-component of the flux of solute with index 3 in a multiphasic material
+j3z,The z-component of the flux of solute with index 3 in a multiphasic material
+j4x,The x-component of the flux of solute with index 4 in a multiphasic material
+j4y,The y-component of the flux of solute with index 4 in a multiphasic material
+j4z,The z-component of the flux of solute with index 4 in a multiphasic material
+j5x,The x-component of the flux of solute with index 5 in a multiphasic material
+j5y,The y-component of the flux of solute with index 5 in a multiphasic material
+j5z,The z-component of the flux of solute with index 5 in a multiphasic material
+j6x,The x-component of the flux of solute with index 6 in a multiphasic material
+j6y,The y-component of the flux of solute with index 6 in a multiphasic material
+j6z,The z-component of the flux of solute with index 6 in a multiphasic material
+j7x,The x-component of the flux of solute with index 7 in a multiphasic material
+j7y,The y-component of the flux of solute with index 7 in a multiphasic material
+j7z,The z-component of the flux of solute with index 7 in a multiphasic material
+j8x,The x-component of the flux of solute with index 8 in a multiphasic material
+j8y,The y-component of the flux of solute with index 8 in a multiphasic material
+j8z,The z-component of the flux of solute with index 8 in a multiphasic material
+facet area,The area of the surface facet in the current configuration
+crc, referential mass-concentration of solute in a biphasic-solute material.
+contact area, The total contact area of the contact interface this surface belongs to.
+cF, fixed charge density in current configuration
+ce1, effective concentration of solute with index 1 in current configuration
+ce2, effective concentration of solute with index 2 in current configuration
+ce3, effective concentration of solute with index 3 in current configuration
+ce4, effective concentration of solute with index 4 in current configuration
+ce5, effective concentration of solute with index 5 in current configuration
+ce6, effective concentration of solute with index 6 in current configuration
+ce7, effective concentration of solute with index 7 in current configuration
+ce8, effective concentration of solute with index 8 in current configuration
+c1_integral, the integral of the actual solute 1 concentration over the domain.
+c2_integral, the integral of the actual solute 2 concentration over the domain.
+c3_integral, the integral of the actual solute 3 concentration over the domain.
+c4_integral, the integral of the actual solute 4 concentration over the domain.
+c5_integral, the integral of the actual solute 5 concentration over the domain.
+c6_integral, the integral of the actual solute 6 concentration over the domain.
+c7_integral, the integral of the actual solute 7 concentration over the domain.
+c8_integral, the integral of the actual solute 8 concentration over the domain.
+c1, the element-averaged actual concentration of solute with index 1 in a multiphasic material.
+c2, the element-averaged actual concentration of solute with index 2 in a multiphasic material.
+c3, the element-averaged actual concentration of solute with index 3 in a multiphasic material.
+c4, the element-averaged actual concentration of solute with index 4 in a multiphasic material.
+c5, the element-averaged actual concentration of solute with index 5 in a multiphasic material.
+c6, the element-averaged actual concentration of solute with index 6 in a multiphasic material.
+c7, the element-averaged actual concentration of solute with index 7 in a multiphasic material.
+c8, the element-averaged actual concentration of solute with index 8 in a multiphasic material.
+c, the element-averaged actual concentration of solute in a biphasic-solute material.
+effective strain, the effective (or von-Mises) norm of the Green-Lagrange strain tensor.
+effective stress, the effective (or von-Mises) norm of the Cauchy stress tensor
+damage_1, the damage (or fraction of broken bonds) of solid component 1 in a solid mixture material.
+damage_2, the damage (or fraction of broken bonds) of solid component 2 in a solid mixture material.
+damage_3, the damage (or fraction of broken bonds) of solid component 3 in a solid mixture material.
+damage_4, the damage (or fraction of broken bonds) of solid component 4 in a solid mixture material.
+damage_5, the damage (or fraction of broken bonds) of solid component 5 in a solid mixture material.
+damage_6, the damage (or fraction of broken bonds) of solid component 6 in a solid mixture material.
+damage_7, the damage (or fraction of broken bonds) of solid component 7 in a solid mixture material.
+damage_8, the damage (or fraction of broken bonds) of solid component 8 in a solid mixture material.
