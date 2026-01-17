@@ -33,7 +33,7 @@ effective fluid pressure,"fluid pressure for biphasic, biphasic-solute, triphasi
 effective shell fluid pressure,"fluid pressure for biphasic, biphasic-solute, triphasic, and multiphasic materials of shell domains."
 effective shell solute concentration,"Effective solute concentration for biphasic-solute, triphasic, and multiphasic materials of shell domains."
 effective solute concentration,"Effective solute concentration for biphasic-solute, triphasic, and multiphasic materials."
-effective fluid pressure,"Fluid pressure p for biphasic materials, Eq.[eq:bp-stress], or $\tilde{p}$ for biphasic-solute"
+effective fluid pressure,"Fluid pressure p for biphasic materials, or $\tilde{p}$ for biphasic-solute"
 effective friction coefficient,Effective friction coefficient at a biphasic contact interface
 effective solute concentration,"Effective solute concentration $\tilde{c}$ for biphasic-solute materials"
 elasticity,Spatial elasticity tensor components
@@ -73,7 +73,7 @@ fluid heat supply density,Average heat supply density of a fluid element
 fluid kinetic energy density,Average kinetic energy densify of a fluid element
 fluid load support,The total fluid load support across a named surface
 fluid mass flow rate,"Mass flow rate across a named surface, $\dot{m}=\int_{A}\rho\mathbf{v}\cdot\mathbf{n}\,dA$"
-fluid pressure,"Fluid pressure $$ in biphasic, biphasic-solute, triphasic/multiphasic materials, and fluid materials"
+fluid pressure,"Fluid pressure $p$ in biphasic, biphasic-solute, triphasic/multiphasic materials, and fluid materials"
 fluid rate of deformation,"Fluid rate of deformation tensor $\mathbf{D}$"
 fluid shear viscosity,Average shear viscosity of a fluid element
 fluid strain energy density,Average shear energy density of fluid element
