@@ -1,5 +1,8 @@
 # Welcome to the FEBio Feature Manual
 
+!!! caution
+    This is a work in progress! At this point this documentation is incomplete. 
+
 This manual lists all the features that are currently available in FEBio.
 
 It complements the **FEBio User Manual** and the **FEBio Theory Manual**, which can be found on the [FEBio Knowledgebase](https://febio.org/knowledgebase/)
