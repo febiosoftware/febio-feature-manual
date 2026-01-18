@@ -1,8 +1,17 @@
 # Open the json file containing the data
-import json, csv
+import json, csv, sys
+
+# get the command line arguments (skip the first argument which is the script name)
+args = sys.argv[1:]
+
+verbose = False
+if '-v' in args or '--verbose' in args:
+    verbose = True
 
 print("Building FEBio Feature Manual...")
-print("Reading febio_features.json...")
+if verbose:
+    print("Reading febio_features.json...")
+
 with open('febio_features.json', mode='r') as file:
     # Load the JSON data
     data = json.load(file)
@@ -48,7 +57,8 @@ with open('mkdocs.yml', mode='w') as file:
 module_files = {}
 
 # process the modules first
-print("Processing modules...")
+if verbose:
+    print("Processing modules...")
 for module in data['modules']:
     # get the module name
     module_name = module['name']
@@ -69,7 +79,9 @@ for module in data['modules']:
     except FileNotFoundError:
         print(f'WARNING: No description file found for \"{module_name}\" ({filename})')
 
-    print(f'Processing module: {module_name}')
+    if verbose:
+        print(f'Processing module: {module_name}')
+
     # create a markdown file for each module
     with open(f'docs/modules/{filename}', 'w') as md_file:
         md_file.write(f'# {module_name} module\n\n')
@@ -89,7 +101,8 @@ plot_variables = {}
 log_variables = {}
 
 # Process the data
-print("Processing data...")
+if verbose:
+    print("Processing data...")
 for row in data['features']:
     # get the name
     name = row['type_string']
@@ -137,7 +150,8 @@ for row in data['features']:
     # append module name and class ID to filename
     filename = f'{clean_mod}_{clean_class}_{clean_name}.md'
 
-    print(f'Processing feature: \"{name}\" ({filename})')
+    if verbose:
+        print(f'Processing feature: \"{name}\" ({filename})')
 
     # see if we have a description file for this feature
     info = ''
@@ -185,7 +199,8 @@ for row in data['features']:
 class_files = dict(sorted(class_files.items()))
 
 # open the mkdocs.yml file in append mode
-print("Writing mkdocs.yml...")
+if verbose:
+    print("Writing mkdocs.yml...")
 with open('mkdocs.yml', mode='a') as mkdocs:
 
     # append the Modules section
@@ -214,7 +229,8 @@ with open('mkdocs.yml', mode='a') as mkdocs:
     mkdocs.write('    - log variables: logvars.md\n')
 
 # open the plotvars.csv that contains the descriptions of the plot variables
-print("Reading plotvars.csv...")
+if verbose:
+    print("Reading plotvars.csv...")
 with open('meta/plotvars.csv', mode='r') as csvfile:
     csvreader = csv.reader(csvfile)
     for row in csvreader:
@@ -226,7 +242,8 @@ with open('meta/plotvars.csv', mode='r') as csvfile:
             plot_variables[var_name] = (plot_variables[var_name][0], var_desc)
 
 # create the plotvars.md file
-print("Writing plotvars.md...")
+if verbose:
+    print("Writing plotvars.md...")
 with open('docs/plotvars.md', mode='w') as plot_file:
     plot_file.write('# Plot Variables\n\n')
     plot_file.write('The following plot variables are available in FEBio:\n\n')
@@ -238,7 +255,8 @@ with open('docs/plotvars.md', mode='w') as plot_file:
         plot_file.write(f'|`{var}` | {desc[1]}|{desc[0]}|\n')
 
 # open the logvars.csv that contains the descriptions of the plot variables
-print("Reading logvars.csv...")
+if verbose:
+    print("Reading logvars.csv...")
 with open('meta/logvars.csv', mode='r') as csvfile:
     csvreader = csv.reader(csvfile)
     for row in csvreader:
@@ -250,7 +268,8 @@ with open('meta/logvars.csv', mode='r') as csvfile:
             log_variables[var_name] = (log_variables[var_name][0], var_desc)
 
 # create the logvars.md file
-print("Writing logvars.md...")
+if verbose:
+    print("Writing logvars.md...")
 with open('docs/logvars.md', mode='w') as log_file:
     log_file.write('# Log Variables\n\n')
     log_file.write('The following log variables are available in FEBio:\n\n')
