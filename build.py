@@ -36,6 +36,8 @@ with open('mkdocs.yml', mode='w') as file:
     file.write('  - pymdownx.arithmatex:\n')
     file.write('      generic: true\n')
     file.write('  - pymdownx.superfences\n')
+    file.write('  - pymdownx.blocks.caption\n')
+    file.write('  - pymdownx.details\n')
     file.write('extra_javascript:\n')
     file.write('  - js/mathjax_config.js\n')
     file.write('  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js\n')

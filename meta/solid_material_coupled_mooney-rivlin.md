@@ -11,7 +11,7 @@ Here, $I_{1}$ and $I_{2}$ are the first and second invariants of the right Cauch
 This material model uses a standard displacement-based element formulation, so care must be taken when modeling materials with nearly-incompressible material behavior to avoid element locking. For (nearly-) incompressible materials, use the Mooney-Rivlin material described in Section [Mooney-Rivlin](solid_material_mooney-rivlin.md).
 
 _Example:_
-```
+```xml
 <material id="1" type="coupled Mooney-Rivlin">
   <c1>10.0</c1>
   <c2>1.0</c2>

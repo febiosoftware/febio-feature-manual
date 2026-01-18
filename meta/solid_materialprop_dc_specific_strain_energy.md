@@ -7,6 +7,6 @@ The material type for specific strain energy damage criterion is `DC specific st
 where $\rho$ is the elastic material's density.
 
 _Example:_
-```
+```xml
 <criterion type="DC specific strain energy"/>
 ```

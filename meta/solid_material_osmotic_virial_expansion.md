@@ -17,7 +17,7 @@ $c$ is the solute concentration in the current configuration, and $J=\det\mathbf
 This osmotic swelling pressure in the interstitial fluid of a porous material represents an entropic mechanism whose magnitude is independent of the external bath osmolarity. Typically, this material should be used in a solid mixture where the swelling pressure is resisted by a solid matrix in tension.
 
 _Example:_
-```
+```xml
 <Material>
   <material id="1" type="solid mixture">
     <solid type="osmotic virial expansion">

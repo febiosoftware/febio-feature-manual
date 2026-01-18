@@ -15,7 +15,7 @@ U\left(J\right)=\frac{1}{2}k\left(\ln J\right)^{2}\,.
 This material model was proposed by Arruda and Boyce [^1] and is based on an eight-chain representation of the macromolecular network structure of polymer chains. The strain energy form represents a truncated Taylor series of the inverse Langevin function, which arises in the statistical treatment of non-Gaussian chains. The parameter $N$ is related to the locking stretch $\lambda_{L}$, the stretch at which the chains reach their full extended state, $by \lambda_{L}=\sqrt{N}$.
 
 _Example:_
-```
+```xml
 <material id="1" type="Arruda-Boyce">
   <mu>0.09</mu>
   <N>26.5</N>

@@ -19,7 +19,7 @@ The Cauchy stress takes on the following form,
 \]
 
 _Example:_
-```
+```xml
 <solid type="damage fiber power">
   <a1>1400</a1>
   <a2>2.2</a2>

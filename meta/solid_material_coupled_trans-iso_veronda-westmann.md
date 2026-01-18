@@ -15,7 +15,7 @@ U\left(J\right)=\frac{1}{2}k\left(\ln J\right)^{2}
 where $J=\det\mathbf{F}$ is the Jacobian of the deformation.
 
 _Example:_
-```
+```xml
 <material id="1" type="coupled trans-iso Veronda-Westmann">
   <c1>1</c1>
   <c2>0.1</c2>

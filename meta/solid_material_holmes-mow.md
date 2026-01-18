@@ -27,7 +27,7 @@ and $\lambda$ and $\mu$ are the Lamé parameters which are related to the more f
 \]
 
 _Example:_
-```
+```xml
 <material id="3" type="Holmes-Mow">
   <E>1</E>
   <v>0.35</v>

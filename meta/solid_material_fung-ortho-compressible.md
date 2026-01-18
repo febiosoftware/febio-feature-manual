@@ -43,7 +43,7 @@ Here, $\mathbf{E}=\left(\mathbf{C}-\mathbf{I}\right)/2$ and $\mathbf{M}_{a}=\mat
 The orthotropic Lamé parameters should produce a positive definite stiffness matrix.
 
 _Example:_
-```
+```xml
 <material id="3" type="Fung-ortho-compressible">
   <E1>124</E1>
   <E2>124</E2>

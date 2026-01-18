@@ -23,6 +23,9 @@ The optional parameters `interpolate` and `extend` define how the value of the l
 |`smooth`   | The values are interpolated using a cubic polynomial|
 
 ![Load curve types](figs/FigLoadCurveTypes.png)
+///figure-caption
+The different types of load curves.
+///
 
 |Extend         |Description|
 |---------------|-----------|
@@ -32,6 +35,6 @@ The optional parameters `interpolate` and `extend` define how the value of the l
 |`repeat offset`| The curve is repeated but offset from the endpoints |
 
 ![Load curve extend](figs/FigLoadCurveExtend.png)
-
-
-
+/// figure-caption
+The different extend options
+///

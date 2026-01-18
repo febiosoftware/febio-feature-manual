@@ -13,7 +13,7 @@ k=\frac{\sigma_{y}}{\sqrt{3}}\left(1-\frac{4}{27}c\right)^{1/6}\quad\frac{\sigma
 In the special case when $c=0$ the Drucker criterion reduces to the von Mises criterion, with $k=\sigma_{y}/\sqrt{3}$.
 
 _Example:_
-```
+```xml
 <criterion type="DC Drucker shear stress">
   <c>2.25</c>
 </criterion>

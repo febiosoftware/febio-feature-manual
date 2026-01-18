@@ -26,7 +26,7 @@ _Example 1:_
 
 Single fiber oriented along $\mathbf{e}_{1}$, embedded in a Mooney-Rivlin ground matrix.
 
-```
+```xml
 <material id="1" type="uncoupled solid mixture">
   <mat_axis type="local">0,0,0</mat_axis>
   <k>10e3</k>
@@ -50,7 +50,7 @@ _Example 2:_
 
 Two fibers in the plane orthogonal to $\mathbf{e}_{1}$, oriented at ±25 degrees relative to $\mathbf{e}_{3}$, embedded in a Mooney-Rivlin ground matrix.
 
-```
+```xml
 <material id="1" type="uncoupled solid mixture">
   <mat_axis type="local">0,0,0</mat_axis>
   <k>10e3</k>

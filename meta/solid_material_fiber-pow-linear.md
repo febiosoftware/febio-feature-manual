@@ -20,7 +20,8 @@ For this material type, the fiber elasticity at the strain origin reduces to zer
 
 _Example:_
 
-```<solid type="fiber-pow-linear">
+```xml
+<solid type="fiber-pow-linear">
   <fiber type="angles">
     <theta>20</center>
     <phi>90</phi>

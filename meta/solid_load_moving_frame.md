@@ -21,7 +21,7 @@ The moving frame is defined via the two vectors, the angular velocity of the rot
 Note that if you wish to include the effect of gravity, do not add a separate body force load. Instead, modify the linear acceleration to include gravity: $\boldsymbol{a=}A-\boldsymbol{g}$.
 
 _Example:_
-```
+```xml
 <Loads>
   <body_load type="moving frame">
     <wx>0</wx>

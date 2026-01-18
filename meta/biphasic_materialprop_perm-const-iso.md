@@ -12,7 +12,7 @@ For this material model, $k$ is constant. Generally, this assumption is only rea
 
 _Example:_
 
-```
+```xml
 <permeability name="Permeability" type="perm-const-iso">
   <perm>0.001</perm>
 </permeability>

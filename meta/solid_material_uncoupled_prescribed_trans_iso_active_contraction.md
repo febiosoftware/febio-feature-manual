@@ -12,7 +12,7 @@ _Example:_
 
 Isotropic contraction in plane transverse to $\mathbf{e}_{1}$, in a mixture containing a Mooney-Rivlin solid.
 
-```
+```xml
 <material id="1" type="uncoupled solid mixture">
   <mat_axis type="local">0,0,0</mat_axis>
   <solid type="Mooney-Rivlin">

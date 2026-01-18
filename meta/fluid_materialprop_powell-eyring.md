@@ -16,7 +16,7 @@ Here, $\dot{\gamma}=\sqrt{2\mathbf{D}:\mathbf{D}}$ is the engineering shear rate
 
 _Example:_
 
-```
+```xml
 <viscous type="Powell-Eyring">
 	<mu0>0.056</mu0>
 	<mui>0.0035</mui>

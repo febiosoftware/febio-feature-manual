@@ -15,7 +15,7 @@ The `in-situ stretch` constraint can be used as a prestrain update rule to enfor
 where $\lambda^{2}=\mathbf{a}_{0}\cdot\mathbf{C}^{k}\cdot\mathbf{a}_{0}$, is the fiber stretch induced by the distortion. 
 
 _Example:_
-```
+```xml
 <constraint type="in-situ stretch">
   <tolerance>0.01</tolerance>
   <isochoric>1</isochoric>

@@ -9,7 +9,7 @@ This material uses a strain-dependent permeability tensor that accommodates stra
 where $J$ is the Jacobian of the deformation, i.e. $J=\det\mathbf{F}$ where $\mathbf{F}$ is the deformation gradient, and $\mathbf{b}=\mathbf{F}\cdot\mathbf{F}^{T}$ is the left Cauchy-Green tensor. Here, $\varphi_{r}^{s}$ is the referential solid volume fraction in the current configuration and $\varphi_{0}=\varphi_{r}^{s}\left(0\right)$ is its value in the reference configuration. Note that the permeability in the reference state ($\mathbf{F}=\mathbf{I}$) is isotropic and given by $\mathbf{k}=\left(k_{0r}+k_{1r}+k_{2r}\right)\mathbf{I}$.
 
 _Example:_
-```
+```xml
 <permeability name="Permeability" type="perm-ref-iso">
   <perm0>0.001</perm0>
   <perm1>0.005</perm1>

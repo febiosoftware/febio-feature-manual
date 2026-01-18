@@ -28,7 +28,7 @@ T_{12}
 \]
 
 _Example:_
-```
+```xml
 <material id="3" type="orthotropic elastic">
   <mat_axis type="vector">
     <a>0.866,0.5,0</a>

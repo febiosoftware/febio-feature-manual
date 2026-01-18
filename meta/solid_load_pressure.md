@@ -11,7 +11,7 @@ When the `shell_bottom flag` is set to 1, the surface is assumed to be a shell s
 
 
 _Example:_
-```
+```xml
 <surface_load type="pressure" surface="surface1">
   <pressure lc="1">1.0</pressure>
   <symmetric_stiffness>0</symmetric_stiffness>

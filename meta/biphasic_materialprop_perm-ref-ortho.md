@@ -24,7 +24,7 @@ where $\mathbf{V}_{a}$ are orthonormal vectors normal to the planes of symmetry.
 
 _Example:_
 
-```
+```xml
 <permeability name="Permeability" type="perm-ref-ortho">
   <perm0>0.001</perm0>
   <perm1>0.01, 0.02, 0.03</perm1>

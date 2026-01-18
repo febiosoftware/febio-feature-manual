@@ -7,3 +7,6 @@ The following example defines all element fiber directions in the direction of t
 ```
 
 ![FigVectorFiberDirectionOption.png](figs/FigVectorFiberDirectionOption.png)
+/// figure-caption
+Illustration for the `vector` vector valuator.
+///

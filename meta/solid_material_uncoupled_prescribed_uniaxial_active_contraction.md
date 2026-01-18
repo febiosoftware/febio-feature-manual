@@ -12,7 +12,7 @@ _Example:_
 
 Uniaxial contraction along $\mathbf{e}_{1}$, in a mixture containing a Mooney-Rivlin solid.
 
-```
+```xml
 <material id="1" type="uncoupled solid mixture">
   <mat_axis type="local">0,0,0</mat_axis>
   <k>1000</k>

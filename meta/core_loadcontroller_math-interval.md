@@ -10,7 +10,7 @@ The values for left_extend and right_extend can be set to one of the following v
 
 
 _Example:_
-```
+```xml
 <load_controller id="1" name="LC1" type="math-interval">
 	<interval>0,1</interval>
 	<left_extend>constant</left_extend>

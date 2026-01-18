@@ -7,7 +7,7 @@ The Young's modulus $E$ and Poisson ratio $v$ currently have no effect on the re
 The degrees of freedom of a rigid body are initially unconstrained. This implies that a rigid body is free to move in all three directions and rotate about any of the coordinate axes. 
 
 _Example:_
-```
+```xml
 <material id="1" type="rigid body">
   <density>1.0</density>
   <center_of_mass>0,0,0</center_of_mass>

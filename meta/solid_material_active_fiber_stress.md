@@ -16,7 +16,7 @@ _Example 1:_
 
 An example defining the `stl` parameter via a mathematical expression.
 
-```
+```xml
 <material id="1" type="solid mixture">
   <mat_axis type="local">0,0,0</mat_axis>
   <solid type="neo-Hookean">
@@ -37,7 +37,7 @@ _Example 2:_
 
 An example defining the `stl` parameter via a point list.
 
-```
+```xml
 <material id="1" type="solid mixture">
   <mat_axis type="local">0,0,0</mat_axis>
   <solid type="neo-Hookean">

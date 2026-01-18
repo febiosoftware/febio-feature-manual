@@ -26,7 +26,7 @@ where $\mathbf{A}=\boldsymbol{a}\otimes\boldsymbol{a}$, $\lambda$ the prescribed
 
 _Example:_
 
-```
+```xml
 <material id="1" type="prestrain elastic">
    <elastic type="coupled trans-iso Mooney-Rivlin">
         <k>0.1</k>

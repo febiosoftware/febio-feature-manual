@@ -18,7 +18,7 @@ _Example:_
 
 This example defines a permeability material of the Holmes-Mow type.
 
-```
+```xml
 <permeability type="perm-Holmes-Mow">
   <perm>0.001</perm>
   <M>1.5</M>

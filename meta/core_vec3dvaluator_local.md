@@ -7,4 +7,6 @@ The following example defines a vector for the fiber property by local element n
 ```
 
 ![FigLocalFiberDirectionOption.png](figs/FigLocalFiberDirectionOption.png)
-
+/// figure-caption
+Illustration for the `local` vector valuator.
+///

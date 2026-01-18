@@ -3,7 +3,7 @@ A `node distance` constraint can be used to enforce a user-defined distance betw
 _Example:_
 This example illustrates how the node distance constraint can be used to reduce the distance between two nodes to zero: the target is set to zero and the relative flag is off so that the target is interpreted as an absolute distance. 
 
-```
+```xml
 <constraint name="NodeDistance3" type="node distance">
   <laugon>0</laugon>
   <augtol>0.01</augtol>

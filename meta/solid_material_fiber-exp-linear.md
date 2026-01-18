@@ -37,8 +37,7 @@ C_{6}=C_{3}\left(e^{C_{4}\left(\lambda_{m}-1\right)}-1\right)-C_{5}\lambda_{m}
 To use the form of $F_{2}$ that satisfies continuity of the elasticity at $\lambda_{m}$ the user may set $C_{3}=0$ in the input file, and specify $C_{4}$ and $C_{5}$ as explained above. When $C_{3}=0$ the code will automatically recalculate $C_{3}$ internally using the formula above.
 
 _Example:_
-
-```
+```xml
 <material id="1" name="Material" type="solid mixture">
   <solid type="neo-Hookean">
     <E>1e-6</E>

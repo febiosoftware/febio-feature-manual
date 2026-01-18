@@ -19,7 +19,7 @@ The parameters $L_{3}$ and $L_{4}$ are determined by requiring $C^{0}$ and $C^{1
 The tendon fiber direction is specified similarly to the transversely isotropic Mooney-Rivlin model.
 
 _Example:_
-```
+```xml
 <material id="1" type="tendon material">
   <g1>5e4</g1>
   <g2>5e4</g2>

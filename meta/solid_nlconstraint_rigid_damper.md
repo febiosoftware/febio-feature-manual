@@ -1,7 +1,7 @@
 The `rigid damper` applies a linear damper that connects two rigid bodies $a$ and $b$ at arbitrary points (not necessarily nodes).
 
 _Example:_
-```
+```xml
 <rigid_connector type="rigid damper">
   <body_a>1</body_a>
   <body_b>2</body_b>

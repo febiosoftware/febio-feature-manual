@@ -3,7 +3,7 @@ The `rigid contractile` force applies an actuator force between arbitrary points
 The `f0` parameter represents the actuator force (positive for contraction). Optionally, it may be associated with a load curve.
 
 _Example:_
-```
+```xml
 <rigid_connector type="rigid contractile force">
   <body_a>1</body_a>
   <body_b>2</body_b>

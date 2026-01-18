@@ -9,7 +9,7 @@ The Cauchy stress for this material is given by,
 Here, $\boldsymbol{\sigma}_{NH}$ is the stress from the Neo-Hookean basis (see [neo-Hookean](solid_material_neo-hookean.md)), and $\boldsymbol{\sigma}_{f}$ is the stress contribution from the fibers (see  [Ellipsoidal-Fiber-Distribution](solid_material_ellipsoidal_fiber_distribution.md)).
 
 _Example:_
-```
+```xml
 <material id="1" type="EFD neo-Hookean">
   <E>1</E>
   <v>0.3</v>

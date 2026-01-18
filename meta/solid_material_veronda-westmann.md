@@ -9,7 +9,7 @@ This model is similar to the Mooney-Rivlin model in that it also uses an uncoupl
 The dilatational term is identical to the one used in the Mooney-Rivlin model. This model can be used to describe certain types of biological materials that display exponential stiffening with increasing strain. It has been used to describe the response of skin tissue [^1].
 
 _Example:_
-```
+```xml
 <material id="2" type="Veronda-Westmann">
   <c1>1000.0</c1>
   <c2>2000.0</c2>

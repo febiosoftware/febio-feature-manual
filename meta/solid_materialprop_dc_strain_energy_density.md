@@ -5,6 +5,6 @@ The material type for strain energy density damage criterion is `DC strain energ
 \]
 
 _Example:_
-```
+```xml
 <criterion type="DC strain energy density"/>
 ```

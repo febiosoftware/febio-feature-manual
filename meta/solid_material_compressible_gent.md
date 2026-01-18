@@ -9,7 +9,7 @@ The strain energy of this material is defined as follows,
 Here, $\mu$ is the shear modulus. 
 
 _Example:_
-```
+```xml
 <material id="2" type="compressible Gent">
   <G>3.14</G>
   <Jm>1.5</Jm>

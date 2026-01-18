@@ -24,7 +24,7 @@ Note: When $\beta>2$, the fiber modulus is zero at the strain origin ($I_{n}=I_{
 
 _Example 1:_
 Single fiber oriented along $\mathbf{e}_{1}$, embedded in a neo-Hookean ground matrix.
-```
+```xml
 <material id="1" type="solid mixture">
   <mat_axis type="local">0,0,0</mat_axis>
   <solid type="neo-Hookean">
@@ -47,7 +47,7 @@ _Example 2:_
 
 Two fibers in the plane orthogonal to $\mathbf{e}_{1}$, oriented at ±25 degrees relative to $\mathbf{e}_{3}$, embedded in a neo-Hookean ground matrix.
 
-```
+```xml
 <material id="1" type="solid mixture">
   <mat_axis type="local">0,0,0</mat_axis>
   <solid type="neo-Hookean">

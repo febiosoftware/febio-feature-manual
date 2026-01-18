@@ -24,7 +24,7 @@ Since the enzyme is not modeled explicitly in the Michaelis-Menten approximation
 Therefore, this reaction accepts only one reactant parameter `vR` and one product parameter `vP`. For consistency with the formulation of this reaction, the stoichiometric coefficients should be set to $\nu_{R}^{s}=\nu_{P}^{p}=1$, so that $\hat{c}^{p}=\hat{\zeta}$.
 
 _Example:_
-```
+```xml
 <reaction name="enzyme kinetics" type="Michaelis-Menten">
   <Vbar>0</Vbar>
   <vR sol="1">1</vR>

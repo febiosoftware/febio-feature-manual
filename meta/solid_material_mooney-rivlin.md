@@ -11,8 +11,7 @@ This material model uses a three-field element formulation, interpolating displa
 This material model is useful for modeling certain types of isotropic materials that exhibit some limited compressibility, i.e. $100 < (K/C_{\mathrm{1}}) < 10000$.
 
 _Example:_
-
-```
+```xml
 <material id="2" type="Mooney-Rivlin">
   <c1>10.0</c1>
   <c2>20.0</c2>

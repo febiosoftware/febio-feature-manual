@@ -9,7 +9,7 @@ g\left(\mathbf{F}\left(v\right);t-v\right)=e^{-\left(t-v\right)/\tau\left[K_{2}\
 where $\tau\left(K_{2}\left(v\right)\right)$ is given as a mathematical expression (type="math"), or as a loadcurve (type="point").
 
 _Example 1:_
-```
+```xml
 <material id="1" name="RVE" type="reactive viscoelastic">
   <kinetics>1</kinetics>
   <trigger>1</trigger>
@@ -30,7 +30,7 @@ _Example 1:_
 ```
 
 _Example 2:_
-```
+```xml
 <material id="1" name="RVE UC" type="uncoupled reactive viscoelastic">
   <kinetics>1</kinetics>
   <trigger>1</trigger>

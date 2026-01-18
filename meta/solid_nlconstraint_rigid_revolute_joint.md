@@ -20,7 +20,7 @@ Optionally, a moment may be prescribed on body b relative to body a, about the j
 The `moment` parameter specifies the magnitude of the moment, with an optional associated load controller. The `moment` parameter should not be used simultaneously with a prescribed rotation.
 
 _Example:_
-```
+```xml
 <rigid_connector type="rigid revolute joint" name="Joint 1">
   <tolerance>0</tolerance>
   <gaptol>1e-4</gaptol>

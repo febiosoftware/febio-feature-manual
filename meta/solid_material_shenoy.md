@@ -32,7 +32,7 @@ Finally, the parameters $\lambda_{1}$ and $\lambda_{2}$ are given as follows.
 \]
 
 _Example:_
-```
+```xml
 <material id="1" name="Material1" type="Shenoy">
   <density>1</density>
   <mu>0.7692</mu>

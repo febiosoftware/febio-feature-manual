@@ -16,7 +16,7 @@ _Example:_
 
 This example defines a transversely isotropic material with a Mooney-Rivlin basis. It defines a homogeneous fiber direction and uses the active fiber contraction feature.
 
-```
+```xml
 <material id="3" type="trans iso Mooney-Rivlin">
   <c1>13.85</c1>
   <c2>0.0</c2>

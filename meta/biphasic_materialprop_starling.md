@@ -12,7 +12,7 @@ _Example:_
 
 This example defines a solvent supply material of the Starling type for a multiphasic mixture containing one solute.
 
-```
+```xml
 <solvent_supply type="Starling">
   <kp>0.001</kp>
   <pv>0.1</pv>

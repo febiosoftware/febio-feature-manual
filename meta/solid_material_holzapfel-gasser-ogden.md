@@ -29,7 +29,7 @@ where $\tilde{I}_{1}=tr\tilde{\mathbf{C}}$ and $\tilde{I}_{4\alpha}=\mathbf{a}_{
 There are two fiber families along the vectors $\mathbf{a}_{\alpha r} (\alpha=1,2)$, lying in the $\left\{ \mathbf{e}_{1},\mathbf{e}_{2}\right\}$ plane of the local material axes $\left\{ \mathbf{e}_{1},\mathbf{e}_{2},\mathbf{e}_{3}\right\}$, making an angle $\pm\gamma$ with respect to $\mathbf{e}_{1}$. Each fiber family has a dispersion $\kappa$, where $0\le\kappa\le\frac{1}{3}$. When $\kappa=0$ there is no fiber dispersion, implying that all the fibers in that family act along the angle $\pm\gamma$; the value $\kappa=\frac{1}{3}$ represents an isotropic fiber dispersion. All other intermediate values of $\kappa$ produce a $\pi$-periodic von Mises fiber distribution, as described in [^1]. $c$ is the shear modulus of the ground matrix; $k_{1}$ is the fiber modulus and $k_{2}$ is the exponential coefficient.
 
 _Example:_
-```
+```xml
 <material id="2" type="Holzapfel-Gasser-Ogden">
   <c>7.64</c>
   <k1>996.6</k1>

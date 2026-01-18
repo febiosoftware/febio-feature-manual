@@ -7,9 +7,13 @@ R\left(\mathbf{n}\right)=\frac{1}{\pi}\sqrt{\frac{b}{2\pi}}\frac{\exp\left(2bn_{
 where $\left(n_{1},n_{2},n_{3}\right)$ are the components of $\mathbf{n}$ in the local Cartesian basis $\left\{ \mathbf{e}_{1},\mathbf{e}_{2},\mathbf{e}_{3}\right\}$ of each element of the global basis by default; and b is the concentration parameter ($b>0$).
 
 ![FigPiPeriodicVonMisesDistribution.png](figs/FigPiPeriodicVonMisesDistribution.png)
+/// figure-caption
+Illustration of the `von-Mises-3d` distribution function.
+///
+
 
 _Example:_
-```
+```xml
 <distribution type="von-Mises-3d">
   <b>0.5</b>
 </distribution>

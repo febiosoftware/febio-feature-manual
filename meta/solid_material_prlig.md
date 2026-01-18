@@ -30,7 +30,7 @@ The volumetric penalty coefficient $\kappa$ must be selected to be large enough 
 where $J$ is the jacobian of the deformation gradient $\mathbf{F}$, $\mathbf{B}=\mathbf{F}\cdot\mathbf{F}^{T}$ is the left Cauchy-Green deformation tensor, $\mathbf{1}$ is the $3\times3$ identity tensor, $\mathbf{a}$ is the fiber orientation vector in the deformed configuration.
 
 _Example:_
-```
+```xml
 <material id="1" name="Material1" type="PRLig">
   <c1>90</c1>
   <c2>160</c2>

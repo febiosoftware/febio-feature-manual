@@ -7,7 +7,7 @@ The 'prestrain' constraint can be used as an update rule to eliminate the distor
 By specifying a loadcurve for the `update` flag, the update can be delayed. This can be useful if, for instance, the prestrain is applied incrementally and the update rule should not be applied until the full prestrain field is applied. In that case, specifying a loadcurve for the `update` flag that is zero while the prestrain is applied, will delay the update process.
 
 _Example:_
-```
+```xml
 <constraint type="prestrain">
   <tolerance>0.01</tolerance>
 </constraint> 

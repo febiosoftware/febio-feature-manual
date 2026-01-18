@@ -14,7 +14,7 @@ _Example:_
 
 In this example, the prestrain gradient is ramped up to a desired gradient value via a load controller. 
 
-```
+```xml
 <material id="1" type="prestrain elastic">
   <elastic type="neo-Hookean">
     <E>1.0</E>

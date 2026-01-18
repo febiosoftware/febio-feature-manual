@@ -7,7 +7,7 @@ R\left(\mathbf{n}\right)=\frac{1}{2\pi}\,.
 It requires no additional parameters.
 
 _Example:_
-```
+```xml
 <distribution type="circular">
 </distribution>
 ```

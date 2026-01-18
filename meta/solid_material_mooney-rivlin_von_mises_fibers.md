@@ -24,8 +24,9 @@ P\left(\theta\right)=\frac{1}{\pi I_{0}\left(k_{f}\right)}\exp\left[k_{f}\cos\le
 where $I_{0}$ is the modified Bessel function of the first kind (order 0), and $k_{f}$ is the fiber concentration factor. $k_{f}$ controls the amount of fibers that are concentrated along the orientation $\theta_{P}$ as illustrated in the figure below.
 
 ![FigMooneyRivlinVonMises](figs/FigMooneyRivlinVonMises.png)
-
-**Fig:** Polar representation of the semi-circular von-Mises distribution describing in-plane collagen fiber alignment. In this case, the preferred fiber orientation $\theta_{P}$ is equal to zero degrees. When the fiber concentration factor k is equal to zero, the collagen fibers have an isotropic distribution in a plane tangent to the scleral wall. As $k$ increases, the collagen fibers align along the preferred fiber orientation $\theta_{P}$. Note that the distributions were plotted on a circle of unit one to ease visualization.
+/// figure-caption
+Polar representation of the semi-circular von-Mises distribution describing in-plane collagen fiber alignment. In this case, the preferred fiber orientation $\theta_{P}$ is equal to zero degrees. When the fiber concentration factor k is equal to zero, the collagen fibers have an isotropic distribution in a plane tangent to the scleral wall. As $k$ increases, the collagen fibers align along the preferred fiber orientation $\theta_{P}$. Note that the distributions were plotted on a circle of unit one to ease visualization.
+///
 
 ### Constrained von Mises Mixture Distribution (vmc = 2)
 

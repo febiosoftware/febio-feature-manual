@@ -6,7 +6,7 @@ _Example:_
 
 This example defines a transversely isotropic material model with a Veronda-Westmann basis. The fiber direction is implicitly implied as local.
 
-```
+```xml
 <material id="3" type="trans iso Veronda-Westmann">
   <c1>13.85</c1>
   <c2>0.0</c2>

@@ -3,6 +3,9 @@ This valuator generates a unit vector orientated via the specification of spheri
 Note that both `theta` (the azimuth angle) and `phi` (the declination angle) are defined in degrees.
 
 ![FigSCS.png](figs/FigSCS.png)
+/// figure-caption
+Illustration for the `angles` valuator.
+///
 
 The fiber is oriented along 
 

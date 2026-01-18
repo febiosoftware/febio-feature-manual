@@ -15,7 +15,7 @@ The parameters $s_{TL}$ and $s_{TV}$ are functions that need to be defined in pl
 _Example 1:_
 
 An example defining the stl parameter via a mathematical expression.
-```
+```xml
 <material id="1" type="uncoupled solid mixture">
   <k>100.0</k>
   <mat_axis type="local">0,0,0</mat_axis>
@@ -37,7 +37,7 @@ _Example 2:_
 
 An example defining the stl parameter via a point list.
 
-```
+```xml
 <material id="1" type="uncoupled solid mixture">
   <k>100.0</k>
   <mat_axis type="local">0,0,0</mat_axis>

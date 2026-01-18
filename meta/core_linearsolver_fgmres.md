@@ -4,7 +4,7 @@ Note that when using FGMRES as a preconditioner it is recommended to set the `fa
 
 _Example 1._ This example shows how to set up the FGMRES solver with an ILU0 preconditioner. 
 
-```
+```xml
 <default_linear_solver type="fgmres">  <max_iter>100</max_iter>
   <tol>1e-5</tol>
   <pc_left type="ilu0"/>
@@ -13,7 +13,7 @@ _Example 1._ This example shows how to set up the FGMRES solver with an ILU0 pre
 
 _Example 2._ This example sets up an FGMRES solver with a Schur preconditioner. For the Schur system we use pardiso for solving the A-block outside of the Schur complement and approximate the A-block inside the Schur complement with its diagonal. This solver requires a block-structured matrix. In order to generate the block structure you need to set the `equation_scheme` control parameter to 1 in the model input file. 
 
-```
+```xml
 <default_linear_solver type="fgmres">
     <print_level>2</print_level>
     <max_iter>100</max_iter>

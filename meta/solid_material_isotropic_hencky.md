@@ -27,7 +27,7 @@ E=\frac{9KG}{3K+G},\quad\nu=\frac{3K-2G}{6K+2G}\,.
 \]
 
 _Example:_
-```
+```xml
 <material id="1" type="isotropic Hencky">
   <E>1000.0</E>
   <v>0.45</v>

@@ -21,7 +21,7 @@ where $\mu$ is the shear modulus and
 where $\beta$ is the exponential stiffening coefficient.
 
 _Example:_
-```
+```xml
 <material id="1" name="Material1" type="uncoupled Holmes-Mow">
   <density>1</density>
   <mu>0.5</mu>

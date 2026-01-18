@@ -11,7 +11,7 @@ where $p$ is the fluid pressure in the biphasic material.
 _Example:_
 
 This example defines a fluid supply material of the Starling type.
-```
+```xml
 <solvent_supply type="Starling">
   <kp>0.001</kp>
   <pv>0.1</pv>

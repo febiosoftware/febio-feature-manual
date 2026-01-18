@@ -41,7 +41,7 @@ and an effective Poisson's ratio equal to
 Therefore, the two material properties that need to be provided are $E$ and the referential porosity $\varphi_{r}^{s}=1-\varphi_{r}^{w}$. Poisson's ratio in the limit of infinitesimal strains is dictated by the porosity according to the above formula. In particular, a highly porous material ($\varphi_{r}^{w}\to1$) has an effective Poisson ratio that approaches zero ($\nu\to0$) and $E\to2\mu$  in the range of infinitesimal strains. A low porosity material ($\varphi_{r}^{w}\to0$) has $\nu\to\frac{1}{2}$ and $E\to3\mu$, which is the expected behavior of an incompressible neo-Hookean solid. Note that setting $\varphi_{r}^{w}=0$ ($\varphi_{r}^{s}=1$) would not produce good numerical behavior, since the Cauchy stress in an incompressible material would need to be supplemented by a hydrostatic pressure term (a Lagrange multiplier that enforces the incompressibility constraint). Nevertheless, this compressible porous neo-Hookean material behaves well even for values of $\varphi^{w}$ as low as $\sim0.015$.
 
 _Example:_
-```
+```xml
 <material id="1" type="porous neo-Hookean">
   <density>1.0</density>
   <E>1.0</E>

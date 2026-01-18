@@ -15,9 +15,12 @@ Note that
 represents the maximum allowable damage. Therefore, $\beta$ regulates the maximum allowable damage, whereas $\alpha$ controls the rate at which $F\left(\Xi\right)$ increases with increasing $\Xi$.
 
 ![FigDamageCDFSimo.png](figs/FigDamageCDFSimo.png)
+/// figure-caption
+Illustration of the `CDF Simo` cumulative distribution function.
+///
 
 _Example:_
-```
+```xml
 <damage type="CDF Simo">
   <a>0.1</a>
   <b>0</b>

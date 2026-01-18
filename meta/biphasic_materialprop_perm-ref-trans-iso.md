@@ -22,7 +22,7 @@ where $\mathbf{V}$ is a unit vector along the axial direction. Here, $\varphi_{r
 \]
 
 _Example:_
-```
+```xml
 <permeability name="Permeability" type="perm-ref-trans-iso">
   <perm0>0.002</perm0>
   <perm1A>0.01</perm1A>

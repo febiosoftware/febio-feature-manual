@@ -9,7 +9,7 @@ The stress $\tilde{\boldsymbol{\sigma}}$ for this material is given by,
 Here, $\tilde{\boldsymbol{\sigma}}_{VW}$ is the stress from the Veronda-Westmann basis (see [Veronda-Westmann](solid_material_veronda-westmann.md)), and $\tilde{\boldsymbol{\sigma}}_{f}$ is the stress contribution from the ellipsoidal fiber distribution (see [EFD-Uncoupled](solid_material_efd_uncoupled.md)).
 
 _Example:_
-```
+```xml
 <material id="1" type="EFD Veronda-Westmann">
   <c1>1</c1>
   <c2>0.5</c2>

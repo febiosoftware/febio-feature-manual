@@ -26,7 +26,7 @@ Optionally, the translation of body b relative to body a may be prescribed along
 ```
 
 _Example:_
-```
+```xml
 <rigid_connector type="rigid planar joint" name="Joint01">
   <tolerance>0</tolerance>
   <gaptol>1e-4</gaptol>

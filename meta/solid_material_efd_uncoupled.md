@@ -28,7 +28,7 @@ The materials parameters $\beta$ and $\xi$ are determined from:
 \]
 
 _Example:_
-```
+```xml
 <material id="1" type="uncoupled solid mixture">
   <mat_axis type="local">0,0,0</mat_axis>
   <k>1000</k>

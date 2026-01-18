@@ -3,7 +3,7 @@ The material type for an unconstrained continuous fiber distribution material is
 The `fibers` parameter defines the fiber constitutive relation and associated material properties. The `distribution` parameter defines the fiber density distribution function. The `scheme` parameter specifies the numerical integration scheme.
 
 _Example:_
-```
+```xml
 <material id="1" name="Material" type="solid mixture">
   <solid type="neo-Hookean">
     <density>1</density>

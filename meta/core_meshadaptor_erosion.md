@@ -10,7 +10,7 @@ The `erode_surfaces` parameter sets the policy of handling surface facets that a
 _Example:_
 In this example, elements that have an (integration point averaged) effective stress larger than 0.3, are eroded. Only three elements are eroded per adaptation cycle.
 
-```
+```xml
 <mesh_adaptor type="erosion"> 
   <max_iters>1</max_iters>
   <max_elems>3</max_elems>

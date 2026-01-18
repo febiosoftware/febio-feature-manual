@@ -21,7 +21,7 @@ where $\lambda_{ba}=\lambda_{ab}$ and
 Here, $\mathbf{E}$ is the Lagrangian strain tensor and $\mathbf{A}_{a}^{r}=\mathbf{a}_{a}^{r}\otimes\mathbf{a}_{a}^{r}$, where $\mathbf{a}_{a}^{r} (a=1,2,3)$ are orthonormal vectors aligned with the material axes. This material response was originally formulated for infinitesimal strain analyses; its behavior under finite strains may not be physically realistic.
 
 _Example:_
-```
+```xml
 <material id="1" type=" orthotropic CLE">
   <density>1</density>
   <lp11>13.01</lp11>

@@ -11,7 +11,7 @@ A Taylor series expansion is used to evaluate the inverse Langevin equation. The
 Langevin mechanics describes a stochastic process with non-Gaussian distribution. It will reduce to a Gaussian distribution when the system approaches equilibrium. Thus, when the material is far from its maximum extensibility, i.e., when $\zeta=\sqrt{N}$ is much larger than the stretch, this model will reduce to a neo-Hookean material.
 
 _Example:_
-```
+```xml
 <material id="1" name="Soft Tissue" type="Arruda-Boyce unconstrained">
 	<N>5</N>
 	<ksi>1</ksi>

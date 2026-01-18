@@ -3,8 +3,7 @@ The material type for an uncoupled continuous fiber distribution material is `co
 The `fiber` property defines the fiber constitutive relation and associated material properties. The `distribution` property defines the fiber density distribution function. The `scheme` property specifies the numerical integration scheme.
 
 _Example:_
-
-```
+```xml
 <material id="1" name="Material" type="uncoupled solid mixture">
   <solid type="Mooney-Rivlin">
     <density>1</density>

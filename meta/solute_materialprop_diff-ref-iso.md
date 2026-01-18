@@ -9,7 +9,7 @@ This material uses a strain-dependent diffusivity tensor that accommodates strai
 where $J$ is the jacobian of the deformation, i.e. $J=\det\mathbf{F}$ where $\mathbf{F}$ is the deformation gradient, and $\mathbf{b}=\mathbf{F}\cdot\mathbf{F}^{T}$ is the left Cauchy-Green tensor. Note that the diffusivity in the reference state $(\mathbf{F}=\mathbf{I})$ is isotropic and given by $\mathbf{d}=\left(d_{0r}+d_{1r}+d_{2r}\right)\mathbf{I}$.
 
 _Example:_
-```
+```xml
 <diffusivity name="Diffusivity" type="diff-ref-iso">
   <phi0>0.2</phi0>
   <free_diff>0.005</free_diff>

@@ -3,7 +3,7 @@ The material type for a biphasic material is `biphasic`.
 The `solid` property encloses a description of the solid matrix constitutive relation and associated material properties. The solid must be an unconstrained materil. The `permeability` property defines the permeability constitutive relation and associated material properties. The parameter `phi0` must be greater than 0 (no solid) and less than 1 (no porosity). The volume fraction of fluid (also known as the porosity) in the reference configuration is given by $1-\varphi_{r}^{s}$. The fluid density $\rho_{T}^{w}$ specified in `fluid_density` and the solid density $\rho_{T}^{s}$ specified in `density` within the `solid` property are needed only when body forces are prescribed.
 
 _Example:_
-```
+```xml
 <material id="1" name="Biphasic tissue" type="biphasic">
   <solid name="Elasticity" type="neo-Hookean">
     <E>1.0</E>

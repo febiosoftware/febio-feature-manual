@@ -31,7 +31,7 @@ Note: In the limit when $\alpha\to0$, this expressions produces a power law,
 Note: When $\beta>2$, the fiber modulus is zero at the strain origin ($I_{n}=1$). Therefore, use $\beta>2$ when a smooth transition in the stress is desired from compression to tension. 
 
 _Example:_
-```
+```xml
 <material id="1" type="solid mixture">
   <solid type="neo-Hookean">
     <E>1000.0</E>

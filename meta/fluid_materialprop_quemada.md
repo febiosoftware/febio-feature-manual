@@ -22,7 +22,8 @@ Here, $\dot{\gamma}=\sqrt{2\mathbf{D}:\mathbf{D}}$ is the engineering shear rate
 
 _Example:_
 
-```<viscous type="Quemada">
+```xml
+<viscous type="Quemada">
 	<mu0>0.03</mu0>
 	<H>0.5</H>
 	<k0>3.691</k0>

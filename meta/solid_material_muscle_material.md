@@ -39,8 +39,7 @@ The parameter $\alpha$ is the activation level and can be specified using the ac
 The muscle fiber direction is specified similarly to the transversely isotropic Mooney-Rivlin model.
 
 _Example:_
-
-```
+```xml
 <material id="1" type="muscle material">
   <g1>500</g1>
   <g2>500</g2>

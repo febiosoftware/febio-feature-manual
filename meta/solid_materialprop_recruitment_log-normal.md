@@ -9,7 +9,7 @@ F\left(\Xi\right)=1+\frac{r}{2}\text{erfc}\left[-\frac{\ln\left(\Xi/\mu\right)}{
 Its minimum value is 1 and its maximum value is $1+r$ as $\Xi/\mu\to\infty$.
 
 _Example:_
-```
+```xml
 <recruitment type="recruitment log-normal">
   <mu>0.3</mu>
   <sigma>0.25</sigma>

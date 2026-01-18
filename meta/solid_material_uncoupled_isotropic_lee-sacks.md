@@ -9,7 +9,7 @@ The strain-energy density function for this material combines a neo-Hookean matr
 As reported in Kamensky, the exponential term may cause convergence difficulties under certain loading conditions. It was reported that increasing the value of $c_{0}$ during the stiffness evaluation may improve convergence. The default value for tangent_scale is 1, and thus tangent scaling is not applied. A tangent scale factor of 20 was used in Kamensky.
 
 _Example:_
-```
+```xml
 <material id="1" name="material1" type="uncoupled isotropic Lee-Sacks">
   <k>1000</k>
   <c0>10</c0>

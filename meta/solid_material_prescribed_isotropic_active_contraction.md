@@ -10,7 +10,7 @@ _Example:_
 
 Isotropic contraction in a mixture containing a neo-Hookean solid.
 
-```
+```xml
 <material id="1" type="solid mixture">
   <mat_axis type="local">0,0,0</mat_axis>
   <solid type="neo-Hookean">

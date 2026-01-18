@@ -13,9 +13,12 @@ e=\sqrt{1-\frac{b^{2}}{a^{2}}}
 is the ellipse eccentricity.
 
 ![FigEllipticalDistribution.png](figs/FigEllipticalDistribution.png)
+/// figure-caption
+Illustration of the `elliptical` fiber distribution function.
+///
 
 _Example:_
-```
+```xml
 <distribution type="elliptical">
   <spa1>8</spa1>
   <spa2>1</spa2>

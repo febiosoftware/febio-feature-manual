@@ -26,7 +26,7 @@ The Cauchy stress then takes on the following form,
 \]
 
 _Example:_
-```
+```xml
 <solid type="damage fiber exponential"> 
   <k1>1288.97</k1> 
   <k2>400</k2> 

@@ -34,8 +34,7 @@ For this material type, the fiber elasticity at the strain origin reduces to zer
 where $I_{n}^{1/2}=\lambda_{n}$ is the stretch ratio along the fiber.
 
 _Example:_
-
-```
+```xml
 <solid type="fiber-exp-pow-linear">
  <E>1080</E>
  <alpha>1400</alpha>

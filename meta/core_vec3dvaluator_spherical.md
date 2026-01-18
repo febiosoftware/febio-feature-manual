@@ -6,3 +6,6 @@ The following example defines a spherical fiber distribution centered at $(0,0,1
 ```
 
 ![FigSphericalFiberDirectionOption.png](figs/FigSphericalFiberDirectionOption.png)
+/// figure-caption
+Illustration for the `spherical` vector valuator.
+///

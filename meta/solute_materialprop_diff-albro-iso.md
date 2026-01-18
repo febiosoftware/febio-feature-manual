@@ -15,7 +15,7 @@ where $c_{D}^{-1}=1/c_{D}$ and the porosity $\varphi^{w}$ varies with deformatio
 $J$ is the Jacobian of the deformation, i.e. $J=\det\mathbf{F}$ where $\mathbf{F}$ is the deformation gradient and $\varphi_{r}^{s}$ is the referential solid volume fraction. Here, $c$ represents the actual concentration of the solute whose diffusivity is given by $\mathbf{d}$. This constitutive relation is based on the experimental findings reported by Albro et al. [^1].
 
 _Example:_
-```
+```xml
 <solute sol="1">
   <diffusivity type="diff-Albro-iso">
     <free_diff>123e-6</free_diff>

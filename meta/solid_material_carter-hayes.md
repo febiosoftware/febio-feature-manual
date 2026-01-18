@@ -9,7 +9,7 @@ Here, $\mathbf{C}$ is the right Cauchy-Green deformation tensor and $J$ is the d
 Young's modulus depends on $\rho_{r}^{\sigma}$ according to a power law [^1] [^2], $E_{Y}=E_{0}\left(\frac{\rho_{r}^{\sigma}}{\rho_{0}}\right)^{\gamma}\,$.This type of material references a solid-bound molecule that belongs to a multiphasic mixture. Therefore this material may only be used as the solid (or a component of the solid) in a multiphasic mixture. The solid-bound molecule must be defined in the `Globals` section and must be included in the multiphasic mixture using a `solid_bound` tag. The parameter `sbm` must refer to the global index of that solid-bound molecule. The value of $\rho_{r}^{\sigma}$ is specified within the `solid_bound` tag. If a chemical reaction is defined within that multiphasic mixture that alters the value of $\rho_{r}^{\sigma}$, lower and upper bounds may be specified for this referential density within the `solid_bound` tag to prevent $E_{Y}$ from reducing to zero or achieving excessively elevated values.
 
 _Example:_
-```
+```xml
 <material id="1" name="solid matrix" type="multiphasic">
   <phi0>0</phi0>
   <solid_bound sbm="1">

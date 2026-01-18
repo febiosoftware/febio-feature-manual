@@ -13,7 +13,7 @@ Here, the deviatoric strain energy is given by,
 \]
 
 _Example:_
-```
+```xml
 <material id="2" type="Gent">
   <G>3.14</G>
   <Jm>1.5</Jm>

@@ -3,7 +3,7 @@ The material type for a user-defined CDF is `CDF user`.
 For this material the CDF $F\left(\Xi\right)$ is specified by the user. It can be a constant, linear ramp, mathematical expression, a series of points, or a step function. It is the user's responsibility to ensure that the function rises monotonically from 0 to 1 and does not exceed unity.
 
 _Example:_
-```
+```xml
 <damage type="CDF user">
   <cdf type="point">
     <interpolate>control points</interpolate>

@@ -1,7 +1,7 @@
 The `mmg_remesh` adaptor can be used for adaptive mesh refinement of linear tetrahedral meshes.
 
 _Example:_
-```
+```xml
 <mesh_adaptor type="mmg_remesh">
   <max_iters>1</max_iters>
   <criterion type="stress"/>

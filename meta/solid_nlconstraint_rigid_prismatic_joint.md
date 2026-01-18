@@ -20,7 +20,7 @@ Optionally, a force may be prescribed on body b relative to body a, along the jo
 The `force` element specifies the magnitude of the force, with an optional associated load curve. The `force` element should not be used simultaneously with a prescribed translation.
 
 _Example:_
-```
+```xml
 <rigid_connector type="rigid prismatic joint" name="Joint02 ">
   <tolerance>0</tolerance>
   <gaptol>1e-4</gaptol>

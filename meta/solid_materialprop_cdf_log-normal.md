@@ -15,9 +15,12 @@ F\left(\mu\right)=1/2,
 which shows that $\mu$ is the value of $\Xi$ at which half of the bonds break. Here, $\sigma$ regulates the rate at which damage increases with increasing $\Xi$, with smaller values of $\sigma$ producing a more rapid increase.
 
 ![FigDamageCDFLogNormal.png](figs/FigDamageCDFLogNormal.png)
+/// figure-caption
+Illustration of the `CDF log-normal` cumulative distribution function.
+///
 
 _Example:_
-```
+```xml
 <damage type="CDF log-normal">
   <mu>1</mu>
   <sigma>0.5</sigma>

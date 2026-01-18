@@ -19,7 +19,7 @@ and
 \]
 
 _Example:_
-```
+```xml
 <material id="1" type="lung">
   <density>1</density>
   <E>1913.7</E>

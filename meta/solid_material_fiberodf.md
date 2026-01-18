@@ -11,15 +11,16 @@ Constitutive models using continuous fiber distributions require an efficient in
 To address this issue, we developed a mechanism to reduce the number of sampling points on the ODF using an approach based on finite element remeshing technology. The gradient of each ODF is calculated, and a triangulated mesh of the ODF probability surface and its gradient is passed to the mmg remeshing library. The mmg algorithm remeshes a surface of triangular elements, adjusting the relative nodal density of the ODF mesh based on the magnitude of the gradient, resulting in a higher sampling density in areas of high curvature while reducing the overall number of sample points, thereby preserving sharp changes in orientation (see figure below).
 
 ![fiberODFRemesh.png](figs/fiberODFRemesh.png)
-
-**Fig:**Spherical representations of an ODF showing the results of the remeshing algorithm. (A) A full-resolution, spherical representation of an ODF. (B) An enlarged portion of the same ODF showing the area inside the black square in panel A. In this panel, the ODF’s mesh has been made visible to show the density of sampling points at the full-resolution of 40,962 points. (C) The remeshed surface of the same ODF showing the area inside the black square in panel A. The density of the ODF’s sampling points has been greatly reduced in the regions of the ODF where there is little variation in the ODF’s value, while maintaining high density in regions where there are sharp changes in value. This preserves the general shape of the ODF while significantly reducing the number of sampling points.
+/// figure-caption
+Spherical representations of an ODF showing the results of the remeshing algorithm. (A) A full-resolution, spherical representation of an ODF. (B) An enlarged portion of the same ODF showing the area inside the black square in panel A. In this panel, the ODF’s mesh has been made visible to show the density of sampling points at the full-resolution of 40,962 points. (C) The remeshed surface of the same ODF showing the area inside the black square in panel A. The density of the ODF’s sampling points has been greatly reduced in the regions of the ODF where there is little variation in the ODF’s value, while maintaining high density in regions where there are sharp changes in value. This preserves the general shape of the ODF while significantly reducing the number of sampling points.
+///
 
 The number of integration points in the remeshed ODFs varies depending on the ODF topology, but the number points is generally reduced by about two orders of magnitude. Since the resampling of the ODFs only takes place once, at the beginning of the FE analysis, the time required for the remeshing step is small relative to the overall time involved in a FE analysis. The reduction in points dramatically increases the speed of stress computations without significantly altering the results. After the interpolation and remeshing steps, the material initialization is complete, and the FE analysis continues normally.
 
 The `fibers` property defines the fiber constitutive relation and associated material properties. The Fiber ODF material takes any number of `fiber-odf` tags as parameters, each with a position in space, and a list of spherical harmonic coefficients.
 
 _Example:_
-```
+```xml
 <material id="1" name="Material" type="uncoupled solid mixture">
   <solid type="Mooney-Rivlin">
     <density>1</density>

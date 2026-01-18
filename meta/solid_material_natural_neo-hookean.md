@@ -17,7 +17,7 @@ Here, $K_{1}$ and $K_{2}$ are the first and second invariants of the left natura
 This material model uses a standard displacement-based element formulation, so care must be taken when modeling materials with nearly-incompressible material behavior to avoid element locking. For this case, use the Mooney-Rivlin material described in Section [Mooney-Rivlin](solid_material_mooney-rivlin.md).
 
 _Example:_
-```
+```xml
 <material id="1" type="natural neo-Hookean">
   <E>200e3</E>
   <v>0.3</v>

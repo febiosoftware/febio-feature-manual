@@ -24,7 +24,7 @@ To reproduce the interstitial solid remodeling theory proposed by Weinans et al.
 
 where cells convert solutes (e.g., nutrients) into synthesized solid when the specific strain energy exceeds the homeostatic value. If the cells and solutes are implicit in this reaction (e.g., if it is assumed that their concentrations change negligibly), the production rate of the solid may be given by $\hat{\zeta}=k$ using the law of mass action for a forward reaction, where $k$ has the form given above.
 
-```
+```xml
 <reaction name="solid remodeling" type="mass-action-forward">
   <vP sbm="1">1</vP>
   <forward_rate type="Huiskes reaction rate">

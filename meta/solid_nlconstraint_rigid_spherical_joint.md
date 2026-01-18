@@ -24,7 +24,7 @@ Optionally, moments may be prescribed on body b relative to body a, about the wo
 The moment parameters specify the components of the moment vector in world coordinates, with optional associated load curves. The moment parameters should not be used simultaneously with a prescribed rotation.
 
 _Example:_
-```
+```xml
 <rigid_connector type="rigid spherical joint" name="Joint01">
   <tolerance>0.1</tolerance>
   <gaptol>0</gaptol>

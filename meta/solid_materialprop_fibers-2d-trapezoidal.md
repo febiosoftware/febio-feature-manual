@@ -3,7 +3,7 @@ The scheme type for the trapezoidal integration rule is `fibers-2d-trapezoidal` 
 The parameter `nth` may be any number greater than 0. Odd values for `nth` produce more accurate results than even values.
 
 _Example:_
-```
+```xml
 <scheme type="fibers-2d-trapezoidal">
   <nth>31</nth>
 </scheme>

@@ -19,7 +19,7 @@ where $I_{0}=\lambda_{0}^{2}$,
 _Example:_
 (Fiber model as specified in a solid mixture)
 
-```
+```xml
 <solid type="fiber-pow-linear-uncoupled">
   <fiber type="angles">
     <theta>20</center>

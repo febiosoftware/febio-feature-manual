@@ -5,7 +5,7 @@ The mixture may consist of any number of solids. The stress tensor for the solid
 Material axes may be optionally specified within the `material` level. Within the `material` level, these represent the local element axes relative to the global coordinate system. If material axes are specified at both levels, they are properly compounded to produce local material axes relative to the global coordinate system. Material axes specified in the `ElementData` section are equivalent to a specification at the `material` level: they correspond to local element axes relative to the global system.
 
 _Example:_
-```
+```xml
 <material id="1" type="solid mixture">
   <solid type="neo-Hookean">
     <E>1000.0</E>

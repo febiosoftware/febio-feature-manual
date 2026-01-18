@@ -3,7 +3,7 @@ The material type for a multigeneration solid is `multigeneration`. This materia
 Repeat the `generation` property as many times as needed (see [generation](solid_materialprop_generation.md)).
 
 _Example:_
-```
+```xml
 <material id="1" name="Growing Solid" type="multigeneration">
   <generation id="1">
     <start_time>0.0</start_time>
@@ -28,7 +28,7 @@ _Example:_
 The corresponding value of $t^{\gamma}$ for each of the generations is provided in the `Globals` section.
 
 _Example:_
-```
+```xml
 <Globals>
   <Generations>
     <gen id="1">0.0</gen>

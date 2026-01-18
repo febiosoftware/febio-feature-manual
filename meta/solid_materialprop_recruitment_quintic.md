@@ -13,7 +13,7 @@ F\left(\Xi\right)=\begin{cases}
 Its minimum value is $1$ and its maximum value is $1+r$ when $\Xi\ge\mu_{\text{max}}$.
 
 _Example:_
-```
+```xml
 <recruitment type="recruitment quintic">
   <mumin>0.2</mumin>
   <mumax>0.4</mumax>

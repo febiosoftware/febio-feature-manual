@@ -38,7 +38,7 @@ To enforce continuity of the elasticity at $\lambda_{m}$ the user may also set $
 
 _Example:_
 
-```
+```xml
 <material id="1" name="Material" type="uncoupled solid mixture">
   <k>10</k>
   <solid type="Mooney-Rivlin">

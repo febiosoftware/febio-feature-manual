@@ -21,7 +21,9 @@ where $\varphi_{0}$ is the referential solid volume fraction of the porous solid
 Representative variations of $k\left(J\right)/k_{0}$ are shown in the figure below.
 
 ![FigPermExpIso.png](figs/FigPermExpIso.png)
-**Fig:** Exponential isotropic permeability, showing dependence of $k\left(J\right)/k_{0}$ on material parameter $M$, when $\varphi_{0}=0.2$ and $\varphi_{0}<J\le1.2$.
+/// figure-caption
+Exponential isotropic permeability, showing dependence of $k\left(J\right)/k_{0}$ on material parameter $M$, when $\varphi_{0}=0.2$ and $\varphi_{0}<J\le1.2$.
+///
 
 _Example:_
 ```

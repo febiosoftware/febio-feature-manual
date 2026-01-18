@@ -5,7 +5,7 @@ The material type for Simo's damage criterion [^1] is `DC Simo`. For this criter
 \]
 
 _Example:_
-```
+```xml
 <criterion type="DC Simo"/>
 ```
 

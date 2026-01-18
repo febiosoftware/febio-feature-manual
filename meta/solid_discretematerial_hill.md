@@ -32,7 +32,7 @@ where $v_m$ is the actual discrete element's growth speed.
 The properties Sv, Ftl, and Ftv, are optional and will evaluate to 1 if omitted. They can be defined as load curves. See the example below. 
 
 _Example:_
-```
+```xml
 <discrete_material id="1" name="test" type="Hill">
   <Vmax>1</Vmax>
   <ac>0.1</ac>

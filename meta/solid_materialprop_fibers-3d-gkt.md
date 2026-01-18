@@ -3,7 +3,7 @@ The scheme type for the Gauss-Kronrod trapezoidal rule is `fibers-3d-gkt` for un
 The parameter `nph` must be one of the values 7, 11, 15, 19, 23 and 27. The parameter `nth` may be any number greater than 0. Odd values for `nth` produce more accurate results than even values. A recommended combination is nph=7 and nth=31. The total number of integration points is N=nph ×nth. Increasing values of N require increasing computational time.
 
 _Example:_
-```
+```xml
 <scheme type="fibers-3d-gkt">
   <nph>7</nph>
   <nth>31</nth>

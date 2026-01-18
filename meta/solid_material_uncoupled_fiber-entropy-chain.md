@@ -9,7 +9,7 @@ where $\tilde{I}_{n}=\mathbf{n}_{r}\cdot\tilde{\mathbf{C}}\cdot\mathbf{n}_{r}$ i
 When evaluating the inverse Langevin equation, a Taylor series expansion is applied for computational stability. The parameter $n_{\mathrm{term}}$ is used to control the number of terms used to evaluate the equation; it must be an integer between 3 and 30.
 
 _Example:_
-```
+```xml
 <material id="1" name="Soft Tissue" type="uncoupled solid mixture">
 	<k>1e4</k>
 	<solid type="Mooney-Rivlin">

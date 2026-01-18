@@ -15,7 +15,7 @@ _Example:_
 
 (Fiber model as specified in a continuous fiber distribution)
 
-```
+```xml
 <fibers type="fiber-Kiousis-uncoupled">
   <d1>500</d1>
   <d2>2.25</d2>

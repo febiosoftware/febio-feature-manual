@@ -9,9 +9,13 @@ where $\left(n_{1},n_{2},n_{3}\right)$ are the components of $\mathbf{n}$ in the
 The value of $C$ is automatically adjusted to account for the values of the semi-principal axes $\left(a,b,c\right)$. Therefore, only the relative ratios of these parameters matter.
 
 ![FigEllipsoidalDistribution.png](figs/FigEllipsoidalDistribution.png)
+/// figure-caption
+Illustration of the `ellipsoidal` fiber distribution function.
+///
+
 
 _Example:_
-```
+```xml
 <distribution type="ellipsoidal">
   <spa>3,2,1</spa>
 </distribution>

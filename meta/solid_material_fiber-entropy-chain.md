@@ -9,7 +9,7 @@ where $I_{n}=\mathbf{n}_{r}\cdot\mathbf{C}\cdot\mathbf{n}_{r}$ is the square of 
 When evaluating the inverse Langevin equation, a Taylor series expansion is applied for computational stability. The parameter $n_{\mathrm{term}}$ is used to control the number of terms used to evaluate the equation; it must be an integer between 3 and 30.
 
 _Example:_
-```
+```xml
 <material id="1" name="Soft Tissue" type="solid mixture">
 	<solid type="Arruda-Boyce unconstrained">
 	  <N>2</N>

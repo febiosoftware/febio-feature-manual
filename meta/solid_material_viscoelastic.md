@@ -18,7 +18,7 @@ The `elastic` parameter defines the elastic material and must be an unconstraine
 
 _Example:_
 
-```
+```xml
 <material id="1" name="Material 1" type="viscoelastic">
   <g1>0.95</g1>
   <t1>0.01</t1>

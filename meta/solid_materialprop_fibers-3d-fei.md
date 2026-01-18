@@ -3,9 +3,12 @@ The scheme type for the finite element integration rule is `fibers-3d-fei` for u
 The parameter `resolution` must be one of the values 20, 34, 60, 74, 196, 210, 396, 410, 596, 610, 796, 810, 996, 1010, 1196, 1210, 1396, 1410, 1596, 1610, and 1796. A conservative choice for producing accurate results under general loading conditions is N=1610. Increasing values of N require increasing computational time.
 
 ![FigFiniteElementIntegration.png](figs/FigFiniteElementIntegration.png)
+/// figure-caption
+Illustration of the `fibers-3d-fei` integration scheme.
+///
 
 _Example:_
-```
+```xml
 <scheme type="fibers-3d-fei">
   <resolution>1610</resolution>
 </scheme>

@@ -7,7 +7,7 @@ The strain-energy density function for this material combines a neo-Hookean matr
 \]
 
 _Example:_
-```
+```xml
 <material id="1" name="material1" type="Yeoh">
   <k>100</k>
   <c1>0.75</c0>
