@@ -23,6 +23,7 @@ with open('mkdocs.yml', mode='w') as file:
     file.write('site_author: FEBio Team\n')
     file.write('theme:\n')
     file.write('  name: material\n')
+    file.write('  logo: febio.png\n')
     file.write('  palette:\n')
     file.write('    primary: indigo\n')
     file.write('    accent: indigo\n')

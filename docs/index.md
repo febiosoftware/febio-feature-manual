@@ -1,6 +1,6 @@
 # Welcome to the FEBio Feature Manual
 
-!!! caution
+!!! important
     This is a work in progress! At this point this documentation is incomplete. 
 
 This manual lists all the features that are currently available in FEBio.
