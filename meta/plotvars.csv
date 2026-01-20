@@ -94,7 +94,7 @@ growth relative volume,growth relative volume
 growth right Hencky,growth right Hencky
 growth right stretch,growth right stretch
 heat flux,The average heat flux inside an element of a heat-transfer analysis
-ideal gas pressure,current pressure value of the "ideal gas pressure" load
+ideal gas pressure,current pressure value of the `ideal gas pressure` load
 incremental displacement,The displacement increment from the previously written plot state. 
 intact bond fraction,fraction of intact bonds in a reactive-viscoelastic material
 kinetic energy density,The average kinetic energy density in an element
@@ -113,7 +113,7 @@ nodal contact pressure,"Contact pressure, evaluated at contact surface nodes"
 nodal contact traction,"Contact traction vectors, evaluated at contact surface nodes"
 nodal fluid flux,"Fluid flux in biphasic, biphasic-solute, triphasic, multiphasic, fluid-FSI and biphasic-FSI materials"
 nodal fluid velocity,"Fluid velocity $\mathbf{v}^{f}$ in fluid and fluid-FSI materials"
-nodal shell director,The "director" of a shell node. 
+nodal shell director,The director of a shell node. 
 nodal stress,"The Cauchy stress, projected to the nodes."
 nodal surface traction,Contact nodal tractions
 nodal vector gap,Contact gap vector at surface nodes
@@ -190,3 +190,58 @@ deformation gradient,The deformation gradient $\mathbf{F}$
 right Cauchy-Green,The right Cauchy-Green deformation tensor $\mathbf{C}=\mathbf{F}^T \mathbf{F}$
 surface area, The area of a surface in the current configuration.
 scalar surface load, surface element averaged load. (assumes the surface has a load applied)
+continuous damage, the accumulated damage variable in a continuous-discontinuous damage model
+continuous damage beta, the $\beta$ parameter in a continuous-discontinuous damage model
+continuous damage D1, the D1 parameter in a continuous-discontinuous damage model
+continuous damage D2, the D2 parameter in a continuous-discontinuous damage model
+continuous damage D3, the D3 parameter in a continuous-discontinuous damage model
+continuous damage D2beta, the D2beta parameter in a continuous-discontinuous damage model
+continuous damage gamma, the $\gamma$ parameter in a continuous-discontinuous damage model
+continuous damage P, the P parameter in a continuous-discontinuous damage model
+continuous damage Psi0, the $\Psi_0$ parameter in a continuous-discontinuous damage model
+continuous damage Ds, the Ds parameter in a continuous-discontinuous damage model
+Deshpande-Fleck stress, Element yield stress based on Deshpande-Fleck criterion
+deviatoric fiber stretch, Deviatoric fiber stretch $\tilde{\lambda }$ in a fiber material
+discrete element elongation, Change in length of the discrete element (i.e. $\Delta L = L_t - L_0$)
+discrete element force, the vector force in the discrete element
+discrete element length, Current length of the discrete element
+discrete element stretch, Current stretch of the discrete element (i.e. $\lambda = L_t / L_0$)
+Drucker shear stress, Element yield stress based on Drucker shear stress criterion
+Drucker-Prager stress, Element yield stress based on Drucker-Prager criterion
+elastic fluid pressure, Element elastic fluid pressure
+infinitesimal strain, The average infinitesimal strain tensor in an element
+left Cauchy-Green, The left Cauchy-Green deformation tensor $\mathbf{b}=\mathbf{F} \mathbf{F}^T$
+material axes, "The material axes of an element stored as a $3 \times 3$ tensor. The columns of the tensor represent the local x-, y-, and z-axes, respectively."
+micro energy, the integrated strain energy of a micro material
+mixture stress, the cauchy stress in a component of a solid mixture.
+nodal strain, the Green-Lagrange strain tensor projected to the nodes.
+osmotic coefficient, the element-averaged osmotic coefficient in a multiphasic material
+partition coefficient, the element-averaged solute partition coefficient in a multiphasic material
+permeability, the element-averaged permeability in a biphasic-FSI material
+pid controller, the output value of a PID controller
+PK2 stress, The PK2 stress of the element.
+plastic yield stress, The current yield stress in a plastic material
+porosity, the element-averaged porosity in a biphasic or multiphasic material
+prestrain compatibility, the prestrain compatibility tensor of an elastic-prestrain material
+prestrain stretch error, the error in the prestrain stretch of an elastic-prestrain material
+rate of deformation, The average rate of deformation tensor (i.e. symmetric part of velocity gradient) in an element
+referential solid volume fraction, the referential solid volume fraction in a multiphasic material
+rotation, the values of the nodal rotation degrees of freedom stored as a vector
+RVE recruitment, weak bond recruitment ratio in reactive viscoelastic material point
+sbm areal concentration, SBM areal concentration (mole per shell area) of a shell element
+sbm concentration, concentration of a solid-bound molecule in an element
+shell displacement, Nodal displacements of the back-nodes of shell elements
+solid stress, Cauchy stress in the solid phase of an FSI material
+solid volume fraction, the element-averaged solid volume fraction in a biphasic-FSI material
+solute relative Peclet number, Element relative Peclet number
+solute volumetric flux, Volumetric flux of solute in triphasic/multiphasic materials
+stress error, the effective stress
+surface reaction force, Total reaction force on a surface
+surface reaction moment, Total reaction moment on a surface
+truss stretch, Current stretch of the truss element (i.e. $\lambda = L_t / L_0$)
+total angular momentum, Total angular momentum of a rigid body domain
+total linear momentum, Total linear momentum of a rigid body domain
+total energy, total energy (= strain energy + kinetic energy) of a solid domain.
+plasticity heat supply density, Reactive plasticity heat supply
+fluid volume ratio gradient, Gradient of porosity in a biphasic-FSI material.
+edge contact gap, the contact gap of an edge-to-surface contact interface.

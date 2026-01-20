@@ -9457,16 +9457,6 @@
             "type_string": "fluid force2"
         },
         {
-            "base_class": "FEPlotDomainData",
-            "class_name": "FEPlotFluidHeatFlux",
-            "module": "fluid",
-            "parameters": [
-            ],
-            "source": "",
-            "super_class_id": "FEPLOTDATA_ID",
-            "type_string": "fluid heat flux"
-        },
-        {
             "base_class": "FESurfaceLoad",
             "class_name": "FEFluidNormalHeatFlux",
             "module": "thermo-fluid",
@@ -9484,6 +9474,16 @@
         },
         {
             "base_class": "FEPlotDomainData",
+            "class_name": "FEPlotFluidHeatFlux",
+            "module": "thermo-fluid",
+            "parameters": [
+            ],
+            "source": "",
+            "super_class_id": "FEPLOTDATA_ID",
+            "type_string": "fluid heat flux"
+        },
+        {
+            "base_class": "FEPlotDomainData",
             "class_name": "FEPlotFluidHeatSupplyDensity",
             "module": "fluid",
             "parameters": [
@@ -9495,7 +9495,7 @@
         {
             "base_class": "FEPlotDomainData",
             "class_name": "FEPlotFluidIsobaricSpecificHeatCapacity",
-            "module": "fluid",
+            "module": "thermo-fluid",
             "parameters": [
             ],
             "source": "",
@@ -9505,7 +9505,7 @@
         {
             "base_class": "FEPlotDomainData",
             "class_name": "FEPlotFluidIsochoricSpecificHeatCapacity",
-            "module": "fluid",
+            "module": "thermo-fluid",
             "parameters": [
             ],
             "source": "",
@@ -9867,7 +9867,7 @@
         {
             "base_class": "FEPlotDomainData",
             "class_name": "FEPlotFluidPressureTangentTemperature",
-            "module": "fluid",
+            "module": "thermo-fluid",
             "parameters": [
             ],
             "source": "",
@@ -10445,7 +10445,7 @@
         {
             "base_class": "FEPlotDomainData",
             "class_name": "FEPlotFluidTemperature",
-            "module": "fluid",
+            "module": "thermo-fluid",
             "parameters": [
             ],
             "source": "",
@@ -10455,7 +10455,7 @@
         {
             "base_class": "FEPlotDomainData",
             "class_name": "FEPlotFluidThermalConductivity",
-            "module": "fluid",
+            "module": "thermo-fluid",
             "parameters": [
             ],
             "source": "",
@@ -17987,7 +17987,7 @@
         {
             "base_class": "FEPlotNodeData",
             "class_name": "FEPlotNodalFluidTemperature",
-            "module": "fluid",
+            "module": "thermo-fluid",
             "parameters": [
             ],
             "source": "",

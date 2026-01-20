@@ -3,7 +3,7 @@ The material type for Damage Fiber Power is `damage fiber power`.
 By setting, 
 
 \[
-\Psi^{0}=\kappa\mathit{I_{1}+\left(1-\frac{3}{2}\kappa\right)\mathit{K_{3}}}
+\Psi^{0}=\kappa\mathit{I_{1}}+\left(1-\frac{3}{2}\kappa\right)\mathit{K_{3}}
 \]
 
 and $\mathit{m(P)=\alpha_{1}(P)^{\alpha_{2}},}$ the strain-energy form above can be made suitable for modeling damage,
