@@ -35,20 +35,20 @@ When FEBio fails to converge a time step, the time step size is reduced and then
 ### must-points
 The user can specify a load curve for the `dtmax` parameter. This load curve is referred to as the _must-point curve_ and serves two purposes. Firstly, it defines the value of the `dtmax` parameter as a function of time. This can be useful, for instance, to enforce smaller time steps during rapid loading or larger time steps when approaching steady-state in a transient analysis. Secondly, the time points of the dtmax loadcurve define so-called _must-points_. A must-point is a time point where FEBio must pass through. This is useful for synchronizing the auto-time stepper with the loading scenario. For instance, when loading starts at time 0.5, adding a must-point at this time will guarantee that the timestepper evaluates the model at that time. In conjunction with the `PLOT_MUST_POINT` value of the plot_level parameter, this option can also be used to only write results to the plotfile at the specified time points. Consider the following example.
 
-```
+```xml
 <dtmax lc="1">0.1</dtmax>
 ...
 <loadcontroller id="1" type="loadcurve">
   <interpolate>STEP</interpolate>
-    <points>
-      <point>0,0</point>
-      <point>0.5, 0.1</point>
-      <point>1.0, 0.2</point>
-    </points>
+  <points>
+    <point>0,0</point>
+    <point>0.5, 0.1</point>
+    <point>1.0, 0.2</point>
+  </points>
 </loadcontroller>
 ```
 
-This example defines load curve 1 as the must-point curve. This curve defines three points where FEBio will pass through (namely 0, 0.5 and 1.0). The values of each time point is the value of the maximum time-step size (dtmax). Since the curve is defined as a step-function, each value is valid up to the corresponding time-point. Thus, between time 0 and time 0.5, the maximum time step value is 0.1. Between 0.5 and 1.0 the maximum time step value is 0.2. If the plot_level parameter is set to PLOT_MUST_POINTS, then only the three defined time points will be stored to the plotfile.
+This example defines load curve 1 as the must-point curve. This curve defines three points where FEBio will pass through (namely 0, 0.5 and 1.0). The values of each time point is the value of the maximum time-step size (`dtmax`). Since the curve is defined as a step-function, each value is valid up to the corresponding time-point. Thus, between time 0 and time 0.5, the maximum time step value is 0.1. Between 0.5 and 1.0 the maximum time step value is 0.2. If the plot_level parameter is set to PLOT_MUST_POINTS, then only the three defined time points will be stored to the plotfile.
 
 Note that when specifying a loadcurve for the dtmax parameter, the value of this parameter will be ignored. 
 

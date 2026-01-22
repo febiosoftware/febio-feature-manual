@@ -245,3 +245,10 @@ total energy, total energy (= strain energy + kinetic energy) of a solid domain.
 plasticity heat supply density, Reactive plasticity heat supply
 fluid volume ratio gradient, Gradient of porosity in a biphasic-FSI material.
 edge contact gap, the contact gap of an edge-to-surface contact interface.
+beam curvature, the curvature vector of a beam element
+beam strain, the strain vector of a beam element
+beam stress, the stress vector of a beam element
+beam reference stress, the stress vector in the reference frame of a beam element
+beam stress couple, the stress couple vector of a beam element
+beam reference stress couple, the stress couple vector of a beam element in the reference frame
+body force, the total body force vector applied to a solid element

@@ -1,9 +1,13 @@
-A `tied elastic` contact interface can be used for tying surfaces of two solid parts. It enforces continuity of the displacement across the interface.
+The `sliding-facet-on-facet` contact formulation allows users to model contact between two surfaces. The surfaces can make contact, slide frictionless across each other, and separate. This contact formulation uses Gaussian quadrature to integrate the contact equations. This formulation is inherently symmetric. 
+
+This formulation is mostly retained for backward compatibility. In general, it is advised to use the [sliding-elastic](solid_surfaceinteraction_sliding-elastic.md) contact interface. 
 
 ### control parameters
 Several parameters control the behavior of the algorithm.
 
-* `symmetric_stiffness` : The formulation is inherently non-symmetric. A symmetrized version of this implementation is available by setting the `symmetric_stiffness` flag to 1, but the symmetric version does not converge as well as the non-symmetric version.
+* `node_reloc` : turns this option on if you want the initial projection to move the nodes on the primary surface so that they do not cross into the secondary surface. 
+
+* `knmult` : sets the stiffness scale factor for one of the components of the stiffness matrix.
 
 ### contact enforcement
 Like most contact formulations in FEBio, the contact constraint for this formulation is enforced using the augmented Lagrangian method (ALM).
@@ -30,16 +34,12 @@ The following parameters affect the ALM.
 
 ### contact projection
 
-The formulation identifies contact pairs by using a contact projection method. For each integration point on the primary surface, a ray is projected onto the secondary surface along the local normal of the primary surface. There are several parameters that influence how the projection works. 
+The formulation identifies contact pairs by using a closest point projection method. For each integration point on the primary surface, the closest point on the secondary surface is sought. There are several parameters that influence how the projection works. 
 
 * `search_tol` : this sets the tolerance on the search for finding the isoparametric coordinates of the projected point onto a secondary surface facet. 
 
 * `search_radius` : this parameter sets the maximum distance to find contact pairs. Contact is only established if the primary point and secondary point are within this distance. 
 
+* `seg_up` : sets the maximum number of segment updates (i.e. projection onto the secondary surface). Once this limit is reached, the projected points are assumed to "stick" to the secondary surface. By default, this feature is disabled, but enabling it can sometimes help the models' convergence. 
+
 * `two_pass` : when enabled, the projection (and force calculations) are done twice. After the first pass, the second pass swaps the primary and secondary surfaces, and then runs again. 
-
-### contact with shells
-
-When this contact interface is used with shells, it is important to pay attention to the orientation of the shell surfaces. For this contact to work, the contacting surface must be oriented so that they face each other. If this is not the case, you can use the following flags to orient the surfaces correctly.
-
-* `flip primary` / `flip secondary` : when enabled, this will flip the orientation of the corresponding surface. 

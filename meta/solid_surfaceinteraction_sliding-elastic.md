@@ -1,12 +1,18 @@
-A `tied elastic` contact interface can be used for tying surfaces of two solid parts. It enforces continuity of the displacement across the interface.
+The `sliding-elastic` contact interface uses facet-on-facet contact. It can be used for frictionless or frictional contact. It may optionally be set to sustain tension to prevent contact surfaces from separating along the direction normal to the interface, while still allowing tangential sliding. This method sometimes performs better than the other sliding contact formulations for problems that are dominated by compression. 
 
 ### control parameters
 Several parameters control the behavior of the algorithm.
 
+* `fric_coeff` : friction is enabled by setting this parameter to a nonzero value. 
+
+* `tension` : when enabled, the surface can no longer separate, but they are still allowed to slide across one another. 
+
+* `node_reloc` : turns this option on if you want the initial projection to move the nodes on the primary surface so that they do not cross into the secondary surface. 
+
 * `symmetric_stiffness` : The formulation is inherently non-symmetric. A symmetrized version of this implementation is available by setting the `symmetric_stiffness` flag to 1, but the symmetric version does not converge as well as the non-symmetric version.
 
 ### contact enforcement
-Like most contact formulations in FEBio, the contact constraint for this formulation is enforced using the augmented Lagrangian method (ALM).
+Like most contact formulations in FEBio, the contact constraint for the sliding-elastic is enforced using the augmented Lagrangian method (ALM). 
 
 The following parameters affect the ALM. 
 
@@ -36,6 +42,8 @@ The formulation identifies contact pairs by using a contact projection method. F
 
 * `search_radius` : this parameter sets the maximum distance to find contact pairs. Contact is only established if the primary point and secondary point are within this distance. 
 
+* `seg_up` : sets the maximum number of segment updates (i.e. projection onto the secondary surface). Once this limit is reached, the projected points are assumed to "stick" to the secondary surface. By default, this feature is disabled, but enabling it can sometimes help the models' convergence. 
+
 * `two_pass` : when enabled, the projection (and force calculations) are done twice. After the first pass, the second pass swaps the primary and secondary surfaces, and then runs again. 
 
 ### contact with shells
@@ -43,3 +51,5 @@ The formulation identifies contact pairs by using a contact projection method. F
 When this contact interface is used with shells, it is important to pay attention to the orientation of the shell surfaces. For this contact to work, the contacting surface must be oriented so that they face each other. If this is not the case, you can use the following flags to orient the surfaces correctly.
 
 * `flip primary` / `flip secondary` : when enabled, this will flip the orientation of the corresponding surface. 
+
+* `shell_bottom_primary` / `shell_bottom_secondary` : this flag indicates that the bottom of the shell must be used as the contacting surface. 
