@@ -1,16 +1,6 @@
 {
     "features": [
         {
-            "base_class": "FELogElemData",
-            "class_name": "FELogElemMath",
-            "module": "",
-            "parameters": [
-            ],
-            "source": "",
-            "super_class_id": "FELOGELEMDATA_ID",
-            "type_string": "_math"
-        },
-        {
             "base_class": "FEElasticMaterial",
             "class_name": "FE2DFiberNeoHookean",
             "module": "solid",
@@ -219,34 +209,6 @@
             "source": "",
             "super_class_id": "FEMATERIAL_ID",
             "type_string": "2D trans iso Veronda-Westmann"
-        },
-        {
-            "base_class": "FESurfaceConstraint",
-            "class_name": "FE2OMicroConstraint",
-            "module": "solid",
-            "parameters": [
-                {
-                    "default": "false",
-                    "description": "laugon",
-                    "name": "laugon",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "augtol",
-                    "name": "augtol",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "penalty",
-                    "name": "penalty",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FENLCONSTRAINT_ID",
-            "type_string": "2O microfluc"
         },
         {
             "base_class": "LinearSolver",
@@ -1823,7 +1785,7 @@
         {
             "base_class": "ImageFilter",
             "class_name": "BoxBlur",
-            "module": "solid",
+            "module": "",
             "parameters": [
                 {
                     "default": "0",
@@ -6153,22 +6115,6 @@
             "type_string": "elastic-mm-solid"
         },
         {
-            "base_class": "FESolidDomain",
-            "class_name": "FEElasticMultiscaleDomain2O",
-            "module": "solid",
-            "parameters": [
-                {
-                    "default": "",
-                    "description": "",
-                    "name": "mat_axis",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FESOLIDDOMAIN_ID",
-            "type_string": "elastic-mm-solid2O"
-        },
-        {
             "base_class": "FEShellDomain",
             "class_name": "FEElasticShellDomain",
             "module": "solid",
@@ -6337,22 +6283,6 @@
             "source": "",
             "super_class_id": "FESOLIDDOMAIN_ID",
             "type_string": "elastic-solid"
-        },
-        {
-            "base_class": "FESolidDomain",
-            "class_name": "FEElasticSolidDomain2O",
-            "module": "solid",
-            "parameters": [
-                {
-                    "default": "",
-                    "description": "",
-                    "name": "mat_axis",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FESOLIDDOMAIN_ID",
-            "type_string": "elastic-solid2O"
         },
         {
             "base_class": "FEBeamDomain",
@@ -7145,34 +7075,6 @@
             "source": "",
             "super_class_id": "FELOGELEMDATA_ID",
             "type_string": "fdzz"
-        },
-        {
-            "base_class": "EigenSolver",
-            "class_name": "FEASTEigenSolver",
-            "module": "",
-            "parameters": [
-                {
-                    "default": "0",
-                    "description": "m0",
-                    "name": "m0",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "emin",
-                    "name": "emin",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "emax",
-                    "name": "emax",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FEEIGENSOLVER_ID",
-            "type_string": "feast"
         },
         {
             "base_class": "LinearSolver",
@@ -12053,16 +11955,6 @@
             "type_string": "Fzz"
         },
         {
-            "base_class": "FEPlotDomainData",
-            "class_name": "FEPlotElementGnorm",
-            "module": "solid",
-            "parameters": [
-            ],
-            "source": "",
-            "super_class_id": "FEPLOTDATA_ID",
-            "type_string": "G norm"
-        },
-        {
             "base_class": "FEGrowthTensor",
             "class_name": "FEGeneralGrowth",
             "module": "solid",
@@ -13325,74 +13217,6 @@
             "type_string": "ilut"
         },
         {
-            "base_class": "FEElemDataGenerator",
-            "class_name": "FEImageDataMap",
-            "module": "solid",
-            "parameters": [
-                {
-                    "default": "{0,0,0}",
-                    "description": "range_min",
-                    "name": "range_min",
-                    "units": ""
-                },
-                {
-                    "default": "{0,0,0}",
-                    "description": "range_max",
-                    "name": "range_max",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "blur",
-                    "name": "blur",
-                    "units": ""
-                },
-                {
-                    "default": "",
-                    "description": "",
-                    "name": "image",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FEMESHDATAGENERATOR_ID",
-            "type_string": "image map"
-        },
-        {
-            "base_class": "FEScalarValuator",
-            "class_name": "FEImageValuator",
-            "module": "solid",
-            "parameters": [
-                {
-                    "default": "{0,0,0}",
-                    "description": "range_min",
-                    "name": "range_min",
-                    "units": ""
-                },
-                {
-                    "default": "{0,0,0}",
-                    "description": "range_max",
-                    "name": "range_max",
-                    "units": ""
-                },
-                {
-                    "default": "",
-                    "description": "",
-                    "name": "image",
-                    "units": ""
-                },
-                {
-                    "default": "",
-                    "description": "",
-                    "name": "transform",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FESCALARVALUATOR_ID",
-            "type_string": "image map"
-        },
-        {
             "base_class": "FEUncoupledMaterial",
             "class_name": "FEIncompNeoHookean",
             "module": "solid",
@@ -13893,7 +13717,7 @@
         {
             "base_class": "ImageFilter",
             "class_name": "IterativeBlur",
-            "module": "solid",
+            "module": "",
             "parameters": [
                 {
                     "default": "0",
@@ -15631,170 +15455,6 @@
             "type_string": "micro-material"
         },
         {
-            "base_class": "FEElasticMaterial",
-            "class_name": "FEMicroMaterial2O",
-            "module": "solid",
-            "parameters": [
-                {
-                    "default": "1",
-                    "description": "density",
-                    "name": "density",
-                    "units": "M/L^3"
-                },
-                {
-                    "default": "10",
-                    "description": "beta",
-                    "name": "beta",
-                    "units": ""
-                },
-                {
-                    "default": "true",
-                    "description": "KDG1",
-                    "name": "KDG1",
-                    "units": ""
-                },
-                {
-                    "default": "true",
-                    "description": "KDG2",
-                    "name": "KDG2",
-                    "units": ""
-                },
-                {
-                    "default": "true",
-                    "description": "KDG3",
-                    "name": "KDG3",
-                    "units": ""
-                },
-                {
-                    "default": "true",
-                    "description": "useJ0",
-                    "name": "useJ0",
-                    "units": ""
-                },
-                {
-                    "default": "",
-                    "description": "RVE",
-                    "name": "RVE",
-                    "units": ""
-                },
-                {
-                    "default": "",
-                    "description": "bc_set",
-                    "name": "bc_set",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "rve_type",
-                    "name": "rve_type",
-                    "units": ""
-                },
-                {
-                    "default": "1",
-                    "description": "scale",
-                    "name": "scale",
-                    "units": ""
-                },
-                {
-                    "default": "",
-                    "description": "",
-                    "name": "probe",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FEMATERIAL_ID",
-            "type_string": "micro-material2O"
-        },
-        {
-            "base_class": "FEElasticMaterial",
-            "class_name": "FEMindlinElastic2O",
-            "module": "solid",
-            "parameters": [
-                {
-                    "default": "1",
-                    "description": "density",
-                    "name": "density",
-                    "units": "M/L^3"
-                },
-                {
-                    "default": "10",
-                    "description": "beta",
-                    "name": "beta",
-                    "units": ""
-                },
-                {
-                    "default": "true",
-                    "description": "KDG1",
-                    "name": "KDG1",
-                    "units": ""
-                },
-                {
-                    "default": "true",
-                    "description": "KDG2",
-                    "name": "KDG2",
-                    "units": ""
-                },
-                {
-                    "default": "true",
-                    "description": "KDG3",
-                    "name": "KDG3",
-                    "units": ""
-                },
-                {
-                    "default": "true",
-                    "description": "useJ0",
-                    "name": "useJ0",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "lam",
-                    "name": "lam",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "mu",
-                    "name": "mu",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "a1",
-                    "name": "a1",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "a2",
-                    "name": "a2",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "a3",
-                    "name": "a3",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "a4",
-                    "name": "a4",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "a5",
-                    "name": "a5",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FEMATERIAL_ID",
-            "type_string": "mindlin elastic"
-        },
-        {
             "base_class": "FEMeshAdaptorCriterion",
             "class_name": "FEMinMaxFilterAdaptorCriterion",
             "module": "",
@@ -16347,84 +16007,6 @@
             "source": "",
             "super_class_id": "FEMATERIAL_ID",
             "type_string": "Mooney-Rivlin von Mises Fibers"
-        },
-        {
-            "base_class": "FEPlotSurfaceData",
-            "class_name": "FEPlotMortarContactGap",
-            "module": "solid",
-            "parameters": [
-            ],
-            "source": "",
-            "super_class_id": "FEPLOTDATA_ID",
-            "type_string": "mortar-gap"
-        },
-        {
-            "base_class": "FESurfacePairConstraint",
-            "class_name": "FEMortarSlidingContact",
-            "module": "solid",
-            "parameters": [
-                {
-                    "default": "-6.27744e+66",
-                    "description": "tolerance",
-                    "name": "tolerance",
-                    "units": ""
-                },
-                {
-                    "default": "-6.27744e+66",
-                    "description": "penalty",
-                    "name": "penalty",
-                    "units": ""
-                },
-                {
-                    "default": "-842150451",
-                    "description": "minaug",
-                    "name": "minaug",
-                    "units": ""
-                },
-                {
-                    "default": "-842150451",
-                    "description": "maxaug",
-                    "name": "maxaug",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FESURFACEINTERACTION_ID",
-            "type_string": "mortar-sliding"
-        },
-        {
-            "base_class": "FESurfacePairConstraint",
-            "class_name": "FEMortarTiedContact",
-            "module": "solid",
-            "parameters": [
-                {
-                    "default": "-6.27744e+66",
-                    "description": "tolerance",
-                    "name": "tolerance",
-                    "units": ""
-                },
-                {
-                    "default": "-6.27744e+66",
-                    "description": "penalty",
-                    "name": "penalty",
-                    "units": ""
-                },
-                {
-                    "default": "-842150451",
-                    "description": "minaug",
-                    "name": "minaug",
-                    "units": ""
-                },
-                {
-                    "default": "-842150451",
-                    "description": "maxaug",
-                    "name": "maxaug",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FESURFACEINTERACTION_ID",
-            "type_string": "mortar-tied"
         },
         {
             "base_class": "FEBodyLoad",
@@ -18485,7 +18067,7 @@
         {
             "base_class": "FEImageSource",
             "class_name": "FENRRDImage",
-            "module": "solid",
+            "module": "",
             "parameters": [
                 {
                     "default": "",
@@ -19271,98 +18853,6 @@
             "type_string": "periodic boundary"
         },
         {
-            "base_class": "FESurfacePairConstraint",
-            "class_name": "FEPeriodicBoundary1O",
-            "module": "solid",
-            "parameters": [
-                {
-                    "default": "0",
-                    "description": "Enforcement method",
-                    "name": "laugon",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "tolerance",
-                    "name": "tolerance",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "penalty",
-                    "name": "penalty",
-                    "units": ""
-                },
-                {
-                    "default": "false",
-                    "description": "two_pass",
-                    "name": "two_pass",
-                    "units": ""
-                },
-                {
-                    "default": "{0,0,0}",
-                    "description": "offset",
-                    "name": "offset",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "minaug",
-                    "name": "minaug",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FESURFACEINTERACTION_ID",
-            "type_string": "periodic boundary1O"
-        },
-        {
-            "base_class": "FESurfacePairConstraint",
-            "class_name": "FEPeriodicBoundary2O",
-            "module": "solid",
-            "parameters": [
-                {
-                    "default": "0",
-                    "description": "Enforcement method",
-                    "name": "laugon",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "tolerance",
-                    "name": "tolerance",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "penalty",
-                    "name": "penalty",
-                    "units": ""
-                },
-                {
-                    "default": "false",
-                    "description": "two_pass",
-                    "name": "two_pass",
-                    "units": ""
-                },
-                {
-                    "default": "{0,0,0}",
-                    "description": "offset",
-                    "name": "offset",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "minaug",
-                    "name": "minaug",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FESURFACEINTERACTION_ID",
-            "type_string": "periodic boundary2O"
-        },
-        {
             "base_class": "FEHydraulicPermeability",
             "class_name": "FEPermConstIso",
             "module": "biphasic",
@@ -19872,46 +19362,6 @@
             ],
             "source": "",
             "super_class_id": "FEFUNCTION1D_ID",
-            "type_string": "point"
-        },
-        {
-            "base_class": "FEBodyLoad",
-            "class_name": "FEPointBodyForce",
-            "module": "solid",
-            "parameters": [
-                {
-                    "default": "-6.27744e+66",
-                    "description": "a",
-                    "name": "a",
-                    "units": ""
-                },
-                {
-                    "default": "-6.27744e+66",
-                    "description": "b",
-                    "name": "b",
-                    "units": ""
-                },
-                {
-                    "default": "{0,0,0}",
-                    "description": "rc",
-                    "name": "rc",
-                    "units": ""
-                },
-                {
-                    "default": "-1",
-                    "description": "node",
-                    "name": "node",
-                    "units": ""
-                },
-                {
-                    "default": "true",
-                    "description": "rigid",
-                    "name": "rigid",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FELOAD_ID",
             "type_string": "point"
         },
         {
@@ -20662,46 +20112,6 @@
         },
         {
             "base_class": "FENodalBC",
-            "class_name": "FEBCPrescribedDeformation2O",
-            "module": "solid",
-            "parameters": [
-                {
-                    "default": "false",
-                    "description": "relative",
-                    "name": "relative",
-                    "units": ""
-                },
-                {
-                    "default": "1",
-                    "description": "scale",
-                    "name": "scale",
-                    "units": ""
-                },
-                {
-                    "default": "",
-                    "description": "F",
-                    "name": "F",
-                    "units": ""
-                },
-                {
-                    "default": "",
-                    "description": "G",
-                    "name": "G",
-                    "units": ""
-                },
-                {
-                    "default": "-1",
-                    "description": "reference",
-                    "name": "reference",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FEBC_ID",
-            "type_string": "prescribed deformation 2O"
-        },
-        {
-            "base_class": "FENodalBC",
             "class_name": "FEPrescribedDisplacement",
             "module": "solid",
             "parameters": [
@@ -21080,34 +20490,6 @@
         },
         {
             "base_class": "FESurfaceLoad",
-            "class_name": "FEPressureRobinBC",
-            "module": "solid",
-            "parameters": [
-                {
-                    "default": "0",
-                    "description": "spring_eps",
-                    "name": "spring_eps",
-                    "units": "P/L"
-                },
-                {
-                    "default": "0",
-                    "description": "dashpot_eps",
-                    "name": "dashpot_eps",
-                    "units": "P.t/L"
-                },
-                {
-                    "default": "false",
-                    "description": "shell_bottom",
-                    "name": "shell_bottom",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FELOAD_ID",
-            "type_string": "pressure Robin BC"
-        },
-        {
-            "base_class": "FESurfaceLoad",
             "class_name": "FEPressureStabilization",
             "module": "biphasic",
             "parameters": [
@@ -21461,16 +20843,6 @@
             "type_string": "Pzz"
         },
         {
-            "base_class": "FEPlotDomainData",
-            "class_name": "FEPlotElementQK1norm",
-            "module": "solid",
-            "parameters": [
-            ],
-            "source": "",
-            "super_class_id": "FEPLOTDATA_ID",
-            "type_string": "QK1 norm"
-        },
-        {
             "base_class": "FEViscousFluid",
             "class_name": "FEQuemadaFluid",
             "module": "fluid",
@@ -21703,7 +21075,7 @@
         {
             "base_class": "FEImageSource",
             "class_name": "FERawImage",
-            "module": "solid",
+            "module": "",
             "parameters": [
                 {
                     "default": "",
@@ -28457,22 +27829,6 @@
             "type_string": "solute concentration"
         },
         {
-            "base_class": "FESurfaceLoad",
-            "class_name": "FESoluteConvectiveFlow",
-            "module": "fluid-solutes",
-            "parameters": [
-                {
-                    "default": "-1",
-                    "description": "solute_id",
-                    "name": "solute_id",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FELOAD_ID",
-            "type_string": "solute convective flow"
-        },
-        {
             "base_class": "FEPlotDomainData",
             "class_name": "FEPlotSoluteFlux",
             "module": "solute",
@@ -28537,28 +27893,6 @@
                     "name": "shell_bottom",
                     "units": ""
                 },
-                {
-                    "default": "-1",
-                    "description": "solute_id",
-                    "name": "solute_id",
-                    "units": ""
-                },
-                {
-                    "default": "false",
-                    "description": "update",
-                    "name": "update",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FELOAD_ID",
-            "type_string": "solute natural flux"
-        },
-        {
-            "base_class": "FESurfaceLoad",
-            "class_name": "FEFluidSolutesNaturalFlux",
-            "module": "fluid-solutes",
-            "parameters": [
                 {
                     "default": "-1",
                     "description": "solute_id",
@@ -30164,52 +29498,6 @@
         },
         {
             "base_class": "FEMeshAdaptor",
-            "class_name": "FETestRefine",
-            "module": "",
-            "parameters": [
-                {
-                    "default": "-1",
-                    "description": "max_iters",
-                    "name": "max_iters",
-                    "units": ""
-                },
-                {
-                    "default": "-1",
-                    "description": "max_elements",
-                    "name": "max_elements",
-                    "units": ""
-                },
-                {
-                    "default": "false",
-                    "description": "map_data",
-                    "name": "map_data",
-                    "units": ""
-                },
-                {
-                    "default": "8",
-                    "description": "nnc",
-                    "name": "nnc",
-                    "units": ""
-                },
-                {
-                    "default": "3",
-                    "description": "nsdim",
-                    "name": "nsdim",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "transfer_method",
-                    "name": "transfer_method",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FEMESHADAPTOR_ID",
-            "type_string": "test_refine"
-        },
-        {
-            "base_class": "FEMeshAdaptor",
             "class_name": "FETetRefine",
             "module": "",
             "parameters": [
@@ -31413,34 +30701,6 @@
             "source": "",
             "super_class_id": "FELOAD_ID",
             "type_string": "traction"
-        },
-        {
-            "base_class": "FESurfaceLoad",
-            "class_name": "FETractionRobinBC",
-            "module": "solid",
-            "parameters": [
-                {
-                    "default": "0",
-                    "description": "spring_eps",
-                    "name": "spring_eps",
-                    "units": "P/L"
-                },
-                {
-                    "default": "0",
-                    "description": "dashpot_eps",
-                    "name": "dashpot_eps",
-                    "units": "P.t/L"
-                },
-                {
-                    "default": "false",
-                    "description": "shell_bottom",
-                    "name": "shell_bottom",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FELOAD_ID",
-            "type_string": "traction Robin BC"
         },
         {
             "base_class": "FEUncoupledMaterial",

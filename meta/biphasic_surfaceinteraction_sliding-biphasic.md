@@ -1,4 +1,8 @@
-The `sliding-biphasic` implementation for sliding interfaces can deal with biphasic contact surfaces (including biphasic-on-biphasic, biphasic-on-elastic, biphasic-on-rigid) [^1] [^2]. It allows for the possibility to track fluid flow across the contact interface. In other words, fluid can flow from one side of the contact interface to the other when both contact surfaces are biphasic. To use this feature, the user must define an additional contact parameter, namely:
+The `sliding-biphasic` implementation for sliding interfaces can deal with biphasic contact surfaces (including biphasic-on-biphasic, biphasic-on-elastic, biphasic-on-rigid) [^1] [^2]. It allows for the possibility to track fluid flow across the contact interface. In other words, fluid can flow from one side of the contact interface to the other when both contact surfaces are biphasic. 
+
+Most of the parameters are identical to the [sliding-elastic](solid_surfaceinteraction_sliding-elastic.md) contact interface.
+
+In order to model fluid flow across the interface, the user must define an additional parameter `pressure_penalty`:
 
 ```
 <pressure_penalty>1.0</pressure_penalty>

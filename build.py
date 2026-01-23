@@ -143,6 +143,10 @@ for row in data['features']:
             log_variables[name] = (module_name, "")
         continue
 
+    # also skip the "surface" class
+    if class_id == 'surface':
+        continue
+
     # replace all spaces with underscores and make lower case
     clean_name = name.replace(' ', '_').lower()
     clean_class = class_id.replace(' ', '_').lower()
@@ -194,7 +198,8 @@ for row in data['features']:
     # add the filename to the class_files dictionary
     if class_id not in class_files:
         class_files[class_id] = []
-    class_files[class_id].append((name, filename))
+    hasInfo = info.strip() != ''
+    class_files[class_id].append((name, filename, hasInfo))
 
 # sort the class_files dictionary by class_id
 class_files = dict(sorted(class_files.items()))
@@ -221,7 +226,7 @@ with open('mkdocs.yml', mode='a') as mkdocs:
             class_id = 'initial conditions'
 
         mkdocs.write(f'    - {class_id.capitalize()}:\n')
-        for name, filename in features:
+        for name, filename, hasInfo in features:
             mkdocs.write(f'        - {name}: features/{filename}\n')
 
     # write the Output section
@@ -280,5 +285,20 @@ with open('docs/logvars.md', mode='w') as log_file:
         if desc[1] == "":
             print(f'WARNING: No description found for log variable \"{var}\"')
         log_file.write(f'|`{var}` | {desc[1]}|{desc[0]}|\n')
+
+if verbose:
+    # print summary information
+    print("Summary:")
+    for class_id, features in class_files.items():
+        count = len(features)
+
+        # see how many features have descriptions
+        desc_count = 0
+        for name, filename, hasInfo in features:
+            if hasInfo:
+                desc_count += 1
+
+        # print the class ID and number of features in that class
+        print(f'  {class_id:>20}: {count:>3} features ({desc_count:>3} with descriptions)')
 
 print("Build complete.")
