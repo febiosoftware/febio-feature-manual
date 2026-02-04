@@ -1152,48 +1152,6 @@
                     "units": ""
                 },
                 {
-                    "default": "-2",
-                    "description": "rhoi",
-                    "name": "rhoi",
-                    "units": ""
-                },
-                {
-                    "default": "1",
-                    "description": "alpha",
-                    "name": "alpha",
-                    "units": ""
-                },
-                {
-                    "default": "0.25",
-                    "description": "beta",
-                    "name": "beta",
-                    "units": ""
-                },
-                {
-                    "default": "0.5",
-                    "description": "gamma",
-                    "name": "gamma",
-                    "units": ""
-                },
-                {
-                    "default": "false",
-                    "description": "logSolve",
-                    "name": "logSolve",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "arc_length",
-                    "name": "arc_length",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "arc_length_scale",
-                    "name": "arc_length_scale",
-                    "units": ""
-                },
-                {
                     "default": "",
                     "description": "",
                     "name": "qn_method",
@@ -8717,22 +8675,6 @@
             "type_string": "field"
         },
         {
-            "base_class": "FENodalBC",
-            "class_name": "FEFixedDOF",
-            "module": "",
-            "parameters": [
-                {
-                    "default": "",
-                    "description": "dofs",
-                    "name": "dofs",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FEBC_ID",
-            "type_string": "fix"
-        },
-        {
             "base_class": "FEPlotDomainData",
             "class_name": "FEPlotFixedChargeDensity",
             "module": "solute",
@@ -9605,22 +9547,6 @@
             "type_string": "fluid pressure"
         },
         {
-            "base_class": "FESurfaceLoad",
-            "class_name": "FEFluidPressureLoad",
-            "module": "fluid",
-            "parameters": [
-                {
-                    "default": "0",
-                    "description": "pressure",
-                    "name": "pressure",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FELOAD_ID",
-            "type_string": "fluid pressure"
-        },
-        {
             "base_class": "FESurfaceBC",
             "class_name": "FEPrescribedFluidPressure",
             "module": "fluid",
@@ -9644,22 +9570,6 @@
             ],
             "source": "",
             "super_class_id": "FEPLOTDATA_ID",
-            "type_string": "fluid pressure"
-        },
-        {
-            "base_class": "FESurfaceLoad",
-            "class_name": "FEMultiphasicFSIPressure",
-            "module": "multiphasic-FSI",
-            "parameters": [
-                {
-                    "default": "0",
-                    "description": "pressure",
-                    "name": "pressure",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FELOAD_ID",
             "type_string": "fluid pressure"
         },
         {
@@ -9787,40 +9697,6 @@
             "type_string": "fluid rate of deformation"
         },
         {
-            "base_class": "FESurfaceLoad",
-            "class_name": "FEFluidRCLoad",
-            "module": "fluid",
-            "parameters": [
-                {
-                    "default": "0",
-                    "description": "R",
-                    "name": "R",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "initial_pressure",
-                    "name": "initial_pressure",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "capacitance",
-                    "name": "capacitance",
-                    "units": ""
-                },
-                {
-                    "default": "false",
-                    "description": "Bernoulli",
-                    "name": "Bernoulli",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FELOAD_ID",
-            "type_string": "fluid RC"
-        },
-        {
             "base_class": "FESurfaceBC",
             "class_name": "FEFluidRCBC",
             "module": "fluid",
@@ -9853,46 +9729,6 @@
             "source": "",
             "super_class_id": "FEBC_ID",
             "type_string": "fluid RC"
-        },
-        {
-            "base_class": "FESurfaceLoad",
-            "class_name": "FEFluidRCRLoad",
-            "module": "fluid",
-            "parameters": [
-                {
-                    "default": "0",
-                    "description": "R",
-                    "name": "R",
-                    "units": "F.t/L^5"
-                },
-                {
-                    "default": "0",
-                    "description": "Rd",
-                    "name": "Rd",
-                    "units": "F.t/L^5"
-                },
-                {
-                    "default": "0",
-                    "description": "initial_pressure",
-                    "name": "initial_pressure",
-                    "units": "P"
-                },
-                {
-                    "default": "0",
-                    "description": "pressure_offset",
-                    "name": "pressure_offset",
-                    "units": "P"
-                },
-                {
-                    "default": "0",
-                    "description": "capacitance",
-                    "name": "capacitance",
-                    "units": "L^5/F"
-                }
-            ],
-            "source": "",
-            "super_class_id": "FELOAD_ID",
-            "type_string": "fluid RCR"
         },
         {
             "base_class": "FESurfaceBC",
@@ -9993,28 +9829,6 @@
             "source": "",
             "super_class_id": "FEPLOTDATA_ID",
             "type_string": "fluid relative thermal Peclet number"
-        },
-        {
-            "base_class": "FESurfaceLoad",
-            "class_name": "FEFluidResistanceLoad",
-            "module": "fluid",
-            "parameters": [
-                {
-                    "default": "0",
-                    "description": "R",
-                    "name": "R",
-                    "units": "F.t/L^5"
-                },
-                {
-                    "default": "0",
-                    "description": "pressure_offset",
-                    "name": "pressure_offset",
-                    "units": "P"
-                }
-            ],
-            "source": "",
-            "super_class_id": "FELOAD_ID",
-            "type_string": "fluid resistance"
         },
         {
             "base_class": "FESurfaceBC",
@@ -13272,28 +13086,6 @@
         },
         {
             "base_class": "FEInitialCondition",
-            "class_name": "FEInitialDOF",
-            "module": "",
-            "parameters": [
-                {
-                    "default": "-1",
-                    "description": "dof",
-                    "name": "dof",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "value",
-                    "name": "value",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FEIC_ID",
-            "type_string": "init_dof"
-        },
-        {
-            "base_class": "FEInitialCondition",
             "class_name": "FEInitialConcentration",
             "module": "biphasic",
             "parameters": [
@@ -14875,34 +14667,6 @@
             "type_string": "mass-action-reversible-effective"
         },
         {
-            "base_class": "FESurfaceLoad",
-            "class_name": "FEMatchingOsmoticCoefficientLoad",
-            "module": "multiphasic",
-            "parameters": [
-                {
-                    "default": "0",
-                    "description": "ambient_pressure",
-                    "name": "ambient_pressure",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "ambient_osmolarity",
-                    "name": "ambient_osmolarity",
-                    "units": ""
-                },
-                {
-                    "default": "false",
-                    "description": "shell_bottom",
-                    "name": "shell_bottom",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FELOAD_ID",
-            "type_string": "matching_osm_coef"
-        },
-        {
             "base_class": "FESurfaceBC",
             "class_name": "FEMatchingOsmoticCoefficientBC",
             "module": "multiphasic",
@@ -16305,48 +16069,6 @@
                     "default": "true",
                     "description": "force_positive_concentrations",
                     "name": "force_positive_concentrations",
-                    "units": ""
-                },
-                {
-                    "default": "-2",
-                    "description": "rhoi",
-                    "name": "rhoi",
-                    "units": ""
-                },
-                {
-                    "default": "1",
-                    "description": "alpha",
-                    "name": "alpha",
-                    "units": ""
-                },
-                {
-                    "default": "0.25",
-                    "description": "beta",
-                    "name": "beta",
-                    "units": ""
-                },
-                {
-                    "default": "0.5",
-                    "description": "gamma",
-                    "name": "gamma",
-                    "units": ""
-                },
-                {
-                    "default": "false",
-                    "description": "logSolve",
-                    "name": "logSolve",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "arc_length",
-                    "name": "arc_length",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "arc_length_scale",
-                    "name": "arc_length_scale",
                     "units": ""
                 },
                 {
@@ -20025,34 +19747,6 @@
             "source": "",
             "super_class_id": "FEMATERIALPROP_ID",
             "type_string": "Powell-Eyring"
-        },
-        {
-            "base_class": "FENodalBC",
-            "class_name": "FEPrescribedDOF",
-            "module": "",
-            "parameters": [
-                {
-                    "default": "false",
-                    "description": "relative",
-                    "name": "relative",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "scale",
-                    "name": "scale",
-                    "units": ""
-                },
-                {
-                    "default": "-1",
-                    "description": "dof",
-                    "name": "dof",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FEBC_ID",
-            "type_string": "prescribe"
         },
         {
             "base_class": "FENodalBC",
@@ -24393,28 +24087,6 @@
             "type_string": "rigid_fixed"
         },
         {
-            "base_class": "FERigidBC",
-            "class_name": "FERigidFixedBCOld",
-            "module": "solid",
-            "parameters": [
-                {
-                    "default": "-1",
-                    "description": "Rigid material",
-                    "name": "rb",
-                    "units": ""
-                },
-                {
-                    "default": "",
-                    "description": "dofs",
-                    "name": "dofs",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FEBC_ID",
-            "type_string": "rigid_fixed_old"
-        },
-        {
             "base_class": "FERigidLoad",
             "class_name": "FERigidFollowerForce",
             "module": "solid",
@@ -24549,40 +24221,6 @@
             "source": "",
             "super_class_id": "FELOAD_ID",
             "type_string": "rigid_moment"
-        },
-        {
-            "base_class": "FERigidBC",
-            "class_name": "FERigidPrescribedOld",
-            "module": "solid",
-            "parameters": [
-                {
-                    "default": "-1",
-                    "description": "Rigid material",
-                    "name": "rb",
-                    "units": ""
-                },
-                {
-                    "default": "-1",
-                    "description": "dof",
-                    "name": "dof",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "value",
-                    "name": "value",
-                    "units": ""
-                },
-                {
-                    "default": "false",
-                    "description": "relative",
-                    "name": "relative",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FEBC_ID",
-            "type_string": "rigid_prescribed_old"
         },
         {
             "base_class": "FERigidBC",
@@ -27237,166 +26875,6 @@
             "type_string": "solid_bound"
         },
         {
-            "base_class": "FESolver",
-            "class_name": "FESolidSolver",
-            "module": "solid",
-            "parameters": [
-                {
-                    "default": "1",
-                    "description": "matrix format",
-                    "name": "symmetric_stiffness",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "equation_scheme",
-                    "name": "equation_scheme",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "equation_order",
-                    "name": "equation_order",
-                    "units": ""
-                },
-                {
-                    "default": "false",
-                    "description": "optimize_bw",
-                    "name": "optimize_bw",
-                    "units": ""
-                },
-                {
-                    "default": "0.9",
-                    "description": "lstol",
-                    "name": "lstol",
-                    "units": ""
-                },
-                {
-                    "default": "0.01",
-                    "description": "lsmin",
-                    "name": "lsmin",
-                    "units": ""
-                },
-                {
-                    "default": "5",
-                    "description": "lsiter",
-                    "name": "lsiter",
-                    "units": ""
-                },
-                {
-                    "default": "false",
-                    "description": "ls_check_jacobians",
-                    "name": "ls_check_jacobians",
-                    "units": ""
-                },
-                {
-                    "default": "15",
-                    "description": "max_refs",
-                    "name": "max_refs",
-                    "units": ""
-                },
-                {
-                    "default": "false",
-                    "description": "check_zero_diagonal",
-                    "name": "check_zero_diagonal",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "zero_diagonal_tol",
-                    "name": "zero_diagonal_tol",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "force_partition",
-                    "name": "force_partition",
-                    "units": ""
-                },
-                {
-                    "default": "true",
-                    "description": "reform_each_time_step",
-                    "name": "reform_each_time_step",
-                    "units": ""
-                },
-                {
-                    "default": "false",
-                    "description": "reform_augment",
-                    "name": "reform_augment",
-                    "units": ""
-                },
-                {
-                    "default": "true",
-                    "description": "diverge_reform",
-                    "name": "diverge_reform",
-                    "units": ""
-                },
-                {
-                    "default": "1e-20",
-                    "description": "min_residual",
-                    "name": "min_residual",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "max_residual",
-                    "name": "max_residual",
-                    "units": ""
-                },
-                {
-                    "default": "0.001",
-                    "description": "dtol",
-                    "name": "dtol",
-                    "units": ""
-                },
-                {
-                    "default": "0.01",
-                    "description": "etol",
-                    "name": "etol",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "rtol",
-                    "name": "rtol",
-                    "units": ""
-                },
-                {
-                    "default": "0.25",
-                    "description": "beta",
-                    "name": "beta",
-                    "units": ""
-                },
-                {
-                    "default": "0.5",
-                    "description": "gamma",
-                    "name": "gamma",
-                    "units": ""
-                },
-                {
-                    "default": "false",
-                    "description": "use_new_rigid_update",
-                    "name": "use_new_rigid_update",
-                    "units": ""
-                },
-                {
-                    "default": "",
-                    "description": "",
-                    "name": "qn_method",
-                    "units": ""
-                },
-                {
-                    "default": "",
-                    "description": "",
-                    "name": "linear_solver",
-                    "units": ""
-                }
-            ],
-            "source": "",
-            "super_class_id": "FESOLVER_ID",
-            "type_string": "solid_old"
-        },
-        {
             "base_class": "FESoluteSolubility",
             "class_name": "FESolubConst",
             "module": "solute",
@@ -27691,48 +27169,6 @@
                     "default": "0",
                     "description": "mixed_formulation",
                     "name": "mixed_formulation",
-                    "units": ""
-                },
-                {
-                    "default": "-2",
-                    "description": "rhoi",
-                    "name": "rhoi",
-                    "units": ""
-                },
-                {
-                    "default": "1",
-                    "description": "alpha",
-                    "name": "alpha",
-                    "units": ""
-                },
-                {
-                    "default": "0.25",
-                    "description": "beta",
-                    "name": "beta",
-                    "units": ""
-                },
-                {
-                    "default": "0.5",
-                    "description": "gamma",
-                    "name": "gamma",
-                    "units": ""
-                },
-                {
-                    "default": "false",
-                    "description": "logSolve",
-                    "name": "logSolve",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "arc_length",
-                    "name": "arc_length",
-                    "units": ""
-                },
-                {
-                    "default": "0",
-                    "description": "arc_length_scale",
-                    "name": "arc_length_scale",
                     "units": ""
                 },
                 {
@@ -29466,7 +28902,7 @@
             "module": "solid",
             "parameters": [
                 {
-                    "default": "-6.27744e+66",
+                    "default": "0",
                     "description": "E",
                     "name": "E",
                     "units": ""

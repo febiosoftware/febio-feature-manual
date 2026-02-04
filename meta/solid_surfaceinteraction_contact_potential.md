@@ -6,6 +6,11 @@ The parameter `p` defines the order of the potential. The paper discusses why th
 
 The potential is divided in an "inner" and "outer" region. If $r$ is the distance from a point on the primary contact surface to the opposing secondary surface, then the "inner" region is defined by the criterion $0<r<R_{in}$ and the "outer" region is defined by $R_{in}<r<R_{out}$. The contact force is stronger in the inner region.
 
+![FigContactPotential.png](figs/FigContactPotential.png)
+/// figure-caption
+Illustration of force applied by the contact potential and the relevant parameters that affect the force. 
+///
+
 The `R0_min` parameter defines the minimum distance between two potential contacting points in the reference configuration. In other words, two points whose initial distance was smaller than `R0_min` will not be considered as a valid contact pair. This parameter is important in self-contact to avoid neighboring points from generating contact forces. The default value of 0 indicates that this criterion is not used. 
 
 The `w_tol` parameter defines a local normal criterion for a potential pair: If the absolute value of the cosine of the angle between the two local normals is less than w_tol, the two points are not considered in contact. In other words, the two normals have to point in the "same direction" in order for the two contacting points to be in contact. This criterion can be useful in cases of self-contact in order to avoid invalid contact pairs. A value of 0 effectively ignores this criterion. 

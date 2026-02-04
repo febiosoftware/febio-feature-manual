@@ -143,8 +143,8 @@ for row in data['features']:
             log_variables[name] = (module_name, "")
         continue
 
-    # also skip the "surface" class
-    if class_id == 'surface':
+    # also skip the "surface" and "datarecord" class
+    if class_id == 'surface' or class_id == 'datarecord':
         continue
 
     # replace all spaces with underscores and make lower case
