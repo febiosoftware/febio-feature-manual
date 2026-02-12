@@ -20220,7 +20220,29 @@
 </tbody>
 </table>
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
-<p>(No description provided)</p>
+<p>The <code>three-field-solid</code> solid domain type implements a three-field formulation <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> for solving the finite element equations. This formulation is recommended for modeling (nearly-) incompressible materials using linear hexahedral and pentahedral elements. These elements tend to "lock" when modeling incompressible materials and the three-field formulation overcomes this issue. This formulation requires an uncoupled-elastic material to work. </p>
+<p>In addition to the displacement, this formulation also solves for the pressure <span class="arithmatex">\(p\)</span> and volume ratio <span class="arithmatex">\(J\)</span>. The pressure can be seen as a Lagrange multiplier and the volume constraint (i.e. <span class="arithmatex">\(J=1\)</span>) is enforced using an augmented Lagrangian method. The bulk modulus <span class="arithmatex">\(k\)</span> (defined on the material) is seen as a penalty factor for the constraint enforcement. Without augmentations, this amounts to a penalty method for enforcing the constraint. To enable augmentations, set <code>laugon</code> to 1 and specify a convergence tolerance using <code>atol</code>.  The augmentation tolerance determines the convergence condition that is used for the augmented Lagrangian method: convergence is reached when the relative ratio of the Lagrange multiplier norm of the previous augmentation <span class="arithmatex">\(\left\Vert \lambda_{k}\right\Vert\)</span> to the current one <span class="arithmatex">\(\left\Vert \lambda_{k+1}\right\Vert\)</span> is less than the specified value:</p>
+<div class="arithmatex">\[
+\left|\frac{\left\Vert \lambda_{k+1}\right\Vert -\left\Vert \lambda_{k}\right\Vert }{\left\Vert \lambda_{k+1}\right\Vert }\right|&lt;\varepsilon 
+\]</div>
+<p>Thus, a value of 0.01 implies that the change in norm between the previous augmentation loop and the current loop is less than 1%.</p>
+<p>In addition, you can control the minimum and maximum number of augmentations using <code>minaug</code> and <code>maxaug</code>. </p>
+<p><em>Example:</em></p>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;SolidDomain</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Part1&quot;</span><span class="w"> </span><span class="na">mat=</span><span class="s">&quot;Material1&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;three-field-solid&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;laugon&gt;</span>1<span class="nt">&lt;/laugon&gt;</span>
+<span class="w">    </span><span class="nt">&lt;atol&gt;</span>0.01<span class="nt">&lt;/atol&gt;</span>
+<span class="w">    </span><span class="nt">&lt;minaug&gt;</span>0<span class="nt">&lt;/minaug&gt;</span>
+<span class="w">    </span><span class="nt">&lt;maxaug&gt;</span>0<span class="nt">&lt;/maxaug&gt;</span>
+<span class="nt">&lt;/SolidDomain&gt;</span>
+</code></pre></div>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Simo, J.C. and Taylor, R.L., "Quasi-incompressible finite elasticity in principal stretches: Continuum basis and numerical algorithms", Computer Methods in Applied Mechanics and Engineering 85 (1991), pp. 273-310.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
 
 
