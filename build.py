@@ -18,7 +18,7 @@ with open('febio_features.json', mode='r') as file:
 
 # create the mkdocs.yml file
 with open('mkdocs.yml', mode='w') as file:
-    file.write('site_name: FEBio Feature Manual\n')
+    file.write('site_name: FEBio 4.12 - Feature Manual\n')
     file.write('site_description: This manual provides documentation for the features of FEBio.\n')
     file.write('site_author: FEBio Team\n')
     file.write('theme:\n')

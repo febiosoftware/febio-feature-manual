@@ -15,6 +15,8 @@ The `R0_min` parameter defines the minimum distance between two potential contac
 
 The `w_tol` parameter defines a local normal criterion for a potential pair: If the absolute value of the cosine of the angle between the two local normals is less than w_tol, the two points are not considered in contact. In other words, the two normals have to point in the "same direction" in order for the two contacting points to be in contact. This criterion can be useful in cases of self-contact in order to avoid invalid contact pairs. A value of 0 effectively ignores this criterion. 
 
+By default, the contact potential will ignore immediate neighbors of faces as candidates for contact pairing. This is done to avoid creating contact pairs that likely will always lie within the `R_out` distance. However, if immediate neighbors should be considered as possible contact pairs, then this behavior can be disabled by setting the `exclude_neighbors` parameter to 0. 
+
 _Example:_
 ```xml
 <contact type="contact potential" name="FacetOnFacetSliding1" surface_pair="FacetOnFacetSliding1">
