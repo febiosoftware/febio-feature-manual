@@ -27,7 +27,7 @@
     
     
       
-        <title>contact potential - FEBio Feature Manual</title>
+        <title>contact potential - FEBio 4.12 - Feature Manual</title>
       
     
     
@@ -90,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="FEBio Feature Manual" class="md-header__button md-logo" aria-label="FEBio Feature Manual" data-md-component="logo">
+    <a href="../.." title="FEBio 4.12 - Feature Manual" class="md-header__button md-logo" aria-label="FEBio 4.12 - Feature Manual" data-md-component="logo">
       
   <img src="../../febio.png" alt="logo">
 
@@ -103,7 +103,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            FEBio Feature Manual
+            FEBio 4.12 - Feature Manual
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -295,12 +295,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="FEBio Feature Manual" class="md-nav__button md-logo" aria-label="FEBio Feature Manual" data-md-component="logo">
+    <a href="../.." title="FEBio 4.12 - Feature Manual" class="md-nav__button md-logo" aria-label="FEBio 4.12 - Feature Manual" data-md-component="logo">
       
   <img src="../../febio.png" alt="logo">
 
     </a>
-    FEBio Feature Manual
+    FEBio 4.12 - Feature Manual
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -20250,6 +20250,7 @@
 </figure>
 <p>The <code>R0_min</code> parameter defines the minimum distance between two potential contacting points in the reference configuration. In other words, two points whose initial distance was smaller than <code>R0_min</code> will not be considered as a valid contact pair. This parameter is important in self-contact to avoid neighboring points from generating contact forces. The default value of 0 indicates that this criterion is not used. </p>
 <p>The <code>w_tol</code> parameter defines a local normal criterion for a potential pair: If the absolute value of the cosine of the angle between the two local normals is less than w_tol, the two points are not considered in contact. In other words, the two normals have to point in the "same direction" in order for the two contacting points to be in contact. This criterion can be useful in cases of self-contact in order to avoid invalid contact pairs. A value of 0 effectively ignores this criterion. </p>
+<p>By default, the contact potential will ignore immediate neighbors of faces as candidates for contact pairing. This is done to avoid creating contact pairs that likely will always lie within the <code>R_out</code> distance. However, if immediate neighbors should be considered as possible contact pairs, then this behavior can be disabled by setting the <code>exclude_neighbors</code> parameter to 0. </p>
 <p><em>Example:</em>
 <div class="highlight"><pre><span></span><code><span class="nt">&lt;contact</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;contact potential&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;FacetOnFacetSliding1&quot;</span><span class="w"> </span><span class="na">surface_pair=</span><span class="s">&quot;FacetOnFacetSliding1&quot;</span><span class="nt">&gt;</span>
 <span class="w">    </span><span class="nt">&lt;kc&gt;</span>1e-6<span class="nt">&lt;/kc&gt;</span>
