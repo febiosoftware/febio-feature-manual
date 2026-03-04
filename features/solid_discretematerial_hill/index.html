@@ -20251,21 +20251,40 @@ F=F_{p}+F_{a}
 <p>The passive force is given by,</p>
 <div class="arithmatex">\[
 F_{p}=\begin{cases}
-F_{max}\left(\exp\left(Ksh\left(l-1\right)/L_{max}-1\right)/\exp\left(Ksh-1\right)\right) &amp; ,l&gt;1\\
+F_{max}\left(\exp\left(K_{sh}\left(l-1\right)/L_{max}-1\right)/\exp\left(K_{sh}-1\right)\right) &amp; ,l&gt;1\\
 0 &amp; ,l\leqslant1
 \end{cases}
 \]</div>
-<p>where l is the relative stretch defined by, l=lm/l0 and lmis the discrete element length and l0is either the L0 parameter, or the initial discrete element length (if L0 is set to zero). </p>
+<p>where <span class="arithmatex">\(l\)</span> is the relative stretch defined by, <span class="arithmatex">\(l=l_m/l_0\)</span> and <span class="arithmatex">\(l_m\)</span> is the discrete element length and <span class="arithmatex">\(l_0\)</span> is either the <code>L0</code> parameter, which sets the reference length of the muscle, or the initial discrete element length (if <code>L0</code> is set to zero). </p>
+<p>The Max Force parameter (<code>Fmax</code>) is the maximum force the muscle can produce. Physiologically, this happens under 1) tetanized neural activation 2) at the optimum muscle length and 3) isometric contraction (contraction without movement). From a modelling perspective, this is the tensile force developed in the discrete element at the optimum length (Max Length) and 100% activation.</p>
+<p>The Max Length parameter (<code>Lmax</code>) is the optimum muscle length. This corresponds to the peak of the force-length curve.</p>
+<p>The shape parameter (<span class="arithmatex">\(K_{sh}\)</span> = <code>Ksh</code>) is a dimensionless parameter that controls the rate of the rise of the exponential function that defines the passive force-length relationship for the parallel elastic component of the Hill model.</p>
 <p>The active force is given by, </p>
 <div class="arithmatex">\[
-Fa=ac\,F_{max}\,F_{tl}\left(l\right)\,F_{tv}\left(v\right)
+F_a=ac\,F_{max}\,F_{tl}\left(l\right)\,F_{tv}\left(v\right)
 \]</div>
 <p>Here, <span class="arithmatex">\(v\)</span>, a measure of the relative discrete element's growth speed, is defined by,</p>
 <div class="arithmatex">\[
 v=v_m/\left(V_{max}\,S_v\left(ac\right)\right)
 \]</div>
-<p>where <span class="arithmatex">\(v_m\)</span> is the actual discrete element's growth speed. </p>
-<p>The properties Sv, Ftl, and Ftv, are optional and will evaluate to 1 if omitted. They can be defined as load curves. See the example below. </p>
+<p>where <span class="arithmatex">\(v_m\)</span> is the actual discrete element's growth speed and the Maximum Shortening Velocity parameter (<code>Vmax</code>) defines the maximum shortening velocity for the muscle.</p>
+<p>The Activation Level parameter (<code>ac</code>) defines the normalized activation level of the muscle, which can vary between 0 (no activation, passive properties) to 1 (maximum activation). This parameter can be set as a constant or varied as a function of time via a load curve.</p>
+<p>The shortening velocity-force curve (<code>Sv</code>) defines a scale factor that optionally scales the Maximum Shortening Velocity property (<code>Vmax</code>) as a function of the current activation level. This curve can be defined using the Curve Editor. The x-axis should be the activation level (varying between 0 and 1, no units), and the y-axis should be the scale factor (no units). If this curve is not defined, the value entered for <code>Vmax</code> is assumed constant as a function of activation level.</p>
+<p>The normalized tension-length curve (<code>Ftl</code>) (Figure 1) defines the relationship between normalized length (x-axis) and normalized tension (y-axis).  This curve can be defined using the Curve Editor. A normalized length of 1 means that the current length is the same as the initial length (<code>L0</code>). A normalized force of 1 means that the force is equal to the Max Force property (<code>Fmax</code>).</p>
+<figure id="__figure-caption_1">
+<p><img alt="image.png" src="../figs/FigHillForceLength.png" /></p>
+<figcaption>
+<p><span class="caption-prefix">Figure 1.</span> Example data for the normalized tension-length curve (<code>Ftl</code>).</p>
+</figcaption>
+</figure>
+<p>The normalized force-velocity curve (<code>Fvl</code>) (Figure 2) defines the relationship between normalized velocity (x-axis) and normalized velocity (y-axis). This curve can be defined using the Curve Editor. A normalized velocity of 0 means that the muscle is neither shortening nor lengthening, while a normalized velocity of -1 and +1 indicate maximal velocities of shortening and lengthening, respectively. A normalized force of 1 means that the force at the current velocity of shortening/lengthening is equal to the Max Force property (<code>Fmax</code>).</p>
+<figure id="__figure-caption_2">
+<p><img alt="image.png" src="../figs/FigHillForceVelocity.png" /></p>
+<figcaption>
+<p><span class="caption-prefix">Figure 2.</span> Example data for the normalized force-velocity curve (<code>Fvl</code>).</p>
+</figcaption>
+</figure>
+<p>The properties <code>Sv</code>, <code>Ftl</code>, and <code>Ftv</code>, are optional and will evaluate to 1 if omitted. They can be defined as load curves. See the example below. </p>
 <p><em>Example:</em>
 <div class="highlight"><pre><span></span><code><span class="nt">&lt;discrete_material</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;test&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;Hill&quot;</span><span class="nt">&gt;</span>
 <span class="w">  </span><span class="nt">&lt;Vmax&gt;</span>1<span class="nt">&lt;/Vmax&gt;</span>
