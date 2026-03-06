@@ -20267,6 +20267,7 @@
 <th>Name</th>
 <th>Description</th>
 <th>Default</th>
+<th>Range</th>
 <th>Units</th>
 </tr>
 </thead>
@@ -20275,169 +20276,197 @@
 <td><code>symmetric_stiffness</code></td>
 <td>matrix format</td>
 <td>0</td>
-<td>[]</td>
+<td><span class="arithmatex">\([0, 4]\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>equation_scheme</code></td>
 <td>equation_scheme</td>
 <td>0</td>
-<td>[]</td>
+<td><span class="arithmatex">\([0, 2]\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>equation_order</code></td>
 <td>equation_order</td>
 <td>0</td>
-<td>[]</td>
+<td><span class="arithmatex">\([0, 3]\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>optimize_bw</code></td>
 <td>optimize_bw</td>
 <td>false</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\{0, 1\}\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>lstol</code></td>
 <td>lstol</td>
 <td>0.9</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\ge 0\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>lsmin</code></td>
 <td>lsmin</td>
 <td>0.01</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\ge 0\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>lsiter</code></td>
 <td>lsiter</td>
 <td>5</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\ge 0\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>ls_check_jacobians</code></td>
 <td>ls_check_jacobians</td>
 <td>false</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\{0, 1\}\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>max_refs</code></td>
 <td>max_refs</td>
 <td>15</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\ge 0\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>check_zero_diagonal</code></td>
 <td>check_zero_diagonal</td>
 <td>false</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\{0, 1\}\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>zero_diagonal_tol</code></td>
 <td>zero_diagonal_tol</td>
 <td>0</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\in \mathbb{R}\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>force_partition</code></td>
 <td>force_partition</td>
 <td>0</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\in \mathbb{Z}\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>reform_each_time_step</code></td>
 <td>reform_each_time_step</td>
 <td>true</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\{0, 1\}\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>reform_augment</code></td>
 <td>reform_augment</td>
 <td>false</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\{0, 1\}\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>diverge_reform</code></td>
 <td>diverge_reform</td>
 <td>true</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\{0, 1\}\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>min_residual</code></td>
 <td>min_residual</td>
 <td>1e-20</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\ge 0\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>max_residual</code></td>
 <td>max_residual</td>
 <td>0</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\ge 0\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>dtol</code></td>
 <td>dtol</td>
 <td>0.001</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\in \mathbb{R}\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>vtol</code></td>
 <td>vtol</td>
 <td>0.001</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\in \mathbb{R}\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>ftol</code></td>
 <td>ftol</td>
 <td>0.001</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\in \mathbb{R}\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>etol</code></td>
 <td>etol</td>
 <td>0.01</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\ge 0\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>rtol</code></td>
 <td>rtol</td>
 <td>0.001</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\ge 0\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>rhoi</code></td>
 <td>rhoi</td>
 <td>0</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\in \mathbb{R}\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>predictor</code></td>
 <td>predictor</td>
 <td>0</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\in \mathbb{Z}\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>min_volume_ratio</code></td>
 <td>min_volume_ratio</td>
 <td>0</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\in \mathbb{R}\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>order</code></td>
 <td>order</td>
 <td>2</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\in \mathbb{Z}\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>qn_method</code></td>
 <td>Quasi-Newton method</td>
 <td></td>
-<td>[]</td>
+<td>N/A</td>
+<td></td>
 </tr>
 <tr>
 <td><code>linear_solver</code></td>
 <td>linear_solver</td>
 <td></td>
-<td>[]</td>
+<td>N/A</td>
+<td></td>
 </tr>
 </tbody>
 </table>

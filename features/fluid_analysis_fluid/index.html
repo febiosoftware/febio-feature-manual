@@ -20267,6 +20267,7 @@
 <th>Name</th>
 <th>Description</th>
 <th>Default</th>
+<th>Range</th>
 <th>Units</th>
 </tr>
 </thead>
@@ -20275,73 +20276,85 @@
 <td><code>analysis</code></td>
 <td>analysis</td>
 <td>0</td>
-<td>[]</td>
+<td><span class="arithmatex">\([0, 2]\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>time_steps</code></td>
 <td>time_steps</td>
 <td>10</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\ge -1\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>step_size</code></td>
 <td>step_size</td>
 <td>0.1</td>
-<td>[t]</td>
+<td><span class="arithmatex">\(\ge 0\)</span></td>
+<td>t</td>
 </tr>
 <tr>
 <td><code>plot_zero_state</code></td>
 <td>plot_zero_state</td>
 <td>false</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\{0, 1\}\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>plot_range</code></td>
 <td>plot_range</td>
 <td></td>
-<td>[]</td>
+<td><span class="arithmatex">\(\in \mathbb{Z}\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>plot_level</code></td>
 <td>plot_level</td>
 <td>1</td>
-<td>[]</td>
+<td><span class="arithmatex">\([0, 7]\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>output_level</code></td>
 <td>output_level</td>
 <td>1</td>
-<td>[]</td>
+<td><span class="arithmatex">\([0, 5]\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>plot_stride</code></td>
 <td>plot_stride</td>
 <td>1</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\in \mathbb{Z}\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>output_stride</code></td>
 <td>output_stride</td>
 <td>1</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\in \mathbb{Z}\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>adaptor_re_solve</code></td>
 <td>re-solve after adaptation</td>
 <td>true</td>
-<td>[]</td>
+<td><span class="arithmatex">\(\{0, 1\}\)</span></td>
+<td></td>
 </tr>
 <tr>
 <td><code>time_stepper</code></td>
 <td>Auto time stepper</td>
 <td></td>
-<td>[]</td>
+<td>N/A</td>
+<td></td>
 </tr>
 <tr>
 <td><code>solver</code></td>
 <td>solver</td>
 <td></td>
-<td>[]</td>
+<td>N/A</td>
+<td></td>
 </tr>
 </tbody>
 </table>
