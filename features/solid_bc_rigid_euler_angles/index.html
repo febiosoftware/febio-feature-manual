@@ -2596,6 +2596,62 @@
   
   
     <li class="md-nav__item">
+      <a href="../core_class_mma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    mma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../core_class_nelder-mead/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nelder-mead
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../core_class_node/" class="md-nav__link">
         
   
@@ -2716,6 +2772,34 @@
     
   
     rigid_cable_point
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../core_class_sbplx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    sbplx
   
 
     
@@ -20223,11 +20307,11 @@
 <p>The <code>rigid_euler_angles</code> constraint allows the user to prescribe the rotation of a rigid body using three Euler angles. </p>
 <p>The <code>rb</code> parameter is the name attribute assigned to the corresponding rigid body material as defined in the Material section.</p>
 <p>The following example prescribes a rotation around the z-axis using a load controller. </p>
-<div class="highlight"><pre><span></span><code>&lt;rigid_bc type=&quot;rigid_euler_vector&quot;&gt;
+<div class="highlight"><pre><span></span><code>&lt;rigid_bc type=&quot;rigid_euler_angles&quot;&gt;
   &lt;rb&gt;rigid&lt;/rb&gt;
-  &lt;vx&gt;0&lt;/vx&gt;
-  &lt;vy&gt;0&lt;/vy&gt;
-  &lt;vz lc=&quot;1&quot;&gt;180.0&lt;/vz&gt;
+  &lt;Ex&gt;0&lt;/Ex&gt;
+  &lt;Ey&gt;0&lt;/Ey&gt;
+  &lt;Ez lc=&quot;1&quot;&gt;180.0&lt;/Ez&gt;
 &lt;/rigid_bc&gt;
 </code></pre></div>
 
