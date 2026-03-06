@@ -1,4 +1,4 @@
-This material type is `fiber-entropy-chain`. It was proposed by [#Shi22]. This fiber model is based on statistical mechanics to reflect the entropy-driven nature of a biological fiber. The model is derived from the freely-jointed-chain mechanism. Its strain energy is directly related to the entropic change of the chains in the material, given by
+This material type is `fiber-entropy-chain`. It was proposed by Shi[^1]. This fiber model is based on statistical mechanics to reflect the entropy-driven nature of a biological fiber. The model is derived from the freely-jointed-chain mechanism. Its strain energy is directly related to the entropic change of the chains in the material, given by
 
 \[
 \Psi_{n}\left(I_{n}\right)=\xi N\left(\sqrt{\frac{I_{n}}{N}}\beta+\ln\frac{\beta}{\sinh\beta}\right)-\frac{\xi\sqrt{N}}{2}\beta_{0}I_{n}-\alpha_{00}
@@ -36,3 +36,5 @@ _Example:_
     </solid>
 </material>
 ```
+
+[^1]: Shi, Lei, Hu, Lingfeng, Lee, Nicole, Fang, Shuyang, and Myers, Kristin, "Three-dimensional anisotropic hyperelastic constitutive model describing the mechanical response of human and mouse cervix", Acta Biomaterialia 150 (2022), pp. 277--294.

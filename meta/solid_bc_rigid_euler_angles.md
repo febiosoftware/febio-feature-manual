@@ -5,10 +5,10 @@ The `rb` parameter is the name attribute assigned to the corresponding rigid bod
 The following example prescribes a rotation around the z-axis using a load controller. 
 
 ```
-<rigid_bc type="rigid_euler_vector">
+<rigid_bc type="rigid_euler_angles">
   <rb>rigid</rb>
-  <vx>0</vx>
-  <vy>0</vy>
-  <vz lc="1">180.0</vz>
+  <Ex>0</Ex>
+  <Ey>0</Ey>
+  <Ez lc="1">180.0</Ez>
 </rigid_bc>
 ```
