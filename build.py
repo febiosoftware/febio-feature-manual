@@ -180,14 +180,15 @@ for row in data['features']:
         if len(params) == 0:
             md_file.write('This feature has no parameters.\n') 
         else:
-            md_file.write('| Name | Description | Default | Units |\n')
-            md_file.write('|------|-------------|---------|-------|\n')
+            md_file.write('| Name | Description | Default | Range | Units |\n')
+            md_file.write('|------|-------------|---------|-------|-------|\n')
             for param in params:
                 param_name = param['name']
                 param_desc = param['description']
                 param_default = param['default']
+                param_range = param['range']
                 param_units = param['units']
-                md_file.write(f'| `{param_name}` | {param_desc} | {param_default} | [{param_units}] |\n')
+                md_file.write(f'| `{param_name}` | {param_desc} | {param_default} | {param_range} | {param_units} |\n')
 
         md_file.write('\n\n## Description\n\n')
         if info == '':
