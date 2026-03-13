@@ -20303,7 +20303,25 @@
 </tbody>
 </table>
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
-<p>(No description provided)</p>
+<p>In a biphasic mixture of intrinsically incompressible solid and fluid constituents, the <span class="arithmatex">\(\mathbf{u}-p\)</span> formulation adopted in FEBio implies that the normal component of the relative fluid flux is a natural boundary condition. If this boundary condition is not explicitly prescribed, the code automatically assumes that it is equal to zero. Therefore, biphasic boundaries are impermeable by default. (To implement a free-draining boundary, the fluid pressure nodal degrees of freedom should be set to zero.)</p>
+<p>The flux of fluid relative to the solid matrix is given by the vector <span class="arithmatex">\(\mathbf{w}\)</span>. Since viscosity is not explicitly modeled in a biphasic material, the tangential component of <span class="arithmatex">\(\mathbf{w}\)</span> on a boundary surface may not be prescribed. Only the normal component of the relative fluid flux, <span class="arithmatex">\(w_{n}=\mathbf{w}\cdot\mathbf{n}\)</span>, represents a natural boundary condition. To prescribe a value for <span class="arithmatex">\(w_{n}\)</span> on a surface, use:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;surface_load</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;fluidflux&quot;</span><span class="w"> </span><span class="na">surface=</span><span class="s">&quot;surf1&quot;</span><span class="nt">&gt;</span>
+<span class="w">  </span><span class="nt">&lt;flux</span><span class="w"> </span><span class="na">lc=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>1.0<span class="nt">&lt;/flux&gt;</span>
+<span class="w">  </span><span class="nt">&lt;linear&gt;</span>0<span class="nt">&lt;/linear&gt;</span>
+<span class="w">  </span><span class="nt">&lt;mixture&gt;</span>0<span class="nt">&lt;/mixture&gt;</span>
+<span class="nt">&lt;/surface_load&gt;</span>
+</code></pre></div>
+<p>The <code>flux</code> parameter defines the flux that will be applied to the surface. The optional parameter <code>lc</code> defines a loadcurve for the normal flux evolution. If omitted a constant fluid flux is applied.</p>
+<p>When <code>linear</code> is set to zero (default) it means that the flux matches the prescribed value even if the surface on which it is applied changes in area as it deforms. Therefore, the net volumetric flow rate across the surface changes with changes in area. This type of boundary condition is useful if the fluid flux is known in the current configuration.</p>
+<p>When <code>linear</code> is set to non-zero it means that the prescribed flux produces a volumetric flow rate based on the undeformed surface area in the reference configuration. Therefore, the flux in the current configuration does not match the prescribed value. This type of boundary condition is useful if the net volumetric flow rate across the surface is known. For example: Let <span class="arithmatex">\(Q\)</span> be the known volumetric flow rate, let <span class="arithmatex">\(A_{\mathrm{0}}\)</span> be the surface area in the reference configuration (a constant). Using <code>linear</code> means that the user prescribes <span class="arithmatex">\(Q/A_{\mathrm{0}}\)</span> as the flux boundary condition. (However, regardless of the type, the fluid flux saved in the output file has a normal component equal to <span class="arithmatex">\(Q/A\)</span>, where <span class="arithmatex">\(A\)</span> is the area in current configuration.)</p>
+<p>Prescribing <span class="arithmatex">\(w_{n}\)</span> on a free surface works only if the nodal displacements of the corresponding faces are also prescribed. If the nodal displacements are not known a priori, the proper boundary condition calls for prescribing the normal component of the mixture velocity, <span class="arithmatex">\(v_{n}=\left(\mathbf{v}^{s}+\mathbf{w}\right)\cdot\mathbf{n}\)</span>. To prescribe the value of <span class="arithmatex">\(v_{n}\)</span> on a surface, use</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;surface_load</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;fluidflux&quot;</span><span class="w"> </span><span class="na">surface=</span><span class="s">&quot;surf1&quot;</span><span class="nt">&gt;</span>
+<span class="w">  </span><span class="nt">&lt;flux</span><span class="w"> </span><span class="na">lc=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>1.0<span class="nt">&lt;/flux&gt;</span>
+<span class="w">  </span><span class="nt">&lt;linear&gt;</span>0<span class="nt">&lt;/linear&gt;</span>
+<span class="w">  </span><span class="nt">&lt;mixture&gt;</span>1<span class="nt">&lt;/mixture&gt;</span>
+<span class="nt">&lt;/surface_load&gt;</span>
+</code></pre></div>
+<p>For example, this boundary condition may be used when modeling a permeation problem through a biphasic material, when the upstream fluid velocity is prescribed, <span class="arithmatex">\(v_{n}=v_{0}\)</span>. If the upstream face is free, the companion boundary condition would be to let <span class="arithmatex">\(t_{n}^{e}=0\)</span> on that face as well.</p>
 
 
 
