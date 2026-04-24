@@ -9,7 +9,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -61,7 +61,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -75,7 +75,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -162,7 +162,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -176,7 +176,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -269,7 +269,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -461,7 +461,7 @@
                     "default": "-1",
                     "description": "sol",
                     "name": "sol",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -557,7 +557,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -571,7 +571,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -602,7 +602,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -755,7 +755,7 @@
                     "default": "0",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -1026,7 +1026,7 @@
                     "default": "0",
                     "description": "analysis",
                     "name": "analysis",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -1061,14 +1061,14 @@
                     "default": "1",
                     "description": "plot_level",
                     "name": "plot_level",
-                    "range": "$[0, 7]$",
+                    "range": "$[0, 6]$",
                     "units": ""
                 },
                 {
                     "default": "1",
                     "description": "output_level",
                     "name": "output_level",
-                    "range": "$[0, 5]$",
+                    "range": "$[0, 4]$",
                     "units": ""
                 },
                 {
@@ -1120,21 +1120,21 @@
                     "default": "0",
                     "description": "matrix format",
                     "name": "symmetric_stiffness",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "equation_scheme",
                     "name": "equation_scheme",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "equation_order",
                     "name": "equation_order",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -2288,7 +2288,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -2340,7 +2340,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -2375,7 +2375,7 @@
                     "default": "-1",
                     "description": "sbm",
                     "name": "sbm",
-                    "range": "$[0, 2]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 }
             ],
@@ -2392,7 +2392,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -2720,7 +2720,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -2844,21 +2844,21 @@
                     "default": "1",
                     "description": "matrix format",
                     "name": "symmetric_stiffness",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "equation_scheme",
                     "name": "equation_scheme",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "equation_order",
                     "name": "equation_order",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -2959,7 +2959,7 @@
                     "default": "-1",
                     "description": "dof",
                     "name": "dof",
-                    "range": "$[0, 3]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -3000,7 +3000,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -3434,7 +3434,7 @@
                     "default": "0",
                     "description": "integration_rule",
                     "name": "integration_rule",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -3638,7 +3638,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -3683,7 +3683,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -3697,7 +3697,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -3742,7 +3742,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -3780,7 +3780,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -3853,7 +3853,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -3926,7 +3926,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -4012,7 +4012,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -4426,7 +4426,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -4555,7 +4555,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -4677,7 +4677,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -4799,7 +4799,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -4813,7 +4813,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -4865,7 +4865,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -4910,7 +4910,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -4924,7 +4924,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -5843,7 +5843,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -6080,7 +6080,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -6146,7 +6146,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -6160,7 +6160,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -6205,7 +6205,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -6250,7 +6250,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -6295,7 +6295,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -6309,7 +6309,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -6347,7 +6347,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -6361,7 +6361,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -6536,7 +6536,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -6787,7 +6787,7 @@
                     "default": "",
                     "description": "elem_type",
                     "name": "elem_type",
-                    "range": "$[0, 1]$",
+                    "range": "N/A",
                     "units": ""
                 },
                 {
@@ -6987,7 +6987,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -7025,7 +7025,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -7128,7 +7128,7 @@
                     "default": "1",
                     "description": "erode_surfaces",
                     "name": "erode_surfaces",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -7303,21 +7303,21 @@
                     "default": "1",
                     "description": "matrix format",
                     "name": "symmetric_stiffness",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "equation_scheme",
                     "name": "equation_scheme",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "equation_order",
                     "name": "equation_order",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -7826,7 +7826,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -7962,7 +7962,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -8024,7 +8024,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -8038,7 +8038,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -8114,7 +8114,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -8142,7 +8142,7 @@
                     "default": "30",
                     "description": "n_term",
                     "name": "n_term",
-                    "range": "$\\ge 3$",
+                    "range": "$[3, 30]$",
                     "units": ""
                 },
                 {
@@ -8204,7 +8204,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -8256,7 +8256,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -8315,7 +8315,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -8329,7 +8329,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -8426,7 +8426,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -8485,7 +8485,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -8527,7 +8527,7 @@
                     "default": "-1",
                     "description": "sbm",
                     "name": "sbm",
-                    "range": "$[0, 2]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -8589,7 +8589,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -8679,7 +8679,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -8693,7 +8693,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -8745,7 +8745,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -8759,7 +8759,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -8828,7 +8828,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -8883,7 +8883,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -8931,7 +8931,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -8945,7 +8945,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -9000,7 +9000,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -9069,7 +9069,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -9152,7 +9152,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -9204,7 +9204,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -9246,7 +9246,7 @@
                     "default": "-1",
                     "description": "sbm",
                     "name": "sbm",
-                    "range": "$[0, 2]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -9301,7 +9301,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -9315,7 +9315,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -9377,7 +9377,7 @@
                     "default": "-1",
                     "description": "resolution",
                     "name": "resolution",
-                    "range": "$[0, 21]$",
+                    "range": "$[0, 20]$",
                     "units": ""
                 }
             ],
@@ -9418,7 +9418,7 @@
                     "default": "0",
                     "description": "resolution",
                     "name": "resolution",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 }
             ],
@@ -9548,7 +9548,7 @@
                     "default": "0",
                     "description": "analysis",
                     "name": "analysis",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -9583,14 +9583,14 @@
                     "default": "1",
                     "description": "plot_level",
                     "name": "plot_level",
-                    "range": "$[0, 7]$",
+                    "range": "$[0, 6]$",
                     "units": ""
                 },
                 {
                     "default": "1",
                     "description": "output_level",
                     "name": "output_level",
-                    "range": "$[0, 5]$",
+                    "range": "$[0, 4]$",
                     "units": ""
                 },
                 {
@@ -9642,21 +9642,21 @@
                     "default": "0",
                     "description": "matrix format",
                     "name": "symmetric_stiffness",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "equation_scheme",
                     "name": "equation_scheme",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "equation_order",
                     "name": "equation_order",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -10304,7 +10304,7 @@
                     "default": "0",
                     "description": "frame",
                     "name": "frame",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 }
             ],
@@ -10498,7 +10498,7 @@
                     "default": "0",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -11225,7 +11225,7 @@
                     "default": "0",
                     "description": "analysis",
                     "name": "analysis",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -11260,14 +11260,14 @@
                     "default": "1",
                     "description": "plot_level",
                     "name": "plot_level",
-                    "range": "$[0, 7]$",
+                    "range": "$[0, 6]$",
                     "units": ""
                 },
                 {
                     "default": "1",
                     "description": "output_level",
                     "name": "output_level",
-                    "range": "$[0, 5]$",
+                    "range": "$[0, 4]$",
                     "units": ""
                 },
                 {
@@ -11319,21 +11319,21 @@
                     "default": "0",
                     "description": "matrix format",
                     "name": "symmetric_stiffness",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "equation_scheme",
                     "name": "equation_scheme",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "equation_order",
                     "name": "equation_order",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -11583,7 +11583,7 @@
                     "default": "0",
                     "description": "analysis",
                     "name": "analysis",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -11618,14 +11618,14 @@
                     "default": "1",
                     "description": "plot_level",
                     "name": "plot_level",
-                    "range": "$[0, 7]$",
+                    "range": "$[0, 6]$",
                     "units": ""
                 },
                 {
                     "default": "1",
                     "description": "output_level",
                     "name": "output_level",
-                    "range": "$[0, 5]$",
+                    "range": "$[0, 4]$",
                     "units": ""
                 },
                 {
@@ -11677,21 +11677,21 @@
                     "default": "0",
                     "description": "matrix format",
                     "name": "symmetric_stiffness",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "equation_scheme",
                     "name": "equation_scheme",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "equation_order",
                     "name": "equation_order",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -11859,7 +11859,7 @@
                     "default": "0",
                     "description": "solve_strategy",
                     "name": "solve_strategy",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -12408,7 +12408,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -12422,7 +12422,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -12516,7 +12516,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -12882,21 +12882,21 @@
                     "default": "-842150451",
                     "description": "body_a",
                     "name": "body_a",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "-842150451",
                     "description": "body_b",
                     "name": "body_b",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -12983,7 +12983,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -12997,7 +12997,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -13304,7 +13304,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -13370,7 +13370,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -13384,7 +13384,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -13502,7 +13502,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -13540,7 +13540,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -13554,7 +13554,7 @@
                     "default": "3",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -13755,7 +13755,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -14201,7 +14201,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -14215,7 +14215,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -14259,7 +14259,7 @@
                     "default": "-1",
                     "description": "Solute",
                     "name": "dof",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -14409,7 +14409,7 @@
                     "default": "-1",
                     "description": "Solute",
                     "name": "dof",
-                    "range": "$[0, 3]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -14450,7 +14450,7 @@
                     "default": "-1",
                     "description": "Rigid material",
                     "name": "rb",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -14474,7 +14474,7 @@
                     "default": "-1",
                     "description": "Rigid material",
                     "name": "rb",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -14604,7 +14604,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -14635,7 +14635,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -14666,7 +14666,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -15059,7 +15059,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -15248,7 +15248,7 @@
                     "default": "-1",
                     "description": "dof",
                     "name": "dof",
-                    "range": "$[0, 3]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -15286,7 +15286,7 @@
                     "default": "1",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -15434,7 +15434,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\gt 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -15527,14 +15527,14 @@
                     "default": "0",
                     "description": "interpolate",
                     "name": "interpolate",
-                    "range": "$[0, 8]$",
+                    "range": "$[0, 7]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "extend",
                     "name": "extend",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -15622,7 +15622,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -16120,14 +16120,14 @@
                     "default": "1",
                     "description": "left_extend",
                     "name": "left_extend",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
                     "default": "1",
                     "description": "right_extend",
                     "name": "right_extend",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -16510,7 +16510,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -16986,7 +16986,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -17000,7 +17000,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -17031,7 +17031,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -17045,7 +17045,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -17076,7 +17076,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -17090,7 +17090,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -17233,7 +17233,7 @@
                     "default": "0",
                     "description": "frame",
                     "name": "frame",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 }
             ],
@@ -17250,7 +17250,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -17274,7 +17274,7 @@
                     "default": "0",
                     "description": "analysis",
                     "name": "analysis",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -17309,14 +17309,14 @@
                     "default": "1",
                     "description": "plot_level",
                     "name": "plot_level",
-                    "range": "$[0, 7]$",
+                    "range": "$[0, 6]$",
                     "units": ""
                 },
                 {
                     "default": "1",
                     "description": "output_level",
                     "name": "output_level",
-                    "range": "$[0, 5]$",
+                    "range": "$[0, 4]$",
                     "units": ""
                 },
                 {
@@ -17368,21 +17368,21 @@
                     "default": "0",
                     "description": "matrix format",
                     "name": "symmetric_stiffness",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "equation_scheme",
                     "name": "equation_scheme",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "equation_order",
                     "name": "equation_order",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -17654,7 +17654,7 @@
                     "default": "0",
                     "description": "analysis",
                     "name": "analysis",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -17689,14 +17689,14 @@
                     "default": "1",
                     "description": "plot_level",
                     "name": "plot_level",
-                    "range": "$[0, 7]$",
+                    "range": "$[0, 6]$",
                     "units": ""
                 },
                 {
                     "default": "1",
                     "description": "output_level",
                     "name": "output_level",
-                    "range": "$[0, 5]$",
+                    "range": "$[0, 4]$",
                     "units": ""
                 },
                 {
@@ -17748,21 +17748,21 @@
                     "default": "0",
                     "description": "matrix format",
                     "name": "symmetric_stiffness",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "equation_scheme",
                     "name": "equation_scheme",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "equation_order",
                     "name": "equation_order",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -18245,7 +18245,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -18259,7 +18259,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -18376,7 +18376,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -18448,7 +18448,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -18479,7 +18479,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -18510,7 +18510,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -18589,6 +18589,20 @@
             "class_name": "FENewtonianThermoFluid",
             "module": "thermo-fluid",
             "parameters": [
+                {
+                    "default": "0",
+                    "description": "bulk viscosity",
+                    "name": "kappa",
+                    "range": "$\\ge 0$",
+                    "units": "P.t"
+                },
+                {
+                    "default": "0",
+                    "description": "shear viscosity",
+                    "name": "mu",
+                    "range": "$\\ge 0$",
+                    "units": "P.t"
+                },
                 {
                     "default": "",
                     "description": "normalized bulk viscosity",
@@ -18676,7 +18690,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -18714,7 +18728,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -18728,7 +18742,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -18796,7 +18810,7 @@
                     "default": "-1",
                     "description": "sol",
                     "name": "sol",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -19067,7 +19081,7 @@
                     "default": "-1",
                     "description": "dof",
                     "name": "dof",
-                    "range": "$[0, 3]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -19122,14 +19136,14 @@
                     "default": "0",
                     "description": "id",
                     "name": "id",
-                    "range": "$[0, 0]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "bc",
                     "name": "bc",
-                    "range": "$[0, 2]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -19301,7 +19315,7 @@
                     "default": "0",
                     "description": "measure",
                     "name": "measure",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -19483,7 +19497,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -19497,7 +19511,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -19598,7 +19612,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -19756,7 +19770,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -19864,7 +19878,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -19975,7 +19989,7 @@
                     "default": "-1",
                     "description": "co_ion",
                     "name": "co_ion",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -20019,7 +20033,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -20237,7 +20251,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -20275,7 +20289,7 @@
                     "default": "0",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -20860,14 +20874,14 @@
                     "default": "0",
                     "description": "interpolate",
                     "name": "interpolate",
-                    "range": "$[0, 8]$",
+                    "range": "$[0, 7]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "extend",
                     "name": "extend",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -20967,7 +20981,7 @@
                     "default": "0",
                     "description": "analysis",
                     "name": "analysis",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -21002,14 +21016,14 @@
                     "default": "1",
                     "description": "plot_level",
                     "name": "plot_level",
-                    "range": "$[0, 7]$",
+                    "range": "$[0, 6]$",
                     "units": ""
                 },
                 {
                     "default": "1",
                     "description": "output_level",
                     "name": "output_level",
-                    "range": "$[0, 5]$",
+                    "range": "$[0, 4]$",
                     "units": ""
                 },
                 {
@@ -21061,21 +21075,21 @@
                     "default": "0",
                     "description": "matrix format",
                     "name": "symmetric_stiffness",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "equation_scheme",
                     "name": "equation_scheme",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "equation_order",
                     "name": "equation_order",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -21441,7 +21455,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -21558,7 +21572,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -21630,7 +21644,7 @@
                     "default": "-1",
                     "description": "dof",
                     "name": "dof",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -21692,7 +21706,7 @@
                     "default": "-1",
                     "description": "dof",
                     "name": "dof",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -21723,7 +21737,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -21754,7 +21768,7 @@
                     "default": "-1",
                     "description": "dof",
                     "name": "dof",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -21857,7 +21871,7 @@
                     "default": "-1",
                     "description": "dof",
                     "name": "dof",
-                    "range": "$[0, 3]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -21888,7 +21902,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -21912,7 +21926,7 @@
                     "default": "-1",
                     "description": "dof",
                     "name": "dof",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -21943,7 +21957,7 @@
                     "default": "-1",
                     "description": "dof",
                     "name": "dof",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -21998,7 +22012,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -22029,7 +22043,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -22207,7 +22221,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -22282,7 +22296,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -22726,14 +22740,14 @@
                     "default": "",
                     "description": "file",
                     "name": "file",
-                    "range": "$[0, 0]$",
+                    "range": "N/A",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "format",
                     "name": "format",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -23064,7 +23078,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -23130,7 +23144,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -23217,7 +23231,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -23276,7 +23290,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -23290,14 +23304,14 @@
                     "default": "1",
                     "description": "kinetics",
                     "name": "kinetics",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "trigger",
                     "name": "trigger",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -23349,7 +23363,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -23387,7 +23401,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -24695,7 +24709,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -24817,7 +24831,7 @@
                     "default": "-1",
                     "description": "rb",
                     "name": "rb",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 }
             ],
@@ -24854,14 +24868,14 @@
                     "default": "-842150451",
                     "description": "body_a",
                     "name": "body_a",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "-842150451",
                     "description": "body_b",
                     "name": "body_b",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -24915,7 +24929,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -24960,14 +24974,14 @@
                     "default": "-842150451",
                     "description": "body_a",
                     "name": "body_a",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "-842150451",
                     "description": "body_b",
                     "name": "body_b",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -25005,21 +25019,21 @@
                     "default": "-842150451",
                     "description": "body_a",
                     "name": "body_a",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "-842150451",
                     "description": "body_b",
                     "name": "body_b",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "1",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -25155,14 +25169,14 @@
                     "default": "-842150451",
                     "description": "body_a",
                     "name": "body_a",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "-842150451",
                     "description": "body_b",
                     "name": "body_b",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -25241,21 +25255,21 @@
                     "default": "-842150451",
                     "description": "body_a",
                     "name": "body_a",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "-842150451",
                     "description": "body_b",
                     "name": "body_b",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "1",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -25344,21 +25358,21 @@
                     "default": "-842150451",
                     "description": "body_a",
                     "name": "body_a",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "-842150451",
                     "description": "body_b",
                     "name": "body_b",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "1",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -25452,21 +25466,21 @@
                     "default": "-842150451",
                     "description": "body_a",
                     "name": "body_a",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "-842150451",
                     "description": "body_b",
                     "name": "body_b",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "1",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -25612,21 +25626,21 @@
                     "default": "-842150451",
                     "description": "body_a",
                     "name": "body_a",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "-842150451",
                     "description": "body_b",
                     "name": "body_b",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "1",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -25755,21 +25769,21 @@
                     "default": "-842150451",
                     "description": "body_a",
                     "name": "body_a",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "-842150451",
                     "description": "body_b",
                     "name": "body_b",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "1",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -25915,21 +25929,21 @@
                     "default": "-842150451",
                     "description": "body_a",
                     "name": "body_a",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "-842150451",
                     "description": "body_b",
                     "name": "body_b",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "1",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -26058,14 +26072,14 @@
                     "default": "-842150451",
                     "description": "body_a",
                     "name": "body_a",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "-842150451",
                     "description": "body_b",
                     "name": "body_b",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -26130,14 +26144,14 @@
                     "default": "-1",
                     "description": "rbA",
                     "name": "rbA",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "-1",
                     "description": "rbB",
                     "name": "rbB",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -26230,7 +26244,7 @@
                     "default": "-842150451",
                     "description": "Rigid material",
                     "name": "rigid_body_id",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -26264,14 +26278,14 @@
                     "default": "-1",
                     "description": "Rigid material",
                     "name": "rb",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "-1",
                     "description": "dof",
                     "name": "dof",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -26302,14 +26316,14 @@
                     "default": "-1",
                     "description": "Rigid material",
                     "name": "rb",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "convention",
                     "name": "convention",
-                    "range": "$[0, 1]$",
+                    "range": "$[0, 0]$",
                     "units": ""
                 },
                 {
@@ -26347,7 +26361,7 @@
                     "default": "-1",
                     "description": "Rigid material",
                     "name": "rb",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -26406,7 +26420,7 @@
                     "default": "-1",
                     "description": "rb",
                     "name": "rb",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -26444,7 +26458,7 @@
                     "default": "-1",
                     "description": "rb",
                     "name": "rb",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -26468,14 +26482,14 @@
                     "default": "-1",
                     "description": "Rigid material",
                     "name": "rb",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "dof",
                     "name": "dof",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -26489,7 +26503,7 @@
                     "default": "0",
                     "description": "load_type",
                     "name": "load_type",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -26513,14 +26527,14 @@
                     "default": "-1",
                     "description": "Rigid material",
                     "name": "rb",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "dof",
                     "name": "dof",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -26541,7 +26555,7 @@
                     "default": "0",
                     "description": "load_type",
                     "name": "load_type",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 }
             ],
@@ -26558,14 +26572,14 @@
                     "default": "-1",
                     "description": "Rigid material",
                     "name": "rb",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
                     "default": "-1",
                     "description": "dof",
                     "name": "dof",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -26596,7 +26610,7 @@
                     "default": "-1",
                     "description": "Rigid material",
                     "name": "rb",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -26634,7 +26648,7 @@
                     "default": "0",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -27351,7 +27365,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -27382,7 +27396,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -27396,7 +27410,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -27660,7 +27674,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -27736,7 +27750,7 @@
                     "default": "0",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -27809,7 +27823,7 @@
                     "default": "0",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -27952,7 +27966,7 @@
                     "default": "0",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -28137,7 +28151,7 @@
                     "default": "0",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -28322,7 +28336,7 @@
                     "default": "0",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -28486,7 +28500,7 @@
                     "default": "0",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -28657,7 +28671,7 @@
                     "default": "0",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -28772,7 +28786,7 @@
                     "default": "0",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -28957,7 +28971,7 @@
                     "default": "0",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -29086,7 +29100,7 @@
                     "default": "0",
                     "description": "analysis",
                     "name": "analysis",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -29121,14 +29135,14 @@
                     "default": "1",
                     "description": "plot_level",
                     "name": "plot_level",
-                    "range": "$[0, 7]$",
+                    "range": "$[0, 6]$",
                     "units": ""
                 },
                 {
                     "default": "1",
                     "description": "output_level",
                     "name": "output_level",
-                    "range": "$[0, 5]$",
+                    "range": "$[0, 4]$",
                     "units": ""
                 },
                 {
@@ -29180,21 +29194,21 @@
                     "default": "1",
                     "description": "matrix format",
                     "name": "symmetric_stiffness",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "equation_scheme",
                     "name": "equation_scheme",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "equation_order",
                     "name": "equation_order",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -29393,7 +29407,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -29485,7 +29499,7 @@
                     "default": "-1",
                     "description": "sbm",
                     "name": "sbm",
-                    "range": "$[0, 3]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -29547,7 +29561,7 @@
                     "default": "-1",
                     "description": "co_ion",
                     "name": "co_ion",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -29602,7 +29616,7 @@
                     "default": "0",
                     "description": "analysis",
                     "name": "analysis",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -29637,14 +29651,14 @@
                     "default": "1",
                     "description": "plot_level",
                     "name": "plot_level",
-                    "range": "$[0, 7]$",
+                    "range": "$[0, 6]$",
                     "units": ""
                 },
                 {
                     "default": "1",
                     "description": "output_level",
                     "name": "output_level",
-                    "range": "$[0, 5]$",
+                    "range": "$[0, 4]$",
                     "units": ""
                 },
                 {
@@ -29696,21 +29710,21 @@
                     "default": "0",
                     "description": "matrix format",
                     "name": "symmetric_stiffness",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "equation_scheme",
                     "name": "equation_scheme",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "equation_order",
                     "name": "equation_order",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -29881,7 +29895,7 @@
                     "default": "-1",
                     "description": "sol",
                     "name": "sol",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -29936,7 +29950,7 @@
                     "default": "-1",
                     "description": "solute_id",
                     "name": "solute_id",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 }
             ],
@@ -30004,7 +30018,7 @@
                     "default": "-1",
                     "description": "solute_id",
                     "name": "solute_id",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 }
             ],
@@ -30028,7 +30042,7 @@
                     "default": "-1",
                     "description": "solute_id",
                     "name": "solute_id",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -30155,7 +30169,7 @@
                     "default": "-1",
                     "description": "solute_id",
                     "name": "solute_id",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 }
             ],
@@ -30172,21 +30186,21 @@
                     "default": "0",
                     "description": "matrix format",
                     "name": "symmetric_stiffness",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "equation_scheme",
                     "name": "equation_scheme",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "equation_order",
                     "name": "equation_order",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -30503,7 +30517,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -30548,7 +30562,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -30590,7 +30604,7 @@
                     "default": "-1",
                     "description": "sbm",
                     "name": "sbm",
-                    "range": "$[0, 2]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -30721,7 +30735,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -30831,7 +30845,7 @@
                     "default": "0",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -31239,7 +31253,7 @@
                     "default": "0",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -31569,7 +31583,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -31583,7 +31597,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -31669,7 +31683,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -31683,7 +31697,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -31831,7 +31845,7 @@
                     "default": "0",
                     "description": "analysis",
                     "name": "analysis",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -31866,14 +31880,14 @@
                     "default": "1",
                     "description": "plot_level",
                     "name": "plot_level",
-                    "range": "$[0, 7]$",
+                    "range": "$[0, 6]$",
                     "units": ""
                 },
                 {
                     "default": "1",
                     "description": "output_level",
                     "name": "output_level",
-                    "range": "$[0, 5]$",
+                    "range": "$[0, 4]$",
                     "units": ""
                 },
                 {
@@ -31925,21 +31939,21 @@
                     "default": "0",
                     "description": "matrix format",
                     "name": "symmetric_stiffness",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "equation_scheme",
                     "name": "equation_scheme",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "equation_order",
                     "name": "equation_order",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -32107,7 +32121,7 @@
                     "default": "0",
                     "description": "solve_strategy",
                     "name": "solve_strategy",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -32362,7 +32376,7 @@
                     "default": "0",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -32477,7 +32491,7 @@
                     "default": "0",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -32592,7 +32606,7 @@
                     "default": "0",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -32651,7 +32665,7 @@
                     "default": "0",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -32752,7 +32766,7 @@
                     "default": "0",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -32818,7 +32832,7 @@
                     "default": "0",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 2]$",
+                    "range": "$[0, 1]$",
                     "units": ""
                 },
                 {
@@ -32947,7 +32961,7 @@
                     "default": "0",
                     "description": "Enforcement method",
                     "name": "laugon",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -33084,7 +33098,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -33146,7 +33160,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -33160,7 +33174,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -33233,7 +33247,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -33247,7 +33261,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -33320,7 +33334,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -33334,7 +33348,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -33407,7 +33421,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -33592,7 +33606,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -33606,7 +33620,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -33672,7 +33686,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -33686,7 +33700,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -33797,7 +33811,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -33811,7 +33825,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -33880,7 +33894,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -33894,7 +33908,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -33915,7 +33929,7 @@
                     "default": "30",
                     "description": "n_term",
                     "name": "n_term",
-                    "range": "$\\gt 3$",
+                    "range": "$[3, 30]$",
                     "units": ""
                 },
                 {
@@ -33977,7 +33991,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -33991,7 +34005,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -34043,7 +34057,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -34057,7 +34071,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -34088,7 +34102,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -34102,7 +34116,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -34133,7 +34147,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -34147,7 +34161,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -34192,7 +34206,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -34206,7 +34220,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -34237,7 +34251,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -34251,7 +34265,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -34275,7 +34289,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -34289,7 +34303,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -34320,7 +34334,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -34334,7 +34348,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -34375,7 +34389,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -34389,7 +34403,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -34420,7 +34434,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -34434,7 +34448,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -34500,7 +34514,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -34514,7 +34528,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -34528,14 +34542,14 @@
                     "default": "1",
                     "description": "kinetics",
                     "name": "kinetics",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
                     "default": "0",
                     "description": "trigger",
                     "name": "trigger",
-                    "range": "$[0, 3]$",
+                    "range": "$[0, 2]$",
                     "units": ""
                 },
                 {
@@ -34587,7 +34601,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -34601,7 +34615,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -34632,7 +34646,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -34646,7 +34660,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -34684,7 +34698,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -34698,7 +34712,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -34813,7 +34827,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -34827,7 +34841,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -35246,7 +35260,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -35260,7 +35274,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -35291,7 +35305,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -35406,7 +35420,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -35626,7 +35640,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -35729,7 +35743,7 @@
                     "default": "-1",
                     "description": "species",
                     "name": "species",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -35753,7 +35767,7 @@
                     "default": "-1",
                     "description": "species",
                     "name": "species",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -35777,7 +35791,7 @@
                     "default": "-1",
                     "description": "species",
                     "name": "species",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -35801,7 +35815,7 @@
                     "default": "-1",
                     "description": "species",
                     "name": "species",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -35825,7 +35839,7 @@
                     "default": "-1",
                     "description": "species",
                     "name": "species",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -35849,7 +35863,7 @@
                     "default": "-1",
                     "description": "species",
                     "name": "species",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 },
                 {
@@ -36161,7 +36175,7 @@
                     "default": "1",
                     "description": "density",
                     "name": "density",
-                    "range": "$\\in \\mathbb{R}$",
+                    "range": "$\\ge 0$",
                     "units": "M/L^3"
                 },
                 {
@@ -36175,7 +36189,7 @@
                     "default": "0",
                     "description": "pressure_model",
                     "name": "pressure_model",
-                    "range": "$[0, 4]$",
+                    "range": "$[0, 3]$",
                     "units": ""
                 },
                 {
@@ -36274,7 +36288,7 @@
                     "default": "-1",
                     "description": "species",
                     "name": "c_dof",
-                    "range": "$[0, 1]$",
+                    "range": "$\\in \\mathbb{Z}$",
                     "units": ""
                 }
             ],
