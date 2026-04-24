@@ -234,6 +234,7 @@ with open('mkdocs.yml', mode='a') as mkdocs:
     mkdocs.write('  - Output:\n')
     mkdocs.write('    - plot variables: plotvars.md\n')
     mkdocs.write('    - log variables: logvars.md\n')
+    mkdocs.write('  - febcode: febcode.md\n')
 
 # open the plotvars.csv that contains the descriptions of the plot variables
 if verbose:
