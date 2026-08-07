@@ -259,3 +259,72 @@ Example:
 ```
 
 Note that the value is defined via a `<![CDATA[]]>` section. This is necessary since the code can contain special xml formatting characters (e.g. `<`) that can confuse xml readers. Any text in a `<![CDATA[]]>` section will be read as raw text. 
+
+## For Developers
+This section describes how you can make use of scripts in your plugins.
+
+First, create a new class that inherits from `FEScripted`. This is a template class that takes the FEBio base class as a template argument. Make sure to pass the `FEModel` class to this base class. For example,
+
+```cpp
+class MyScriptedFEature : public FEScripted<FESurfaceLoad>
+{
+    MyScriptedFEature(FEModel* fem) : FEScripted<FESurfaceLoad>(fem) {}
+};
+```
+
+The `FEScripted` base class will automatically add a new `script` property to the plugin class. Users will use this property to define the script and the input parameters to the script. 
+
+The next step is to define the _script context_, which defines the expected return type of the script and the list of injected variables. It is advised to set the script context in the constructor of the plugin class. 
+
+```cpp
+MyScriptedFEature::MyScriptedFEature(FEModel* fem) : FEScripted<FESurfaceLoad>(fem)
+{
+    ScriptContext sc;
+    sc.returnType = FEValueType::Double; // script should return a double variable.
+    sc.addVariable("pos", FEValueType::Vec3d, true); // add pos as an differentiable injected variable. 
+    sc.addVariable("time", FEValueType::Double, false); // add time as a constant injected variable. 
+    SetScriptContext(sc);
+}
+
+```
+
+When it's time to evaluate the script, use the `FEScripted::Value` method. This function takes two parameters, a `FEMaterialPoint` and a vector of `FEValue` variables that contain the values of the injected variables. Make sure that the size and order of the vector matches the list of injected variables defined in the script context.
+
+```cpp
+vector<FEValue> vars(2);
+vars[0] = mp.m_rt;
+vars[1] = GetTimeInfo().currentTime;
+
+double P = Value(mp, vars).toDouble();
+
+```
+
+The `Value` function will return a `FEValue` variant that can be used to extract the value. You can use the `to<type>` methods to extract the value of the correct type. 
+
+```cpp
+FEValue v;
+bool b = v.toBool();
+int i = v.toInt();
+double a = v.toDouble();
+vec2d v2 = v.toVec2d();
+vec3d v3 = v.toVec3d();
+mat2d m2 = v.toMat2d();
+mat3d m3 = v.toMat3d();
+```
+
+Similarly, to evaluate derivatives, you can use the `DerivValue` method. In addition to a `FEMaterialPoint` and a `std::vector<FEValue>` parameter, it also takes an index parameter that indicates which derivative you want. The index is the index of the injected variable as defined in the script's context. You can query whether the script has a non-zero derivative using the `HasDerivative` method. 
+
+```cpp
+vec3d gradP(0,0,0); // gradient of pressure
+if (HasDerivative(0)) // do we have a derivative w.r.t. position? 
+{
+    // prepare values for injected variables. 
+    vector<FEValue> vars(2);
+    vars[0] = mp.m_rt;
+    vars[1] = GetTimeInfo().currentTime;
+
+    gradP = Value(mp, vars).toVec3d();
+}
+return gradP;
+```
+
